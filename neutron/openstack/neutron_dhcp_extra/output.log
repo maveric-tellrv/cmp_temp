@@ -1,0 +1,57 @@
+<output>
+Checking installed rpms:
+openstack-tempest-16.1.1-0.20170808012534.0fc1454.el7ost.noarch
+sos-3.4-6.el7.noarch
+python-neutron-tests-11.0.0-0.20170821141644.3441b3f.el7ost.noarch
+python-neutron-lbaas-tests-11.0.0-0.20170818025704.bdea6dd.el7ost.noarch
+python-ddt-1.0.1-2.el7ost.noarch
+python-sahara-tests-7.0.0-0.20170821133416.c07f479.el7ost.noarch
+python-neutron-fwaas-tests-11.0.0-0.20170821135612.734e02a.el7ost.noarch
+python-manila-tests-5.0.0-0.20170821131529.e391476.el7ost.noarch
+python-cinder-tests-11.0.0-0.20170821192443.120fdb0.el7ost.noarch
+python-neutron-fwaas-tests-11.0.0-0.20170821135612.734e02a.el7ost.noarch
+python-sahara-tests-tempest-0.4.2-0.20170801104045.5aee39c.el7ost.noarch
+All required packages installed
+Configuring Tempest
+
+2017-09-05 15:37:15.497 721933 INFO tempest [-] Using tempest config file /etc/tempest/tempest.conf
+
+
+Plugin selected: network
+API list selected: neutron_dhcp_extra
+Running tempest
+Running the following tests!!
+neutron.tests.tempest.api.test_revisions.TestRevisions.test_update_extra_dhcp_opt_bumps_revision
+tempest.api.network.test_extra_dhcp_options.ExtraDHCPOptionsIpV6TestJSON.test_create_list_port_with_extra_dhcp_options
+tempest.api.network.test_extra_dhcp_options.ExtraDHCPOptionsTestJSON.test_create_list_port_with_extra_dhcp_options
+neutron.tests.tempest.api.test_extra_dhcp_options.ExtraDHCPOptionsIpV6TestJSON.test_update_show_port_with_extra_dhcp_options
+neutron.tests.tempest.api.test_extra_dhcp_options.ExtraDHCPOptionsTestJSON.test_update_show_port_with_extra_dhcp_options
+tempest.api.network.test_extra_dhcp_options.ExtraDHCPOptionsIpV6TestJSON.test_update_show_port_with_extra_dhcp_options
+tempest.api.network.test_extra_dhcp_options.ExtraDHCPOptionsTestJSON.test_update_show_port_with_extra_dhcp_options
+neutron.tests.tempest.api.test_extra_dhcp_options.ExtraDHCPOptionsTestJSON.test_create_list_port_with_extra_dhcp_options
+neutron.tests.tempest.api.test_extra_dhcp_options.ExtraDHCPOptionsIpV6TestJSON.test_create_list_port_with_extra_dhcp_options
+ostestr -w whitelist.txt --serial
+{0} tempest.api.network.test_extra_dhcp_options.ExtraDHCPOptionsIpV6TestJSON.test_create_list_port_with_extra_dhcp_options [2.350599s] ... ok
+{0} tempest.api.network.test_extra_dhcp_options.ExtraDHCPOptionsIpV6TestJSON.test_update_show_port_with_extra_dhcp_options [0.769218s] ... ok
+{0} tempest.api.network.test_extra_dhcp_options.ExtraDHCPOptionsTestJSON.test_create_list_port_with_extra_dhcp_options [3.310748s] ... ok
+{0} tempest.api.network.test_extra_dhcp_options.ExtraDHCPOptionsTestJSON.test_update_show_port_with_extra_dhcp_options [0.863595s] ... ok
+{0} neutron.tests.tempest.api.test_extra_dhcp_options.ExtraDHCPOptionsIpV6TestJSON.test_create_list_port_with_extra_dhcp_options [2.491668s] ... ok
+{0} neutron.tests.tempest.api.test_extra_dhcp_options.ExtraDHCPOptionsIpV6TestJSON.test_update_show_port_with_extra_dhcp_options [1.297311s] ... ok
+{0} neutron.tests.tempest.api.test_extra_dhcp_options.ExtraDHCPOptionsTestJSON.test_create_list_port_with_extra_dhcp_options [2.622092s] ... ok
+{0} neutron.tests.tempest.api.test_extra_dhcp_options.ExtraDHCPOptionsTestJSON.test_update_show_port_with_extra_dhcp_options [0.894082s] ... ok
+{0} neutron.tests.tempest.api.test_revisions.TestRevisions.test_update_extra_dhcp_opt_bumps_revision [5.668440s] ... ok
+Number of Tests that Ran 9
+Number of Tests that Passed 9
+Number of Tests that Failed 0
+Number of Tests that Skipped 0
+Below are the tests that have passed
+Success: neutron.tests.tempest.api.test_extra_dhcp_options.ExtraDHCPOptionsIpV6TestJSON.test_update_show_port_with_extra_dhcp_options[id-9a6aebf4-86ee-4f47-b07a-7f7232c55607]   PASS
+Success: tempest.api.network.test_extra_dhcp_options.ExtraDHCPOptionsIpV6TestJSON.test_create_list_port_with_extra_dhcp_options[id-d2c17063-3767-4a24-be4f-a23dbfa133c9]   PASS
+Success: neutron.tests.tempest.api.test_extra_dhcp_options.ExtraDHCPOptionsTestJSON.test_create_list_port_with_extra_dhcp_options[id-d2c17063-3767-4a24-be4f-a23dbfa133c9]   PASS
+Success: neutron.tests.tempest.api.test_revisions.TestRevisions.test_update_extra_dhcp_opt_bumps_revision[id-a21ec3b4-3569-4b77-bf29-4177edaa2df5]   PASS
+Success: neutron.tests.tempest.api.test_extra_dhcp_options.ExtraDHCPOptionsTestJSON.test_update_show_port_with_extra_dhcp_options[id-9a6aebf4-86ee-4f47-b07a-7f7232c55607]   PASS
+Success: tempest.api.network.test_extra_dhcp_options.ExtraDHCPOptionsTestJSON.test_create_list_port_with_extra_dhcp_options[id-d2c17063-3767-4a24-be4f-a23dbfa133c9]   PASS
+Success: tempest.api.network.test_extra_dhcp_options.ExtraDHCPOptionsTestJSON.test_update_show_port_with_extra_dhcp_options[id-9a6aebf4-86ee-4f47-b07a-7f7232c55607]   PASS
+Success: tempest.api.network.test_extra_dhcp_options.ExtraDHCPOptionsIpV6TestJSON.test_update_show_port_with_extra_dhcp_options[id-9a6aebf4-86ee-4f47-b07a-7f7232c55607]   PASS
+Success: neutron.tests.tempest.api.test_extra_dhcp_options.ExtraDHCPOptionsIpV6TestJSON.test_create_list_port_with_extra_dhcp_options[id-d2c17063-3767-4a24-be4f-a23dbfa133c9]   PASS
+</output>

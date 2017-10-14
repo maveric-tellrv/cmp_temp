@@ -1,0 +1,529 @@
+<output>
+Checking installed rpms:
+openstack-tempest-16.1.1-0.20170808012534.0fc1454.el7ost.noarch
+sos-3.4-6.el7.noarch
+python-neutron-tests-11.0.0-0.20170821141644.3441b3f.el7ost.noarch
+python-neutron-lbaas-tests-11.0.0-0.20170818025704.bdea6dd.el7ost.noarch
+python-ddt-1.0.1-2.el7ost.noarch
+python-sahara-tests-7.0.0-0.20170821133416.c07f479.el7ost.noarch
+python-neutron-fwaas-tests-11.0.0-0.20170821135612.734e02a.el7ost.noarch
+python-manila-tests-5.0.0-0.20170821131529.e391476.el7ost.noarch
+python-cinder-tests-11.0.0-0.20170821192443.120fdb0.el7ost.noarch
+python-neutron-fwaas-tests-11.0.0-0.20170821135612.734e02a.el7ost.noarch
+python-sahara-tests-tempest-0.4.2-0.20170801104045.5aee39c.el7ost.noarch
+All required packages installed
+Configuring Tempest
+
+2017-09-05 14:36:19.175 24931 INFO tempest [-] Using tempest config file /etc/tempest/tempest.conf
+
+
+Plugin selected: network
+API list selected: neutron_ipv4
+Running tempest
+Running the following tests!!
+neutron.tests.tempest.api.test_routers.RoutersSearchCriteriaTest.test_list_pagination
+tempest.api.network.test_networks.NetworksTest.test_update_subnet_gw_dns_host_routes_dhcp
+tempest.api.network.admin.test_negative_quotas.QuotasNegativeTest.test_network_quota_exceeding
+neutron.tests.tempest.api.test_ports.PortsTestJSON.test_add_ips_to_port
+neutron.tests.tempest.api.test_routers.RoutersSearchCriteriaTest.test_list_pagination_page_reverse_asc
+neutron.tests.tempest.api.test_subnetpools.SubnetPoolsTest.test_show_subnetpool_has_project_id
+neutron.tests.tempest.api.test_subnetpools.SubnetPoolsTest.test_update_subnetpool_associate_another_address_scope
+neutron.tests.tempest.api.test_subnetpools.SubnetPoolsTestV6.test_update_subnetpool_disassociate_address_scope
+neutron.tests.tempest.api.admin.test_quotas_negative.QuotasAdminNegativeTestJSON.test_create_port_when_quotas_is_full
+neutron.tests.tempest.api.test_routers_negative.RoutersNegativeTest.test_delete_router_in_use
+neutron.tests.tempest.api.test_ports.PortsTestJSON.test_create_update_port_with_dns_name
+tempest.api.network.test_ports.PortsTestJSON.test_create_update_port_with_second_ip
+neutron.tests.tempest.api.test_subnets.SubnetsSearchCriteriaTest.test_list_no_pagination_limit_0
+tempest.api.network.test_ports.PortsAdminExtendedAttrsTestJSON.test_list_ports_binding_ext_attr
+tempest.api.network.test_networks.NetworksTest.test_list_subnets
+tempest.api.network.test_allowed_address_pair.AllowedAddressPairTestJSON.test_update_port_with_address_pair
+tempest.api.network.test_versions.NetworksApiDiscovery.test_api_version_resources
+tempest.api.network.test_routers_negative.RoutersNegativeTest.test_router_add_gateway_invalid_network_returns_404
+tempest.api.network.test_floating_ips_negative.FloatingIPNegativeTestJSON.test_associate_floatingip_port_ext_net_unreachable
+neutron.tests.tempest.api.test_subnetpools.SubnetPoolsTestV6.test_update_subnetpool_associate_another_address_scope
+neutron.tests.tempest.api.test_subnetpools.SubnetPoolsTest.test_create_subnetpool_associate_address_scope
+neutron.tests.tempest.api.test_subnetpools.SubnetPoolsTest.test_update_subnetpool_associate_address_scope
+neutron.tests.tempest.api.test_networks.NetworksSearchCriteriaTest.test_list_pagination_page_reverse_asc
+neutron.tests.tempest.api.test_networks.NetworksTestJSON.test_create_update_network_description
+neutron.tests.tempest.api.test_subnetpools.SubnetPoolsTestV6.test_update_subnetpool_prefixes_extend
+neutron.tests.tempest.api.test_subnetpools_negative.SubnetPoolsNegativeTestJSON.test_update_non_existent_subnetpool
+neutron.tests.tempest.api.test_subnetpools.SubnetPoolsTest.test_create_list_subnetpool
+neutron.tests.tempest.api.admin.test_quotas.QuotasTest.test_quotas
+neutron.tests.tempest.api.test_subnetpools.SubnetPoolsTest.test_update_subnetpool_prefixes_extend
+neutron.tests.tempest.api.test_routers.RoutersTest.test_network_attached_with_two_routers
+tempest.api.network.test_ports.PortsTestJSON.test_show_port
+neutron.tests.tempest.api.test_routers.RoutersTest.test_create_router_with_snat_explicit
+neutron.tests.tempest.api.test_networks.NetworksSearchCriteriaTest.test_list_pagination_page_reverse_with_href_links
+tempest.api.network.test_networks_negative.NetworksNegativeTestJSON.test_delete_non_existent_network
+neutron.tests.tempest.api.test_routers.RoutersTest.test_update_router_set_gateway_without_snat
+tempest.api.network.test_routers.RoutersTest.test_update_router_admin_state
+neutron.tests.tempest.api.test_subnetpools_negative.SubnetPoolsNegativeTestJSON.test_tenant_create_subnetpool_associate_shared_address_scope
+tempest.api.network.test_networks.BulkNetworkOpsTest.test_bulk_create_delete_network
+neutron.tests.tempest.api.test_subnetpools_negative.SubnetPoolsNegativeTestJSON.test_update_subnetpool_prefixes_shrink
+neutron.tests.tempest.api.test_subnetpools.SubnetPoolsTestV6.test_create_subnet_from_pool_with_default_prefixlen
+tempest.api.network.test_ports.PortsTestJSON.test_update_port_with_security_group_and_extra_attributes
+tempest.api.network.test_allowed_address_pair.AllowedAddressPairTestJSON.test_update_port_with_multiple_ip_mac_address_pair
+tempest.api.network.test_ports.PortsTestJSON.test_update_port_with_two_security_groups_and_extra_attributes
+neutron.tests.tempest.api.test_subnetpools.SubnetPoolsTest.test_admin_create_shared_subnetpool
+tempest.api.network.test_networks_negative.NetworksNegativeTestJSON.test_show_non_existent_subnet
+tempest.api.network.test_ports.PortsTestJSON.test_show_port_fields
+tempest.api.network.test_floating_ips_negative.FloatingIPNegativeTestJSON.test_create_floatingip_in_private_network
+neutron.tests.tempest.api.test_subnetpools_negative.SubnetPoolsNegativeTestJSON.test_update_subnetpool_prefix_intersect
+tempest.api.network.test_networks_negative.NetworksNegativeTestJSON.test_show_non_existent_port
+neutron.tests.tempest.api.test_networks.NetworksTestJSON.test_create_update_network_dns_domain
+tempest.api.network.test_routers.RoutersTest.test_create_router_with_default_snat_value
+neutron.tests.tempest.api.test_networks.NetworksSearchCriteriaTest.test_list_validation_filters
+neutron.tests.tempest.api.test_subnetpools_negative.SubnetPoolsNegativeTestJSON.test_update_subnetpool_associate_address_scope_of_other_owner
+tempest.api.network.admin.test_external_network_extension.ExternalNetworksTestJSON.test_show_external_networks_attribute
+tempest.api.network.test_networks.NetworksTest.test_create_delete_subnet_all_attributes
+tempest.api.network.test_networks.NetworksTest.test_create_update_network_description
+neutron.tests.tempest.api.test_networks.NetworksSearchCriteriaTest.test_list_pagination
+neutron.tests.tempest.api.test_routers.RoutersSearchCriteriaTest.test_list_pagination_with_href_links
+neutron.tests.tempest.api.test_subnetpools.SubnetPoolsTest.test_create_subnet_from_pool_with_prefixlen
+neutron.tests.tempest.api.admin.test_quotas_negative.QuotasAdminNegativeTestJSON.test_create_security_group_when_quotas_is_full
+neutron.tests.tempest.api.test_subnets.SubnetsSearchCriteriaTest.test_list_validation_filters
+neutron.tests.tempest.api.test_networks.NetworksSearchCriteriaTest.test_list_no_pagination_limit_0
+neutron.tests.tempest.api.test_subnets.SubnetsSearchCriteriaTest.test_list_pagination_page_reverse_with_href_links
+neutron.tests.tempest.api.test_subnetpools.SubnetPoolsTest.test_create_subnet_from_pool_with_subnet_cidr
+neutron.tests.tempest.api.test_subnetpools.SubnetPoolsTest.test_update_subnetpool_prefixes_append
+tempest.api.network.test_routers_negative.RoutersNegativeTest.test_router_add_gateway_net_not_external_returns_400
+tempest.api.network.test_floating_ips.FloatingIPTestJSON.test_create_update_floatingip_with_port_multiple_ip_address
+tempest.api.network.admin.test_external_network_extension.ExternalNetworksTestJSON.test_create_external_network
+neutron.tests.tempest.api.test_subnetpools.SubnetPoolsTest.test_update_subnetpool_disassociate_address_scope
+neutron.tests.tempest.api.test_allowed_address_pair.AllowedAddressPairTestJSON.test_update_port_with_cidr_address_pair
+neutron.tests.tempest.api.test_subnets.SubnetsSearchCriteriaTest.test_list_pagination_with_href_links
+neutron.tests.tempest.api.test_floating_ips.FloatingIPTestJSON.test_create_update_floatingip_description
+tempest.api.network.test_routers_negative.RoutersNegativeTest.test_add_router_interfaces_on_overlapping_subnets_returns_400
+tempest.api.network.test_networks.NetworksTest.test_create_update_delete_network_subnet
+tempest.api.network.test_routers.RoutersTest.test_add_remove_router_interface_with_subnet_id
+tempest.api.network.test_routers_negative.RoutersNegativeTest.test_delete_non_existent_router_returns_404
+neutron.tests.tempest.api.test_routers.RoutersTest.test_update_router_reset_gateway_without_snat
+neutron.tests.tempest.api.test_networks.NetworksSearchCriteriaTest.test_list_sorts_asc
+tempest.api.network.test_networks.NetworksTest.test_show_network
+neutron.tests.tempest.api.test_allowed_address_pair.AllowedAddressPairTestJSON.test_create_list_port_with_address_pair
+tempest.api.network.test_networks.NetworksTest.test_delete_network_with_subnet
+neutron.tests.tempest.api.test_subnets.SubnetsSearchCriteriaTest.test_list_pagination_page_reverse_desc
+tempest.api.network.test_ports.PortsTestJSON.test_port_list_filter_by_ip
+tempest.api.network.test_routers.RoutersTest.test_update_router_set_gateway_with_snat_explicit
+neutron.tests.tempest.api.test_subnetpools.SubnetPoolsTestV6.test_create_subnet_from_pool_with_prefixlen
+tempest.api.network.test_networks_negative.NetworksNegativeTestJSON.test_update_non_existent_network
+neutron.tests.tempest.api.test_subnets.SubnetsSearchCriteriaTest.test_list_sorts_desc
+neutron.tests.tempest.api.test_subnetpools.SubnetPoolsTestV6.test_update_subnetpool_associate_address_scope
+neutron.tests.tempest.api.admin.test_networks.NetworksTestAdmin.test_admin_create_network_keystone_v3_and_other_tenant
+tempest.api.network.admin.test_external_networks_negative.ExternalNetworksAdminNegativeTestJSON.test_create_port_with_precreated_floatingip_as_fixed_ip
+neutron.tests.tempest.api.test_subnetpools.SubnetPoolsTestV6.test_create_update_subnetpool_description
+neutron.tests.tempest.api.admin.test_shared_network_extension.AllowedAddressPairSharedNetworkTest.test_update_with_address_pair_blocked_on_other_network
+neutron.tests.tempest.api.test_subnetpools.SubnetPoolsTestV6.test_create_subnet_from_pool_with_quota
+neutron.tests.tempest.api.test_ports.PortsTestJSON.test_create_update_port_with_no_dns_name
+neutron.tests.tempest.api.test_ports.PortsTestJSON.test_change_dhcp_flag_then_create_port
+neutron.tests.tempest.api.admin.test_floating_ips_admin_actions.FloatingIPAdminTestJSON.test_create_floatingip_with_specified_ip_address
+neutron.tests.tempest.api.test_ports.PortsTestJSON.test_create_update_port_description
+tempest.api.network.test_networks.NetworksTest.test_create_delete_subnet_with_gw
+tempest.api.network.test_networks.NetworksTest.test_create_delete_subnet_with_dhcp_enabled
+neutron.tests.tempest.api.admin.test_quotas_negative.QuotasAdminNegativeTestJSON.test_create_network_when_quotas_is_full
+tempest.api.network.test_routers.RoutersTest.test_update_router_set_gateway_without_snat
+tempest.api.network.test_routers.RoutersTest.test_create_router_with_snat_explicit
+tempest.api.network.test_floating_ips.FloatingIPTestJSON.test_create_list_show_update_delete_floating_ip
+neutron.tests.tempest.api.test_subnetpools_negative.SubnetPoolsNegativeTestJSON.test_create_subnetpool_associate_invalid_address_scope
+neutron.tests.tempest.api.admin.test_quotas_negative.QuotasAdminNegativeTestJSON.test_create_subnet_when_quotas_is_full
+neutron.tests.tempest.api.test_routers.RoutersSearchCriteriaTest.test_list_sorts_desc
+neutron.tests.tempest.api.test_networks.NetworksSearchCriteriaTest.test_list_pagination_with_marker
+tempest.api.network.test_ports.PortsTestJSON.test_list_ports_fields
+tempest.api.network.test_routers.RoutersTest.test_add_multiple_router_interfaces
+tempest.api.network.test_routers.RoutersTest.test_create_show_list_update_delete_router
+neutron.tests.tempest.api.test_networks.NetworksTestJSON.test_show_network_fields
+tempest.api.network.test_networks.NetworksTest.test_list_networks_fields
+neutron.tests.tempest.scenario.test_basic.NetworkBasicTest.test_basic_instance
+neutron.tests.tempest.api.test_subnets.SubnetsSearchCriteriaTest.test_list_pagination_page_reverse_asc
+neutron.tests.tempest.api.test_allowed_address_pair.AllowedAddressPairTestJSON.test_update_port_with_multiple_ip_mac_address_pair
+neutron.tests.tempest.api.test_subnetpools.SubnetPoolsTestV6.test_create_subnet_from_pool_with_subnet_cidr
+neutron.tests.tempest.api.test_subnetpools_negative.SubnetPoolsNegativeTestJSON.test_create_subnetpool_associate_address_scope_of_other_owner
+tempest.api.network.test_networks.NetworksTest.test_show_subnet_fields
+neutron.tests.tempest.api.test_subnetpools_negative.SubnetPoolsNegativeTestJSON.test_tenant_create_shared_subnetpool
+tempest.api.network.test_ports.PortsTestJSON.test_port_list_filter_by_router_id
+neutron.tests.tempest.api.test_routers.RoutersTest.test_create_router_with_default_snat_value
+neutron.tests.tempest.api.admin.test_quotas_negative.QuotasAdminNegativeTestJSON.test_create_floatingip_when_quotas_is_full
+neutron.tests.tempest.api.admin.test_quotas_negative.QuotasAdminNegativeTestJSON.test_create_router_when_quotas_is_full
+neutron.tests.tempest.api.test_subnetpools.SubnetPoolsTestV6.test_create_dual_stack_subnets_from_subnetpools
+tempest.api.network.test_allowed_address_pair.AllowedAddressPairTestJSON.test_create_list_port_with_address_pair
+tempest.api.network.admin.test_quotas.QuotasTest.test_quotas
+neutron.tests.tempest.api.test_subnets.SubnetsSearchCriteriaTest.test_list_pagination
+tempest.api.network.admin.test_external_network_extension.ExternalNetworksTestJSON.test_list_external_networks
+neutron.tests.tempest.api.test_subnetpools_negative.SubnetPoolsNegativeTestJSON.test_create_subnet_different_pools_same_network
+neutron.tests.tempest.api.test_subnetpools.SubnetPoolsTestV6.test_update_subnetpool_prefixes_append
+neutron.tests.tempest.api.test_subnetpools_negative.SubnetPoolsNegativeTestJSON.test_delete_non_existent_subnetpool
+tempest.api.network.test_routers.RoutersTest.test_create_router_set_gateway_with_fixed_ip
+tempest.api.network.test_routers.RoutersTest.test_update_router_unset_gateway
+neutron.tests.tempest.api.test_subnets.SubnetsSearchCriteriaTest.test_list_sorts_asc
+tempest.api.network.test_networks.BulkNetworkOpsTest.test_bulk_create_delete_port
+neutron.tests.tempest.api.test_routers.RoutersTest.test_update_router_set_gateway_with_snat_explicit
+neutron.tests.tempest.api.test_networks_negative.NetworksNegativeTest.test_delete_network_in_use
+tempest.api.network.test_networks_negative.NetworksNegativeTestJSON.test_update_non_existent_port
+tempest.api.network.test_networks.BulkNetworkOpsTest.test_bulk_create_delete_subnet
+tempest.api.network.test_networks.NetworksTest.test_show_network_fields
+tempest.api.network.test_ports.PortsAdminExtendedAttrsTestJSON.test_create_port_binding_ext_attr
+neutron.tests.tempest.api.test_subnetpools_negative.SubnetPoolsNegativeTestJSON.test_tenant_get_not_shared_admin_subnetpool
+tempest.api.network.test_networks.NetworksTest.test_show_subnet
+neutron.tests.tempest.api.test_floating_ips.FloatingIPTestJSON.test_floatingip_update_extra_attributes_port_id_not_changed
+tempest.api.network.test_allowed_address_pair.AllowedAddressPairTestJSON.test_update_port_with_cidr_address_pair
+neutron.tests.tempest.api.test_routers.RoutersSearchCriteriaTest.test_list_sorts_asc
+neutron.tests.tempest.api.test_subnetpools.SubnetPoolsTest.test_create_update_subnetpool_description
+tempest.api.network.admin.test_external_network_extension.ExternalNetworksTestJSON.test_update_external_network
+tempest.api.network.test_routers.RoutersTest.test_create_router_setting_project_id
+neutron.tests.tempest.api.admin.test_networks.NetworksTestAdmin.test_admin_create_network_keystone_v3_and_tenant
+neutron.tests.tempest.api.test_subnetpools_negative.SubnetPoolsNegativeTestJSON.test_get_non_existent_subnetpool
+tempest.api.network.test_routers.RoutersTest.test_update_delete_extra_route
+neutron.tests.tempest.api.test_routers.RoutersTest.test_update_extra_route
+tempest.api.network.test_ports.PortsTestJSON.test_create_port_with_no_securitygroups
+tempest.api.network.test_floating_ips.FloatingIPTestJSON.test_create_floating_ip_specifying_a_fixed_ip_address
+tempest.api.network.test_ports.PortsTestJSON.test_list_ports
+neutron.tests.tempest.api.test_subnetpools_negative.SubnetPoolsNegativeTestJSON.test_create_subnetpool_associate_address_scope_prefix_intersect
+neutron.tests.tempest.api.test_subnetpools.SubnetPoolsTestV6.test_tenant_update_subnetpool
+tempest.api.network.test_routers_negative.RoutersNegativeTest.test_show_non_existent_router_returns_404
+neutron.tests.tempest.api.test_subnetpools.SubnetPoolsTest.test_create_subnet_from_pool_with_default_prefixlen
+tempest.api.network.test_networks.NetworksTest.test_list_networks
+tempest.api.network.test_ports.PortsAdminExtendedAttrsTestJSON.test_show_port_binding_ext_attr
+tempest.api.network.test_routers_negative.RoutersNegativeTest.test_router_remove_interface_in_use_returns_409
+neutron.tests.tempest.api.test_networks.NetworksTestJSON.test_create_network_keystone_v3
+neutron.tests.tempest.api.test_subnetpools.SubnetPoolsTestV6.test_show_subnetpool_has_project_id
+neutron.tests.tempest.api.test_networks.NetworksTestJSON.test_list_networks_fields_keystone_v3
+tempest.api.network.test_routers_negative.RoutersNegativeTest.test_update_non_existent_router_returns_404
+neutron.tests.tempest.api.test_subnetpools_negative.SubnetPoolsNegativeTestJSON.test_create_sp_associate_address_scope_multiple_prefix_intersect
+tempest.api.network.test_ports.PortsTestJSON.test_create_show_delete_port_user_defined_mac
+tempest.api.network.test_networks.NetworksTest.test_external_network_visibility
+neutron.tests.tempest.api.test_networks.NetworksTestJSON.test_list_networks_fields
+neutron.tests.tempest.api.test_subnetpools.SubnetPoolsTestV6.test_create_list_subnetpool
+tempest.api.network.test_floating_ips_negative.FloatingIPNegativeTestJSON.test_create_floatingip_with_port_ext_net_unreachable
+neutron.tests.tempest.api.test_networks.NetworksTestJSON.test_show_network_fields_keystone_v3
+neutron.tests.tempest.api.test_floating_ips.FloatingIPTestJSON.test_blank_update_clears_association
+neutron.tests.tempest.api.test_routers.RoutersSearchCriteriaTest.test_list_pagination_with_marker
+neutron.tests.tempest.api.test_subnetpools_negative.SubnetPoolsNegativeTestJSON.test_tenant_update_sp_prefix_associated_with_shared_addr_scope
+neutron.tests.tempest.api.admin.test_floating_ips_admin_actions.FloatingIPAdminTestJSON.test_associate_floating_ip_with_port_from_another_tenant
+neutron.tests.tempest.api.test_routers.RoutersSearchCriteriaTest.test_list_pagination_page_reverse_with_href_links
+tempest.api.network.test_floating_ips.FloatingIPTestJSON.test_floating_ip_update_different_router
+neutron.tests.tempest.api.test_floating_ips_negative.FloatingIPNegativeTestJSON.test_associate_floatingip_with_port_with_floatingip
+tempest.api.network.test_networks.NetworksTest.test_list_subnets_fields
+tempest.api.network.test_networks.NetworksTest.test_create_delete_subnet_with_gw_and_allocation_pools
+neutron.tests.tempest.api.test_networks.NetworksSearchCriteriaTest.test_list_pagination_with_href_links
+tempest.api.network.test_networks_negative.NetworksNegativeTestJSON.test_create_port_on_non_existent_network
+tempest.api.network.test_networks.NetworksTest.test_create_delete_subnet_with_host_routes_and_dns_nameservers
+tempest.api.network.test_routers_negative.RoutersNegativeTest.test_router_set_gateway_used_ip_returns_409
+neutron.tests.tempest.api.test_networks.NetworksTestJSON.test_show_network
+neutron.tests.tempest.api.test_subnetpools.SubnetPoolsTest.test_get_subnetpool
+tempest.api.network.admin.test_floating_ips_admin_actions.FloatingIPAdminTestJSON.test_list_floating_ips_from_admin_and_nonadmin
+neutron.tests.tempest.api.test_subnetpools.SubnetPoolsTest.test_tenant_update_subnetpool
+tempest.api.network.test_networks.NetworksTest.test_create_delete_subnet_without_gateway
+neutron.tests.tempest.api.test_subnetpools_negative.SubnetPoolsNegativeTestJSON.test_update_subnetpool_multiple_prefix_intersect
+neutron.tests.tempest.api.test_networks.NetworksSearchCriteriaTest.test_list_pagination_page_reverse_desc
+neutron.tests.tempest.api.test_subnetpools.SubnetPoolsTestV6.test_create_subnetpool_associate_address_scope
+neutron.tests.tempest.api.admin.test_shared_network_extension.AllowedAddressPairSharedNetworkTest.test_create_with_address_pair_blocked_on_other_network
+tempest.api.network.test_routers.RoutersTest.test_add_remove_router_interface_with_port_id
+neutron.tests.tempest.api.test_routers.RoutersSearchCriteriaTest.test_list_no_pagination_limit_0
+neutron.tests.tempest.api.test_subnetpools.SubnetPoolsTestV6.test_admin_create_shared_subnetpool
+tempest.api.network.test_networks_negative.NetworksNegativeTestJSON.test_update_non_existent_subnet
+neutron.tests.tempest.api.admin.test_quotas_negative.QuotasAdminNegativeTestJSON.test_create_security_group_rule_when_quotas_is_full
+neutron.tests.tempest.api.test_subnetpools_negative.SubnetPoolsNegativeTestJSON.test_update_subnetpool_tenant_id
+tempest.api.network.test_ports.PortsTestJSON.test_create_port_in_allowed_allocation_pools
+neutron.tests.tempest.api.admin.test_networks.NetworksTestAdmin.test_admin_create_network_keystone_v3
+neutron.tests.tempest.api.test_allowed_address_pair.AllowedAddressPairTestJSON.test_update_port_with_address_pair
+tempest.api.network.admin.test_floating_ips_admin_actions.FloatingIPAdminTestJSON.test_create_list_show_floating_ip_with_tenant_id_by_admin
+neutron.tests.tempest.api.test_subnetpools_negative.SubnetPoolsNegativeTestJSON.test_update_subnetpool_not_modifiable_shared
+tempest.api.network.admin.test_external_network_extension.ExternalNetworksTestJSON.test_delete_external_networks_with_floating_ip
+neutron.tests.tempest.api.test_routers.RoutersTest.test_create_update_router_description
+neutron.tests.tempest.api.test_subnetpools_negative.SubnetPoolsNegativeTestJSON.test_create_subnetpool_associate_non_exist_address_scope
+tempest.api.network.test_networks_negative.NetworksNegativeTestJSON.test_show_non_existent_network
+tempest.api.network.test_ports.PortsTestJSON.test_create_update_delete_port
+tempest.api.network.test_routers.RoutersTest.test_update_router_reset_gateway_without_snat
+tempest.api.network.test_ports.PortsAdminExtendedAttrsTestJSON.test_update_port_binding_ext_attr
+tempest.api.network.test_networks.NetworksTest.test_create_delete_subnet_with_allocation_pools
+tempest.api.network.test_floating_ips.FloatingIPTestJSON.test_floating_ip_delete_port
+tempest.api.network.test_networks_negative.NetworksNegativeTestJSON.test_delete_non_existent_subnet
+tempest.api.network.test_networks_negative.NetworksNegativeTestJSON.test_delete_non_existent_port
+tempest.api.network.test_routers.RoutersTest.test_router_interface_port_update_with_fixed_ip
+neutron.tests.tempest.api.test_networks.NetworksSearchCriteriaTest.test_list_sorts_desc
+neutron.tests.tempest.api.test_subnetpools_negative.SubnetPoolsNegativeTestJSON.test_update_subnetpool_associate_address_scope_wrong_ip_version
+neutron.tests.tempest.api.test_subnetpools.SubnetPoolsTestV6.test_get_subnetpool
+neutron.tests.tempest.api.test_subnets.SubnetsSearchCriteriaTest.test_list_pagination_with_marker
+neutron.tests.tempest.api.test_routers.RoutersTest.test_router_interface_status
+neutron.tests.tempest.api.test_routers.RoutersSearchCriteriaTest.test_list_pagination_page_reverse_desc
+tempest.api.network.test_routers.RoutersTest.test_update_router_set_gateway
+neutron.tests.tempest.api.test_subnetpools.SubnetPoolsTest.test_create_subnet_from_pool_with_quota
+tempest.api.network.test_ports.PortsTestJSON.test_create_bulk_port
+ostestr -w whitelist.txt --serial
+{0} tempest.api.network.admin.test_external_network_extension.ExternalNetworksTestJSON.test_create_external_network [2.594922s] ... ok
+{0} tempest.api.network.admin.test_external_network_extension.ExternalNetworksTestJSON.test_delete_external_networks_with_floating_ip [7.641806s] ... ok
+{0} tempest.api.network.admin.test_external_network_extension.ExternalNetworksTestJSON.test_list_external_networks [2.203071s] ... ok
+{0} tempest.api.network.admin.test_external_network_extension.ExternalNetworksTestJSON.test_show_external_networks_attribute [1.764171s] ... ok
+{0} tempest.api.network.admin.test_external_network_extension.ExternalNetworksTestJSON.test_update_external_network [3.140115s] ... ok
+{0} tempest.api.network.admin.test_external_networks_negative.ExternalNetworksAdminNegativeTestJSON.test_create_port_with_precreated_floatingip_as_fixed_ip [5.452431s] ... ok
+{0} tempest.api.network.admin.test_floating_ips_admin_actions.FloatingIPAdminTestJSON.test_create_list_show_floating_ip_with_tenant_id_by_admin [4.454722s] ... ok
+{0} tempest.api.network.admin.test_floating_ips_admin_actions.FloatingIPAdminTestJSON.test_list_floating_ips_from_admin_and_nonadmin [6.174973s] ... ok
+{0} tempest.api.network.admin.test_negative_quotas.QuotasNegativeTest.test_network_quota_exceeding [4.589548s] ... ok
+{0} tempest.api.network.admin.test_quotas.QuotasTest.test_quotas [1.596122s] ... ok
+{0} tempest.api.network.test_allowed_address_pair.AllowedAddressPairTestJSON.test_create_list_port_with_address_pair [2.611972s] ... ok
+{0} tempest.api.network.test_allowed_address_pair.AllowedAddressPairTestJSON.test_update_port_with_address_pair [3.306678s] ... ok
+{0} tempest.api.network.test_allowed_address_pair.AllowedAddressPairTestJSON.test_update_port_with_cidr_address_pair [3.031347s] ... ok
+{0} tempest.api.network.test_allowed_address_pair.AllowedAddressPairTestJSON.test_update_port_with_multiple_ip_mac_address_pair [4.950120s] ... ok
+{0} tempest.api.network.test_floating_ips.FloatingIPTestJSON.test_create_floating_ip_specifying_a_fixed_ip_address [3.964317s] ... ok
+{0} tempest.api.network.test_floating_ips.FloatingIPTestJSON.test_create_list_show_update_delete_floating_ip [5.597426s] ... ok
+{0} tempest.api.network.test_floating_ips.FloatingIPTestJSON.test_create_update_floatingip_with_port_multiple_ip_address [7.391564s] ... ok
+{0} tempest.api.network.test_floating_ips.FloatingIPTestJSON.test_floating_ip_delete_port [5.106056s] ... ok
+{0} tempest.api.network.test_floating_ips.FloatingIPTestJSON.test_floating_ip_update_different_router [11.208535s] ... ok
+{0} tempest.api.network.test_floating_ips_negative.FloatingIPNegativeTestJSON.test_associate_floatingip_port_ext_net_unreachable [3.793613s] ... ok
+{0} tempest.api.network.test_floating_ips_negative.FloatingIPNegativeTestJSON.test_create_floatingip_in_private_network [0.129169s] ... ok
+{0} tempest.api.network.test_floating_ips_negative.FloatingIPNegativeTestJSON.test_create_floatingip_with_port_ext_net_unreachable [1.714761s] ... ok
+{0} tempest.api.network.test_networks.BulkNetworkOpsTest.test_bulk_create_delete_network [4.509675s] ... ok
+{0} tempest.api.network.test_networks.BulkNetworkOpsTest.test_bulk_create_delete_port [4.241924s] ... ok
+{0} tempest.api.network.test_networks.BulkNetworkOpsTest.test_bulk_create_delete_subnet [6.338047s] ... ok
+{0} tempest.api.network.test_networks.NetworksTest.test_create_delete_subnet_all_attributes [6.351728s] ... ok
+{0} tempest.api.network.test_networks.NetworksTest.test_create_delete_subnet_with_allocation_pools [5.040972s] ... ok
+{0} tempest.api.network.test_networks.NetworksTest.test_create_delete_subnet_with_dhcp_enabled [5.202296s] ... ok
+{0} tempest.api.network.test_networks.NetworksTest.test_create_delete_subnet_with_gw [4.394240s] ... ok
+{0} tempest.api.network.test_networks.NetworksTest.test_create_delete_subnet_with_gw_and_allocation_pools [4.773963s] ... ok
+{0} tempest.api.network.test_networks.NetworksTest.test_create_delete_subnet_with_host_routes_and_dns_nameservers [4.895606s] ... ok
+{0} tempest.api.network.test_networks.NetworksTest.test_create_delete_subnet_without_gateway [4.870336s] ... ok
+{0} tempest.api.network.test_networks.NetworksTest.test_create_update_delete_network_subnet [5.782820s] ... ok
+{0} tempest.api.network.test_networks.NetworksTest.test_create_update_network_description [1.531089s] ... ok
+{0} tempest.api.network.test_networks.NetworksTest.test_delete_network_with_subnet [3.851988s] ... ok
+{0} tempest.api.network.test_networks.NetworksTest.test_external_network_visibility [0.214617s] ... ok
+{0} tempest.api.network.test_networks.NetworksTest.test_list_networks [0.204167s] ... ok
+{0} tempest.api.network.test_networks.NetworksTest.test_list_networks_fields [0.163219s] ... ok
+{0} tempest.api.network.test_networks.NetworksTest.test_list_subnets [0.094491s] ... ok
+{0} tempest.api.network.test_networks.NetworksTest.test_list_subnets_fields [0.085481s] ... ok
+{0} tempest.api.network.test_networks.NetworksTest.test_show_network [0.280462s] ... ok
+{0} tempest.api.network.test_networks.NetworksTest.test_show_network_fields [0.156127s] ... ok
+{0} tempest.api.network.test_networks.NetworksTest.test_show_subnet [0.075171s] ... ok
+{0} tempest.api.network.test_networks.NetworksTest.test_show_subnet_fields [0.083058s] ... ok
+{0} tempest.api.network.test_networks.NetworksTest.test_update_subnet_gw_dns_host_routes_dhcp [4.467264s] ... ok
+{0} tempest.api.network.test_networks_negative.NetworksNegativeTestJSON.test_create_port_on_non_existent_network [0.313388s] ... ok
+{0} tempest.api.network.test_networks_negative.NetworksNegativeTestJSON.test_delete_non_existent_network [0.328611s] ... ok
+{0} tempest.api.network.test_networks_negative.NetworksNegativeTestJSON.test_delete_non_existent_port [0.280130s] ... ok
+{0} tempest.api.network.test_networks_negative.NetworksNegativeTestJSON.test_delete_non_existent_subnet [0.330474s] ... ok
+{0} tempest.api.network.test_networks_negative.NetworksNegativeTestJSON.test_show_non_existent_network [0.048082s] ... ok
+{0} tempest.api.network.test_networks_negative.NetworksNegativeTestJSON.test_show_non_existent_port [0.421104s] ... ok
+{0} tempest.api.network.test_networks_negative.NetworksNegativeTestJSON.test_show_non_existent_subnet [0.061667s] ... ok
+{0} tempest.api.network.test_networks_negative.NetworksNegativeTestJSON.test_update_non_existent_network [0.044846s] ... ok
+{0} tempest.api.network.test_networks_negative.NetworksNegativeTestJSON.test_update_non_existent_port [0.045930s] ... ok
+{0} tempest.api.network.test_networks_negative.NetworksNegativeTestJSON.test_update_non_existent_subnet [0.045191s] ... ok
+{0} tempest.api.network.test_ports.PortsTestJSON.test_create_bulk_port [4.407869s] ... ok
+{0} tempest.api.network.test_ports.PortsTestJSON.test_create_port_in_allowed_allocation_pools [5.767080s] ... ok
+{0} tempest.api.network.test_ports.PortsTestJSON.test_create_port_with_no_securitygroups [6.954156s] ... ok
+{0} tempest.api.network.test_ports.PortsTestJSON.test_create_show_delete_port_user_defined_mac [2.975266s] ... ok
+{0} tempest.api.network.test_ports.PortsTestJSON.test_create_update_delete_port [2.650575s] ... ok
+{0} tempest.api.network.test_ports.PortsTestJSON.test_create_update_port_with_second_ip [12.367651s] ... ok
+{0} tempest.api.network.test_ports.PortsTestJSON.test_list_ports [0.114846s] ... ok
+{0} tempest.api.network.test_ports.PortsTestJSON.test_list_ports_fields [0.099949s] ... ok
+{0} tempest.api.network.test_ports.PortsTestJSON.test_port_list_filter_by_ip [8.529475s] ... ok
+{0} tempest.api.network.test_ports.PortsTestJSON.test_port_list_filter_by_router_id [9.811869s] ... ok
+{0} tempest.api.network.test_ports.PortsTestJSON.test_show_port [0.080660s] ... ok
+{0} tempest.api.network.test_ports.PortsTestJSON.test_show_port_fields [0.075924s] ... ok
+{0} tempest.api.network.test_ports.PortsTestJSON.test_update_port_with_security_group_and_extra_attributes [8.098148s] ... ok
+{0} tempest.api.network.test_ports.PortsTestJSON.test_update_port_with_two_security_groups_and_extra_attributes [9.114199s] ... ok
+{0} tempest.api.network.test_routers.RoutersTest.test_add_multiple_router_interfaces [12.965953s] ... ok
+{0} tempest.api.network.test_routers.RoutersTest.test_add_remove_router_interface_with_port_id [8.617904s] ... ok
+{0} tempest.api.network.test_routers.RoutersTest.test_add_remove_router_interface_with_subnet_id [6.028493s] ... ok
+{0} tempest.api.network.test_routers.RoutersTest.test_create_router_set_gateway_with_fixed_ip ... SKIPPED: Skipped until Bug: 1676207 is resolved.
+{0} tempest.api.network.test_routers.RoutersTest.test_create_show_list_update_delete_router [4.883212s] ... ok
+{0} tempest.api.network.test_routers.RoutersTest.test_router_interface_port_update_with_fixed_ip [8.048193s] ... ok
+{0} tempest.api.network.test_routers.RoutersTest.test_update_delete_extra_route [25.650178s] ... ok
+{0} tempest.api.network.test_routers.RoutersTest.test_update_router_admin_state [1.356772s] ... ok
+{0} tempest.api.network.test_routers_negative.RoutersNegativeTest.test_add_router_interfaces_on_overlapping_subnets_returns_400 [8.387114s] ... ok
+{0} tempest.api.network.test_routers_negative.RoutersNegativeTest.test_delete_non_existent_router_returns_404 [0.110820s] ... ok
+{0} tempest.api.network.test_routers_negative.RoutersNegativeTest.test_router_add_gateway_invalid_network_returns_404 [0.392143s] ... ok
+{0} tempest.api.network.test_routers_negative.RoutersNegativeTest.test_router_add_gateway_net_not_external_returns_400 [1.689169s] ... ok
+{0} tempest.api.network.test_routers_negative.RoutersNegativeTest.test_router_remove_interface_in_use_returns_409 [2.546693s] ... ok
+{0} tempest.api.network.test_routers_negative.RoutersNegativeTest.test_show_non_existent_router_returns_404 [0.068215s] ... ok
+{0} tempest.api.network.test_routers_negative.RoutersNegativeTest.test_update_non_existent_router_returns_404 [0.072144s] ... ok
+{0} tempest.api.network.test_versions.NetworksApiDiscovery.test_api_version_resources [0.015309s] ... ok
+{0} neutron.tests.tempest.api.admin.test_floating_ips_admin_actions.FloatingIPAdminTestJSON.test_associate_floating_ip_with_port_from_another_tenant [6.811330s] ... FAILED
+{0} neutron.tests.tempest.api.admin.test_floating_ips_admin_actions.FloatingIPAdminTestJSON.test_create_floatingip_with_specified_ip_address [2.453629s] ... ok
+{0} neutron.tests.tempest.api.admin.test_networks.NetworksTestAdmin.test_admin_create_network_keystone_v3 [2.366330s] ... ok
+{0} neutron.tests.tempest.api.admin.test_networks.NetworksTestAdmin.test_admin_create_network_keystone_v3_and_other_tenant [0.307087s] ... ok
+{0} neutron.tests.tempest.api.admin.test_networks.NetworksTestAdmin.test_admin_create_network_keystone_v3_and_tenant [0.529933s] ... ok
+{0} neutron.tests.tempest.api.admin.test_quotas.QuotasTest.test_quotas [1.374974s] ... ok
+{0} neutron.tests.tempest.api.admin.test_quotas_negative.QuotasAdminNegativeTestJSON.test_create_floatingip_when_quotas_is_full [3.937806s] ... ok
+{0} neutron.tests.tempest.api.admin.test_quotas_negative.QuotasAdminNegativeTestJSON.test_create_network_when_quotas_is_full [2.648999s] ... ok
+{0} neutron.tests.tempest.api.admin.test_quotas_negative.QuotasAdminNegativeTestJSON.test_create_port_when_quotas_is_full [4.662024s] ... ok
+{0} neutron.tests.tempest.api.admin.test_quotas_negative.QuotasAdminNegativeTestJSON.test_create_router_when_quotas_is_full [0.848470s] ... ok
+{0} neutron.tests.tempest.api.admin.test_quotas_negative.QuotasAdminNegativeTestJSON.test_create_security_group_rule_when_quotas_is_full [1.563032s] ... ok
+{0} neutron.tests.tempest.api.admin.test_quotas_negative.QuotasAdminNegativeTestJSON.test_create_security_group_when_quotas_is_full [1.031070s] ... ok
+{0} neutron.tests.tempest.api.admin.test_quotas_negative.QuotasAdminNegativeTestJSON.test_create_subnet_when_quotas_is_full [3.679500s] ... ok
+{0} neutron.tests.tempest.api.admin.test_shared_network_extension.AllowedAddressPairSharedNetworkTest.test_create_with_address_pair_blocked_on_other_network [1.166753s] ... ok
+{0} neutron.tests.tempest.api.admin.test_shared_network_extension.AllowedAddressPairSharedNetworkTest.test_update_with_address_pair_blocked_on_other_network [2.107868s] ... ok
+{0} neutron.tests.tempest.api.test_allowed_address_pair.AllowedAddressPairTestJSON.test_create_list_port_with_address_pair [2.904980s] ... ok
+{0} neutron.tests.tempest.api.test_allowed_address_pair.AllowedAddressPairTestJSON.test_update_port_with_address_pair [2.849725s] ... ok
+{0} neutron.tests.tempest.api.test_allowed_address_pair.AllowedAddressPairTestJSON.test_update_port_with_cidr_address_pair [3.072811s] ... ok
+{0} neutron.tests.tempest.api.test_allowed_address_pair.AllowedAddressPairTestJSON.test_update_port_with_multiple_ip_mac_address_pair [5.994440s] ... ok
+{0} neutron.tests.tempest.api.test_floating_ips.FloatingIPTestJSON.test_blank_update_clears_association [3.081129s] ... ok
+{0} neutron.tests.tempest.api.test_floating_ips.FloatingIPTestJSON.test_create_update_floatingip_description [3.551677s] ... ok
+{0} neutron.tests.tempest.api.test_floating_ips.FloatingIPTestJSON.test_floatingip_update_extra_attributes_port_id_not_changed [4.013049s] ... ok
+{0} neutron.tests.tempest.api.test_floating_ips_negative.FloatingIPNegativeTestJSON.test_associate_floatingip_with_port_with_floatingip [15.350388s] ... ok
+{0} neutron.tests.tempest.api.test_networks.NetworksSearchCriteriaTest.test_list_no_pagination_limit_0 [0.483337s] ... ok
+{0} neutron.tests.tempest.api.test_networks.NetworksSearchCriteriaTest.test_list_pagination [1.039012s] ... ok
+{0} neutron.tests.tempest.api.test_networks.NetworksSearchCriteriaTest.test_list_pagination_page_reverse_asc [0.422363s] ... ok
+{0} neutron.tests.tempest.api.test_networks.NetworksSearchCriteriaTest.test_list_pagination_page_reverse_desc [0.414471s] ... ok
+{0} neutron.tests.tempest.api.test_networks.NetworksSearchCriteriaTest.test_list_pagination_page_reverse_with_href_links [1.327970s] ... ok
+{0} neutron.tests.tempest.api.test_networks.NetworksSearchCriteriaTest.test_list_pagination_with_href_links [3.153737s] ... ok
+{0} neutron.tests.tempest.api.test_networks.NetworksSearchCriteriaTest.test_list_pagination_with_marker [1.214285s] ... ok
+{0} neutron.tests.tempest.api.test_networks.NetworksSearchCriteriaTest.test_list_sorts_asc [0.204201s] ... ok
+{0} neutron.tests.tempest.api.test_networks.NetworksSearchCriteriaTest.test_list_sorts_desc [0.198552s] ... ok
+{0} neutron.tests.tempest.api.test_networks.NetworksSearchCriteriaTest.test_list_validation_filters [0.389922s] ... ok
+{0} neutron.tests.tempest.api.test_networks.NetworksTestJSON.test_create_network_keystone_v3 [2.080555s] ... ok
+{0} neutron.tests.tempest.api.test_networks.NetworksTestJSON.test_create_update_network_dns_domain ... SKIPPED: Skipped because network extension: dns-integration is not enabled
+{0} neutron.tests.tempest.api.test_networks.NetworksTestJSON.test_list_networks_fields_keystone_v3 [0.900820s] ... ok
+{0} neutron.tests.tempest.api.test_networks.NetworksTestJSON.test_show_network [0.438552s] ... ok
+{0} neutron.tests.tempest.api.test_networks.NetworksTestJSON.test_show_network_fields_keystone_v3 [0.754841s] ... ok
+{0} neutron.tests.tempest.api.test_networks_negative.NetworksNegativeTest.test_delete_network_in_use [4.520323s] ... ok
+{0} neutron.tests.tempest.api.test_ports.PortsTestJSON.test_add_ips_to_port [4.514582s] ... ok
+{0} neutron.tests.tempest.api.test_ports.PortsTestJSON.test_change_dhcp_flag_then_create_port [4.997418s] ... ok
+{0} neutron.tests.tempest.api.test_ports.PortsTestJSON.test_create_update_port_description [2.342219s] ... ok
+{0} neutron.tests.tempest.api.test_ports.PortsTestJSON.test_create_update_port_with_dns_name ... SKIPPED: Skipped because network extension: dns-integration is not enabled
+{0} neutron.tests.tempest.api.test_ports.PortsTestJSON.test_create_update_port_with_no_dns_name ... SKIPPED: Skipped because network extension: dns-integration is not enabled
+{0} neutron.tests.tempest.api.test_routers.RoutersSearchCriteriaTest.test_list_no_pagination_limit_0 [0.350772s] ... ok
+{0} neutron.tests.tempest.api.test_routers.RoutersSearchCriteriaTest.test_list_pagination [0.854178s] ... ok
+{0} neutron.tests.tempest.api.test_routers.RoutersSearchCriteriaTest.test_list_pagination_page_reverse_asc [0.261389s] ... ok
+{0} neutron.tests.tempest.api.test_routers.RoutersSearchCriteriaTest.test_list_pagination_page_reverse_desc [0.275988s] ... ok
+{0} neutron.tests.tempest.api.test_routers.RoutersSearchCriteriaTest.test_list_pagination_page_reverse_with_href_links [0.994352s] ... ok
+{0} neutron.tests.tempest.api.test_routers.RoutersSearchCriteriaTest.test_list_pagination_with_href_links [2.403248s] ... ok
+{0} neutron.tests.tempest.api.test_routers.RoutersSearchCriteriaTest.test_list_pagination_with_marker [1.549279s] ... ok
+{0} neutron.tests.tempest.api.test_routers.RoutersSearchCriteriaTest.test_list_sorts_asc [0.107569s] ... ok
+{0} neutron.tests.tempest.api.test_routers.RoutersSearchCriteriaTest.test_list_sorts_desc [0.408483s] ... ok
+{0} neutron.tests.tempest.api.test_routers.RoutersTest.test_create_router_with_default_snat_value [5.064701s] ... ok
+{0} neutron.tests.tempest.api.test_routers.RoutersTest.test_create_router_with_snat_explicit [7.394645s] ... ok
+{0} neutron.tests.tempest.api.test_routers.RoutersTest.test_create_update_router_description [1.665720s] ... ok
+{0} neutron.tests.tempest.api.test_routers.RoutersTest.test_network_attached_with_two_routers [13.079023s] ... ok
+{0} neutron.tests.tempest.api.test_routers.RoutersTest.test_router_interface_status [11.697121s] ... ok
+{0} neutron.tests.tempest.api.test_routers.RoutersTest.test_update_extra_route [8.743933s] ... ok
+{0} neutron.tests.tempest.api.test_routers.RoutersTest.test_update_router_reset_gateway_without_snat [7.481102s] ... ok
+{0} neutron.tests.tempest.api.test_routers.RoutersTest.test_update_router_set_gateway_with_snat_explicit [3.940787s] ... ok
+{0} neutron.tests.tempest.api.test_routers.RoutersTest.test_update_router_set_gateway_without_snat [4.625996s] ... ok
+{0} neutron.tests.tempest.api.test_routers_negative.RoutersNegativeTest.test_delete_router_in_use [5.322042s] ... ok
+{0} neutron.tests.tempest.api.test_subnetpools.SubnetPoolsTest.test_admin_create_shared_subnetpool [1.820208s] ... ok
+{0} neutron.tests.tempest.api.test_subnetpools.SubnetPoolsTest.test_create_list_subnetpool [0.380453s] ... ok
+{0} neutron.tests.tempest.api.test_subnetpools.SubnetPoolsTest.test_create_subnet_from_pool_with_default_prefixlen [1.588038s] ... ok
+{0} neutron.tests.tempest.api.test_subnetpools.SubnetPoolsTest.test_create_subnet_from_pool_with_prefixlen [1.871852s] ... ok
+{0} neutron.tests.tempest.api.test_subnetpools.SubnetPoolsTest.test_create_subnet_from_pool_with_quota [1.463512s] ... ok
+{0} neutron.tests.tempest.api.test_subnetpools.SubnetPoolsTest.test_create_subnet_from_pool_with_subnet_cidr [2.034825s] ... ok
+{0} neutron.tests.tempest.api.test_subnetpools.SubnetPoolsTest.test_create_subnetpool_associate_address_scope [0.808790s] ... ok
+{0} neutron.tests.tempest.api.test_subnetpools.SubnetPoolsTest.test_create_update_subnetpool_description [1.053115s] ... ok
+{0} neutron.tests.tempest.api.test_subnetpools.SubnetPoolsTest.test_get_subnetpool [0.314720s] ... ok
+{0} neutron.tests.tempest.api.test_subnetpools.SubnetPoolsTest.test_show_subnetpool_has_project_id [0.144209s] ... ok
+{0} neutron.tests.tempest.api.test_subnetpools.SubnetPoolsTest.test_tenant_update_subnetpool [0.635025s] ... ok
+{0} neutron.tests.tempest.api.test_subnetpools.SubnetPoolsTest.test_update_subnetpool_associate_address_scope [0.378344s] ... ok
+{0} neutron.tests.tempest.api.test_subnetpools.SubnetPoolsTest.test_update_subnetpool_associate_another_address_scope [0.494384s] ... ok
+{0} neutron.tests.tempest.api.test_subnetpools.SubnetPoolsTest.test_update_subnetpool_disassociate_address_scope [0.335358s] ... ok
+{0} neutron.tests.tempest.api.test_subnetpools.SubnetPoolsTest.test_update_subnetpool_prefixes_append [0.297160s] ... ok
+{0} neutron.tests.tempest.api.test_subnetpools.SubnetPoolsTest.test_update_subnetpool_prefixes_extend [0.357361s] ... ok
+{0} neutron.tests.tempest.api.test_subnetpools.SubnetPoolsTestV6.test_admin_create_shared_subnetpool [1.918312s] ... ok
+{0} neutron.tests.tempest.api.test_subnetpools.SubnetPoolsTestV6.test_create_dual_stack_subnets_from_subnetpools [3.391022s] ... ok
+{0} neutron.tests.tempest.api.test_subnetpools.SubnetPoolsTestV6.test_create_list_subnetpool [0.458206s] ... ok
+{0} neutron.tests.tempest.api.test_subnetpools.SubnetPoolsTestV6.test_create_subnet_from_pool_with_default_prefixlen [1.132425s] ... ok
+{0} neutron.tests.tempest.api.test_subnetpools.SubnetPoolsTestV6.test_create_subnet_from_pool_with_prefixlen [1.744744s] ... ok
+{0} neutron.tests.tempest.api.test_subnetpools.SubnetPoolsTestV6.test_create_subnet_from_pool_with_quota [1.678153s] ... ok
+{0} neutron.tests.tempest.api.test_subnetpools.SubnetPoolsTestV6.test_create_subnet_from_pool_with_subnet_cidr [1.281761s] ... ok
+{0} neutron.tests.tempest.api.test_subnetpools.SubnetPoolsTestV6.test_create_subnetpool_associate_address_scope [0.463051s] ... ok
+{0} neutron.tests.tempest.api.test_subnetpools.SubnetPoolsTestV6.test_create_update_subnetpool_description [0.402470s] ... ok
+{0} neutron.tests.tempest.api.test_subnetpools.SubnetPoolsTestV6.test_get_subnetpool [0.452443s] ... ok
+{0} neutron.tests.tempest.api.test_subnetpools.SubnetPoolsTestV6.test_show_subnetpool_has_project_id [0.153496s] ... ok
+{0} neutron.tests.tempest.api.test_subnetpools.SubnetPoolsTestV6.test_tenant_update_subnetpool [0.458503s] ... ok
+{0} neutron.tests.tempest.api.test_subnetpools.SubnetPoolsTestV6.test_update_subnetpool_associate_address_scope [0.320098s] ... ok
+{0} neutron.tests.tempest.api.test_subnetpools.SubnetPoolsTestV6.test_update_subnetpool_associate_another_address_scope [0.354675s] ... ok
+{0} neutron.tests.tempest.api.test_subnetpools.SubnetPoolsTestV6.test_update_subnetpool_disassociate_address_scope [0.344250s] ... ok
+{0} neutron.tests.tempest.api.test_subnetpools.SubnetPoolsTestV6.test_update_subnetpool_prefixes_append [0.227385s] ... ok
+{0} neutron.tests.tempest.api.test_subnetpools.SubnetPoolsTestV6.test_update_subnetpool_prefixes_extend [0.251657s] ... ok
+{0} neutron.tests.tempest.api.test_subnetpools_negative.SubnetPoolsNegativeTestJSON.test_create_sp_associate_address_scope_multiple_prefix_intersect [1.306758s] ... ok
+{0} neutron.tests.tempest.api.test_subnetpools_negative.SubnetPoolsNegativeTestJSON.test_create_subnet_different_pools_same_network [2.851077s] ... ok
+{0} neutron.tests.tempest.api.test_subnetpools_negative.SubnetPoolsNegativeTestJSON.test_create_subnetpool_associate_address_scope_of_other_owner [0.389639s] ... ok
+{0} neutron.tests.tempest.api.test_subnetpools_negative.SubnetPoolsNegativeTestJSON.test_create_subnetpool_associate_address_scope_prefix_intersect [0.783082s] ... ok
+{0} neutron.tests.tempest.api.test_subnetpools_negative.SubnetPoolsNegativeTestJSON.test_create_subnetpool_associate_invalid_address_scope [0.027119s] ... ok
+{0} neutron.tests.tempest.api.test_subnetpools_negative.SubnetPoolsNegativeTestJSON.test_create_subnetpool_associate_non_exist_address_scope [0.089036s] ... ok
+{0} neutron.tests.tempest.api.test_subnetpools_negative.SubnetPoolsNegativeTestJSON.test_delete_non_existent_subnetpool [0.285344s] ... ok
+{0} neutron.tests.tempest.api.test_subnetpools_negative.SubnetPoolsNegativeTestJSON.test_get_non_existent_subnetpool [0.031411s] ... ok
+{0} neutron.tests.tempest.api.test_subnetpools_negative.SubnetPoolsNegativeTestJSON.test_tenant_create_shared_subnetpool [0.305230s] ... ok
+{0} neutron.tests.tempest.api.test_subnetpools_negative.SubnetPoolsNegativeTestJSON.test_tenant_create_subnetpool_associate_shared_address_scope [0.569297s] ... ok
+{0} neutron.tests.tempest.api.test_subnetpools_negative.SubnetPoolsNegativeTestJSON.test_tenant_get_not_shared_admin_subnetpool [0.376811s] ... ok
+{0} neutron.tests.tempest.api.test_subnetpools_negative.SubnetPoolsNegativeTestJSON.test_tenant_update_sp_prefix_associated_with_shared_addr_scope [1.226634s] ... ok
+{0} neutron.tests.tempest.api.test_subnetpools_negative.SubnetPoolsNegativeTestJSON.test_update_non_existent_subnetpool [0.028848s] ... ok
+{0} neutron.tests.tempest.api.test_subnetpools_negative.SubnetPoolsNegativeTestJSON.test_update_subnetpool_associate_address_scope_of_other_owner [0.164510s] ... ok
+{0} neutron.tests.tempest.api.test_subnetpools_negative.SubnetPoolsNegativeTestJSON.test_update_subnetpool_associate_address_scope_wrong_ip_version [0.221471s] ... ok
+{0} neutron.tests.tempest.api.test_subnetpools_negative.SubnetPoolsNegativeTestJSON.test_update_subnetpool_multiple_prefix_intersect [0.412660s] ... ok
+{0} neutron.tests.tempest.api.test_subnetpools_negative.SubnetPoolsNegativeTestJSON.test_update_subnetpool_not_modifiable_shared [0.127156s] ... ok
+{0} neutron.tests.tempest.api.test_subnetpools_negative.SubnetPoolsNegativeTestJSON.test_update_subnetpool_prefix_intersect [0.419500s] ... ok
+{0} neutron.tests.tempest.api.test_subnetpools_negative.SubnetPoolsNegativeTestJSON.test_update_subnetpool_prefixes_shrink [0.165536s] ... ok
+{0} neutron.tests.tempest.api.test_subnetpools_negative.SubnetPoolsNegativeTestJSON.test_update_subnetpool_tenant_id [0.114663s] ... ok
+{0} neutron.tests.tempest.api.test_subnets.SubnetsSearchCriteriaTest.test_list_no_pagination_limit_0 [0.118786s] ... ok
+{0} neutron.tests.tempest.api.test_subnets.SubnetsSearchCriteriaTest.test_list_pagination [0.749871s] ... ok
+{0} neutron.tests.tempest.api.test_subnets.SubnetsSearchCriteriaTest.test_list_pagination_page_reverse_asc [0.293370s] ... ok
+{0} neutron.tests.tempest.api.test_subnets.SubnetsSearchCriteriaTest.test_list_pagination_page_reverse_desc [0.285155s] ... ok
+{0} neutron.tests.tempest.api.test_subnets.SubnetsSearchCriteriaTest.test_list_pagination_page_reverse_with_href_links [0.515311s] ... ok
+{0} neutron.tests.tempest.api.test_subnets.SubnetsSearchCriteriaTest.test_list_pagination_with_href_links [1.968397s] ... ok
+{0} neutron.tests.tempest.api.test_subnets.SubnetsSearchCriteriaTest.test_list_pagination_with_marker [0.838003s] ... ok
+{0} neutron.tests.tempest.api.test_subnets.SubnetsSearchCriteriaTest.test_list_sorts_asc [0.127525s] ... ok
+{0} neutron.tests.tempest.api.test_subnets.SubnetsSearchCriteriaTest.test_list_sorts_desc [0.098705s] ... ok
+{0} neutron.tests.tempest.api.test_subnets.SubnetsSearchCriteriaTest.test_list_validation_filters [0.112163s] ... ok
+{0} neutron.tests.tempest.scenario.test_basic.NetworkBasicTest.test_basic_instance [61.276659s] ... ok
+Number of Tests that Ran 212
+Number of Tests that Passed 207
+Number of Tests that Failed 1
+Number of Tests that Skipped 4
+Failures/Skips in Test Run. Please review the json file attached
+Error: neutron.tests.tempest.api.admin.test_floating_ips_admin_actions.FloatingIPAdminTestJSON.test_associate_floating_ip_with_port_from_another_tenant[id-11116ee9-4e99-5b15-b8e1-aa7df92ca589,negative]   FAIL
+Reason of Failure:
+========================================
+_StringException: Empty attachments:
+  stderr
+  stdout
+
+pythonlogging:'': {{{
+2017-09-05 14:45:32,021 24949 INFO     [tempest.lib.common.rest_client] Request (FloatingIPAdminTestJSON:test_associate_floating_ip_with_port_from_another_tenant): 201 POST http://10.65.207.203:5000/v3/auth/tokens
+2017-09-05 14:45:32,022 24949 DEBUG    [tempest.lib.common.rest_client] Request - Headers: {'Content-Type': 'application/json', 'Accept': 'application/json'}
+        Body: &lt;omitted&gt;
+    Response - Headers: {'status': '201', u'content-length': '7930', 'content-location': 'http://10.65.207.203:5000/v3/auth/tokens', u'x-subject-token': '&lt;omitted&gt;', u'vary': 'X-Auth-Token', u'server': 'Apache/2.4.6 (Red Hat Enterprise Linux)', u'connection': 'close', u'date': 'Tue, 05 Sep 2017 09:15:31 GMT', u'content-type': 'application/json', u'x-openstack-request-id': 'req-25846757-f343-4af6-af6f-a30637fbaa7f'}
+        Body: {"token": {"is_domain": false, "methods": ["password"], "roles": [{"id": "9fe2ff9ee4384b1894a90878d3e92bab", "name": "_member_"}, {"id": "516afe9bd72d407183825b7c9817c379", "name": "admin"}], "expires_at": "2017-09-05T10:15:32.000000Z", "project": {"domain": {"id": "default", "name": "Default"}, "id": "1f42b41777be4da39a78c0eb11cb2a40", "name": "tempest-FloatingIPAdminTestJSON-2114755329"}, "catalog": [{"endpoints": [{"region_id": "RegionOne", "url": "http://10.65.207.203:9292", "region": "RegionOne", "interface": "public", "id": "a4bc5342aae64515aaca269248a8de3b"}, {"region_id": "RegionOne", "url": "http://10.65.207.203:9292", "region": "RegionOne", "interface": "internal", "id": "eaa33f9a59794b90a3ce98087647cc10"}, {"region_id": "RegionOne", "url": "http://10.65.207.203:9292", "region": "RegionOne", "interface": "admin", "id": "ff3ad5b1b6304f8f9adfff4c74fa6203"}], "type": "image", "id": "01f3d62a91ab4ed98f0f9ece1c81fa11", "name": "glance"}, {"endpoints": [{"region_id": "RegionOne", "url": "http://10.65.207.203:8041", "region": "RegionOne", "interface": "admin", "id": "7314b4194eb44fdc9cab57d532264d45"}, {"region_id": "RegionOne", "url": "http://10.65.207.203:8041", "region": "RegionOne", "interface": "internal", "id": "b53ce5f15ac949f3b7d9648ef3bbc9cb"}, {"region_id": "RegionOne", "url": "http://10.65.207.203:8041", "region": "RegionOne", "interface": "public", "id": "f8fd58bf4c2045a095fe01f04a54b5b6"}], "type": "metric", "id": "2ae3c943105146f09402c44f606f459c", "name": "gnocchi"}, {"endpoints": [{"region_id": "RegionOne", "url": "http://10.65.207.203:8776/v3/1f42b41777be4da39a78c0eb11cb2a40", "region": "RegionOne", "interface": "public", "id": "5e0a5a4c4e324373ad7857703a9e2017"}, {"region_id": "RegionOne", "url": "http://10.65.207.203:8776/v3/1f42b41777be4da39a78c0eb11cb2a40", "region": "RegionOne", "interface": "admin", "id": "80ac8b4e4f41459fbaabb0bdece0ec35"}, {"region_id": "RegionOne", "url": "http://10.65.207.203:8776/v3/1f42b41777be4da39a78c0eb11cb2a40", "region": "RegionOne", "interface": "internal", "id": "f45f633b22354d67b6997d62714bcdb2"}], "type": "volumev3", "id": "4baec74f98634610a6a9f715979513bb", "name": "cinderv3"}, {"endpoints": [{"region_id": "RegionOne", "url": "http://10.65.207.203:9696", "region": "RegionOne", "interface": "public", "id": "47b5d94352d9427394703d2151819aba"}, {"region_id": "RegionOne", "url": "http://10.65.207.203:9696", "region": "RegionOne", "interface": "admin", "id": "695ab4d414774cfa8dfb88664bcdbcde"}, {"region_id": "RegionOne", "url": "http://10.65.207.203:9696", "region": "RegionOne", "interface": "internal", "id": "d263bd1205cd46a4b965824421d275b0"}], "type": "network", "id": "5cfe5edf907b4e1e810bb6fe0991e570", "name": "neutron"}, {"endpoints": [{"region_id": "RegionOne", "url": "http://10.65.207.203:8776/v2/1f42b41777be4da39a78c0eb11cb2a40", "region": "RegionOne", "interface": "admin", "id": "d27694a8bb9b43028955eb81f96f4393"}, {"region_id": "RegionOne", "url": "http://10.65.207.203:8776/v2/1f42b41777be4da39a78c0eb11cb2a40", "region": "RegionOne", "interface": "internal", "id": "dc9e49825941417cbf4dfef70a7d1f87"}, {"region_id": "RegionOne", "url": "http://10.65.207.203:8776/v2/1f42b41777be4da39a78c0eb11cb2a40", "region": "RegionOne", "interface": "public", "id": "ebdd8f7a7d4448e3bd94360186d1871b"}], "type": "volumev2", "id": "9967b8a355154c0b956cb731ec7a5716", "name": "cinderv2"}, {"endpoints": [{"region_id": "RegionOne", "url": "http://10.65.207.203:8774/v2.1/1f42b41777be4da39a78c0eb11cb2a40", "region": "RegionOne", "interface": "internal", "id": "17d38b6e2fbc47d685e56d6c076612b9"}, {"region_id": "RegionOne", "url": "http://10.65.207.203:8774/v2.1/1f42b41777be4da39a78c0eb11cb2a40", "region": "RegionOne", "interface": "public", "id": "38e08d15e2514007b5122959d610cc05"}, {"region_id": "RegionOne", "url": "http://10.65.207.203:8774/v2.1/1f42b41777be4da39a78c0eb11cb2a40", "region": "RegionOne", "interface": "admin", "id": "c1adbd2ffe844afd8bbe9cf03bbcf577"}], "type": "compute", "id": "9ade218c4e9b42ed932247b58dcf7509", "name": "nova"}, {"endpoints": [{"region_id": "RegionOne
+2017-09-05 14:45:34,148 24949 INFO     [tempest.lib.common.rest_client] Request (FloatingIPAdminTestJSON:test_associate_floating_ip_with_port_from_another_tenant): 201 POST http://10.65.207.203:9696/v2.0/floatingips 2.124s
+2017-09-05 14:45:34,149 24949 DEBUG    [tempest.lib.common.rest_client] Request - Headers: {'Content-Type': 'application/json', 'Accept': 'application/json', 'X-Auth-Token': '&lt;omitted&gt;'}
+        Body: {"floatingip": {"floating_network_id": "198a0191-a5df-4c00-ae4e-1f1cc60ff126"}}
+    Response - Headers: {'status': '201', u'content-length': '470', 'content-location': 'http://10.65.207.203:9696/v2.0/floatingips', u'date': 'Tue, 05 Sep 2017 09:15:34 GMT', u'content-type': 'application/json', u'connection': 'close', u'x-openstack-request-id': 'req-a714b83c-c8d2-4c4f-9107-82260675c774'}
+        Body: {"floatingip": {"router_id": null, "status": "DOWN", "description": "", "tags": [], "tenant_id": "1f42b41777be4da39a78c0eb11cb2a40", "created_at": "2017-09-05T09:15:33Z", "updated_at": "2017-09-05T09:15:33Z", "floating_network_id": "198a0191-a5df-4c00-ae4e-1f1cc60ff126", "fixed_ip_address": null, "floating_ip_address": "172.24.4.2", "revision_number": 0, "project_id": "1f42b41777be4da39a78c0eb11cb2a40", "port_id": null, "id": "8c0b7049-bcab-47b8-8fd3-addc56bffdf6"}}
+2017-09-05 14:45:34,338 24949 INFO     [tempest.lib.common.rest_client] Request (FloatingIPAdminTestJSON:test_associate_floating_ip_with_port_from_another_tenant): 200 POST http://10.65.207.203:35357/v2.0/tenants 0.188s
+2017-09-05 14:45:34,339 24949 DEBUG    [tempest.lib.common.rest_client] Request - Headers: {'Content-Type': 'application/json', 'Accept': 'application/json', 'X-Auth-Token': '&lt;omitted&gt;'}
+        Body: {"tenant": {"name": "tempest-test_tenant_-2108791766", "description": "tempest-desc_-626834765"}}
+    Response - Headers: {'status': '200', u'content-length': '156', 'content-location': 'http://10.65.207.203:35357/v2.0/tenants', u'vary': 'X-Auth-Token,Accept-Encoding', u'server': 'Apache/2.4.6 (Red Hat Enterprise Linux)', u'connection': 'close', u'date': 'Tue, 05 Sep 2017 09:15:34 GMT', u'content-type': 'application/json', u'x-openstack-request-id': 'req-7a9c85a2-264b-4506-b176-7a4b1a2d5339'}
+        Body: {"tenant": {"description": "tempest-desc_-626834765", "enabled": true, "id": "df065293ffc14069ba6ed3d9a55ae6ad", "name": "tempest-test_tenant_-2108791766"}}
+2017-09-05 14:45:35,832 24949 INFO     [tempest.lib.common.rest_client] Request (FloatingIPAdminTestJSON:test_associate_floating_ip_with_port_from_another_tenant): 201 POST http://10.65.207.203:9696/v2.0/ports 1.492s
+2017-09-05 14:45:35,832 24949 DEBUG    [tempest.lib.common.rest_client] Request - Headers: {'Content-Type': 'application/json', 'Accept': 'application/json', 'X-Auth-Token': '&lt;omitted&gt;'}
+        Body: {"port": {"network_id": "d934e67c-0e70-498f-adc0-f3b13c0c0aad", "tenant_id": "df065293ffc14069ba6ed3d9a55ae6ad"}}
+    Response - Headers: {'status': '201', u'content-length': '789', 'content-location': 'http://10.65.207.203:9696/v2.0/ports', u'date': 'Tue, 05 Sep 2017 09:15:35 GMT', u'content-type': 'application/json', u'connection': 'close', u'x-openstack-request-id': 'req-69b89e68-d84d-4e47-afa3-f1be1e3032a6'}
+        Body: {"port":{"allowed_address_pairs":[],"extra_dhcp_opts":[],"updated_at":"2017-09-05T09:15:35Z","device_owner":"","revision_number":3,"binding:profile":{},"port_security_enabled":true,"fixed_ips":[{"subnet_id":"689ebcca-b516-4648-8b9c-dc4b54a1a6ff","ip_address":"10.100.0.3"}],"id":"e1952acf-9eb3-4702-8607-f474cf374cb7","security_groups":["452e8841-043f-4fda-8fe1-a156676483ef"],"binding:vif_details":{},"binding:vif_type":"unbound","mac_address":"fa:16:3e:7e:31:86","project_id":"df065293ffc14069ba6ed3d9a55ae6ad","status":"DOWN","binding:host_id":"","description":"","tags":[],"device_id":"","name":"","admin_state_up":true,"network_id":"d934e67c-0e70-498f-adc0-f3b13c0c0aad","tenant_id":"df065293ffc14069ba6ed3d9a55ae6ad","created_at":"2017-09-05T09:15:35Z","binding:vnic_type":"normal"}}
+2017-09-05 14:45:36,990 24949 INFO     [tempest.lib.common.rest_client] Request (FloatingIPAdminTestJSON:test_associate_floating_ip_with_port_from_another_tenant): 200 PUT http://10.65.207.203:9696/v2.0/floatingips/8c0b7049-bcab-47b8-8fd3-addc56bffdf6 1.156s
+2017-09-05 14:45:36,990 24949 DEBUG    [tempest.lib.common.rest_client] Request - Headers: {'X-Auth-Token': '&lt;omitted&gt;'}
+        Body: {"floatingip": {"port_id": "e1952acf-9eb3-4702-8607-f474cf374cb7"}}
+    Response - Headers: {'status': '200', u'content-length': '546', 'content-location': 'http://10.65.207.203:9696/v2.0/floatingips/8c0b7049-bcab-47b8-8fd3-addc56bffdf6', u'date': 'Tue, 05 Sep 2017 09:15:36 GMT', u'content-type': 'application/json', u'connection': 'close', u'x-openstack-request-id': 'req-c8b7c7e4-c981-449d-8df7-000775beccaa'}
+        Body: {"floatingip": {"router_id": "306871bd-26b9-4c0e-b1c0-de81eb684a87", "status": "DOWN", "description": "", "tags": [], "tenant_id": "1f42b41777be4da39a78c0eb11cb2a40", "created_at": "2017-09-05T09:15:33Z", "updated_at": "2017-09-05T09:15:36Z", "floating_network_id": "198a0191-a5df-4c00-ae4e-1f1cc60ff126", "fixed_ip_address": "10.100.0.3", "floating_ip_address": "172.24.4.2", "revision_number": 1, "project_id": "1f42b41777be4da39a78c0eb11cb2a40", "port_id": "e1952acf-9eb3-4702-8607-f474cf374cb7", "id": "8c0b7049-bcab-47b8-8fd3-addc56bffdf6"}}
+2017-09-05 14:45:37,930 24949 INFO     [tempest.lib.common.rest_client] Request (FloatingIPAdminTestJSON:_run_cleanups): 204 DELETE http://10.65.207.203:9696/v2.0/ports/e1952acf-9eb3-4702-8607-f474cf374cb7 0.936s
+2017-09-05 14:45:37,930 24949 DEBUG    [tempest.lib.common.rest_client] Request - Headers: {'Content-Type': 'application/json', 'Accept': 'application/json', 'X-Auth-Token': '&lt;omitted&gt;'}
+        Body: None
+    Response - Headers: {'status': '204', u'content-length': '0', 'content-location': 'http://10.65.207.203:9696/v2.0/ports/e1952acf-9eb3-4702-8607-f474cf374cb7', u'date': 'Tue, 05 Sep 2017 09:15:37 GMT', u'connection': 'close', u'x-openstack-request-id': 'req-5a6ad3f8-86a0-44b0-ac4f-55c0ab06d60f'}
+        Body: 
+2017-09-05 14:45:38,263 24949 INFO     [tempest.lib.common.rest_client] Request (FloatingIPAdminTestJSON:_run_cleanups): 204 DELETE http://10.65.207.203:35357/v2.0/tenants/df065293ffc14069ba6ed3d9a55ae6ad 0.332s
+2017-09-05 14:45:38,264 24949 DEBUG    [tempest.lib.common.rest_client] Request - Headers: {'Content-Type': 'application/json', 'Accept': 'application/json', 'X-Auth-Token': '&lt;omitted&gt;'}
+        Body: None
+    Response - Headers: {'status': '204', 'content-location': 'http://10.65.207.203:35357/v2.0/tenants/df065293ffc14069ba6ed3d9a55ae6ad', u'vary': 'X-Auth-Token', u'server': 'Apache/2.4.6 (Red Hat Enterprise Linux)', u'connection': 'close', u'date': 'Tue, 05 Sep 2017 09:15:37 GMT', u'content-type': 'text/plain', u'x-openstack-request-id': 'req-759fcf61-58e1-4379-82a7-a0af2b8e8833'}
+        Body:
+}}}
+
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/neutron/tests/tempest/api/admin/test_floating_ips_admin_actions.py", line 65, in test_associate_floating_ip_with_port_from_another_tenant
+    floating_ip['id'], port_id=port['port']['id'])
+  File "/usr/lib/python2.7/site-packages/testtools/testcase.py", line 422, in assertRaises
+    self.assertThat(our_callable, matcher)
+  File "/usr/lib/python2.7/site-packages/testtools/testcase.py", line 435, in assertThat
+    raise mismatch_error
+testtools.matchers._impl.MismatchError: &lt;function _update at 0x66f5de8&gt; returned {u'floatingip': {u'router_id': u'306871bd-26b9-4c0e-b1c0-de81eb684a87', u'status': u'DOWN', u'description': u'', u'tags': [], u'tenant_id': u'1f42b41777be4da39a78c0eb11cb2a40', u'created_at': u'2017-09-05T09:15:33Z', u'updated_at': u'2017-09-05T09:15:36Z', u'floating_network_id': u'198a0191-a5df-4c00-ae4e-1f1cc60ff126', u'fixed_ip_address': u'10.100.0.3', u'floating_ip_address': u'172.24.4.2', u'revision_number': 1, u'project_id': u'1f42b41777be4da39a78c0eb11cb2a40', u'port_id': u'e1952acf-9eb3-4702-8607-f474cf374cb7', u'id': u'8c0b7049-bcab-47b8-8fd3-addc56bffdf6'}}
+
+
+Error: neutron.tests.tempest.api.test_networks.NetworksTestJSON.test_create_update_network_dns_domain[id-94e2a44c-3367-4253-8c2a-22deaf59e96c]   SKIP
+Error: neutron.tests.tempest.api.test_ports.PortsTestJSON.test_create_update_port_with_no_dns_name[id-435e89df-a8bb-4b41-801a-9f20d362d777]   SKIP
+Error: tempest.api.network.test_routers.RoutersTest.test_create_router_set_gateway_with_fixed_ip[id-cbe42f84-04c2-11e7-8adb-fa163e4fa634]   SKIP
+Error: neutron.tests.tempest.api.test_ports.PortsTestJSON.test_create_update_port_with_dns_name[id-539fbefe-fb36-48aa-9a53-8c5fbd44e492]   SKIP
+</output>

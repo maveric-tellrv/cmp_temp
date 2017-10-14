@@ -1,0 +1,60 @@
+<output>
+Checking installed rpms:
+openstack-tempest-16.1.1-0.20170808012534.0fc1454.el7ost.noarch
+sos-3.4-6.el7.noarch
+python-neutron-tests-11.0.0-0.20170821141644.3441b3f.el7ost.noarch
+python-neutron-lbaas-tests-11.0.0-0.20170818025704.bdea6dd.el7ost.noarch
+python-ddt-1.0.1-2.el7ost.noarch
+python-sahara-tests-7.0.0-0.20170821133416.c07f479.el7ost.noarch
+python-neutron-fwaas-tests-11.0.0-0.20170821135612.734e02a.el7ost.noarch
+python-manila-tests-5.0.0-0.20170821131529.e391476.el7ost.noarch
+python-cinder-tests-11.0.0-0.20170821192443.120fdb0.el7ost.noarch
+python-neutron-fwaas-tests-11.0.0-0.20170821135612.734e02a.el7ost.noarch
+python-sahara-tests-tempest-0.4.2-0.20170801104045.5aee39c.el7ost.noarch
+All required packages installed
+Configuring Tempest
+
+2017-09-05 16:12:56.859 28221 INFO tempest [-] Using tempest config file /etc/tempest/tempest.conf
+
+
+Plugin selected: network
+API list selected: neutron_tags
+Running tempest
+Running the following tests!!
+neutron.tests.tempest.api.test_tag.TagFilterPortTestJSON.test_filter_port_tags
+neutron.tests.tempest.api.test_tag.TagSubnetPoolTestJSON.test_subnetpool_tags
+neutron.tests.tempest.api.test_tag.TagFilterNetworkTestJSON.test_filter_network_tags
+neutron.tests.tempest.api.test_tag.TagPortTestJSON.test_port_tags
+neutron.tests.tempest.api.test_tag.TagSubnetTestJSON.test_subnet_tags
+neutron.tests.tempest.api.test_tag.TagFilterRouterTestJSON.test_filter_router_tags
+neutron.tests.tempest.api.test_tag.TagFilterSubnetTestJSON.test_filter_subnet_tags
+neutron.tests.tempest.api.test_tag.TagFilterSubnetpoolTestJSON.test_filter_subnetpool_tags
+neutron.tests.tempest.api.test_tag.TagNetworkTestJSON.test_network_tags
+neutron.tests.tempest.api.test_tag.TagRouterTestJSON.test_router_tags
+ostestr -w whitelist.txt --serial
+{0} neutron.tests.tempest.api.test_tag.TagFilterNetworkTestJSON.test_filter_network_tags [2.462260s] ... ok
+{0} neutron.tests.tempest.api.test_tag.TagFilterPortTestJSON.test_filter_port_tags [1.169707s] ... ok
+{0} neutron.tests.tempest.api.test_tag.TagFilterRouterTestJSON.test_filter_router_tags [1.462293s] ... ok
+{0} neutron.tests.tempest.api.test_tag.TagFilterSubnetTestJSON.test_filter_subnet_tags [1.089724s] ... ok
+{0} neutron.tests.tempest.api.test_tag.TagFilterSubnetpoolTestJSON.test_filter_subnetpool_tags [0.860432s] ... ok
+{0} neutron.tests.tempest.api.test_tag.TagNetworkTestJSON.test_network_tags [3.396601s] ... ok
+{0} neutron.tests.tempest.api.test_tag.TagPortTestJSON.test_port_tags [2.953207s] ... ok
+{0} neutron.tests.tempest.api.test_tag.TagRouterTestJSON.test_router_tags [2.425144s] ... ok
+{0} neutron.tests.tempest.api.test_tag.TagSubnetPoolTestJSON.test_subnetpool_tags [1.525265s] ... ok
+{0} neutron.tests.tempest.api.test_tag.TagSubnetTestJSON.test_subnet_tags [3.221074s] ... ok
+Number of Tests that Ran 10
+Number of Tests that Passed 10
+Number of Tests that Failed 0
+Number of Tests that Skipped 0
+Below are the tests that have passed
+Success: neutron.tests.tempest.api.test_tag.TagSubnetTestJSON.test_subnet_tags[id-2805aabf-a94c-4e70-a0b2-9814f06beb03,smoke]   PASS
+Success: neutron.tests.tempest.api.test_tag.TagNetworkTestJSON.test_network_tags[id-5621062d-fbfb-4437-9d69-138c78ea4188,smoke]   PASS
+Success: neutron.tests.tempest.api.test_tag.TagFilterSubnetTestJSON.test_filter_subnet_tags[id-dd8f9ba7-bcf6-496f-bead-714bd3daac10,smoke]   PASS
+Success: neutron.tests.tempest.api.test_tag.TagFilterSubnetpoolTestJSON.test_filter_subnetpool_tags[id-16ae7ad2-55c2-4821-9195-bfd04ab245b7,smoke]   PASS
+Success: neutron.tests.tempest.api.test_tag.TagFilterRouterTestJSON.test_filter_router_tags[id-cdd3f3ea-073d-4435-a6cb-826a4064193d,smoke]   PASS
+Success: neutron.tests.tempest.api.test_tag.TagFilterPortTestJSON.test_filter_port_tags[id-09c036b8-c8d0-4bee-b776-7f4601512898,smoke]   PASS
+Success: neutron.tests.tempest.api.test_tag.TagPortTestJSON.test_port_tags[id-c7c44f2c-edb0-4ebd-a386-d37cec155c34,smoke]   PASS
+Success: neutron.tests.tempest.api.test_tag.TagRouterTestJSON.test_router_tags[id-b898ff92-dc33-4232-8ab9-2c6158c80d28,smoke]   PASS
+Success: neutron.tests.tempest.api.test_tag.TagSubnetPoolTestJSON.test_subnetpool_tags[id-bdc1c24b-c0b5-4835-953c-8f67dc11edfe,smoke]   PASS
+Success: neutron.tests.tempest.api.test_tag.TagFilterNetworkTestJSON.test_filter_network_tags[id-a66b5cca-7db2-40f5-a33d-8ac9f864e53e,smoke]   PASS
+</output>

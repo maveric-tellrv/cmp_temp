@@ -1,0 +1,34 @@
+<output>
+Checking installed rpms:
+openstack-tempest-16.1.1-0.20170808012534.0fc1454.el7ost.noarch
+sos-3.4-6.el7.noarch
+python-neutron-tests-11.0.0-0.20170821141644.3441b3f.el7ost.noarch
+python-neutron-lbaas-tests-11.0.0-0.20170818025704.bdea6dd.el7ost.noarch
+python-ddt-1.0.1-2.el7ost.noarch
+python-sahara-tests-7.0.0-0.20170821133416.c07f479.el7ost.noarch
+python-neutron-fwaas-tests-11.0.0-0.20170821135612.734e02a.el7ost.noarch
+python-manila-tests-5.0.0-0.20170821131529.e391476.el7ost.noarch
+python-cinder-tests-11.0.0-0.20170821192443.120fdb0.el7ost.noarch
+python-neutron-fwaas-tests-11.0.0-0.20170821135612.734e02a.el7ost.noarch
+python-sahara-tests-tempest-0.4.2-0.20170801104045.5aee39c.el7ost.noarch
+All required packages installed
+Configuring Tempest
+
+2017-09-05 15:58:49.604 22237 INFO tempest [-] Using tempest config file /etc/tempest/tempest.conf
+
+
+Plugin selected: network
+API list selected: neutron_gman
+Running tempest
+Running the following tests!!
+neutron.tests.tempest.api.test_auto_allocated_topology.TestAutoAllocatedTopology.test_get_allocated_net_topology_as_tenant
+neutron.tests.tempest.api.test_auto_allocated_topology.TestAutoAllocatedTopology.test_delete_allocated_net_topology_as_tenant
+ostestr -w whitelist.txt --serial
+{0} setUpClass (neutron.tests.tempest.api.test_auto_allocated_topology.TestAutoAllocatedTopology) ... SKIPPED: No default subnetpool
+Number of Tests that Ran 1
+Number of Tests that Passed 0
+Number of Tests that Failed 0
+Number of Tests that Skipped 1
+Failures/Skips in Test Run. Please review the json file attached
+Error: setUpClass (neutron.tests.tempest.api.test_auto_allocated_topology.TestAutoAllocatedTopology)   SKIP
+</output>

@@ -1,0 +1,87 @@
+<output>
+Checking installed rpms:
+openstack-tempest-16.1.1-0.20170808012534.0fc1454.el7ost.noarch
+sos-3.4-6.el7.noarch
+python-neutron-tests-11.0.0-0.20170821141644.3441b3f.el7ost.noarch
+python-neutron-lbaas-tests-11.0.0-0.20170818025704.bdea6dd.el7ost.noarch
+python-ddt-1.0.1-2.el7ost.noarch
+python-sahara-tests-7.0.0-0.20170821133416.c07f479.el7ost.noarch
+python-neutron-fwaas-tests-11.0.0-0.20170821135612.734e02a.el7ost.noarch
+python-manila-tests-5.0.0-0.20170821131529.e391476.el7ost.noarch
+python-cinder-tests-11.0.0-0.20170821192443.120fdb0.el7ost.noarch
+python-neutron-fwaas-tests-11.0.0-0.20170821135612.734e02a.el7ost.noarch
+python-sahara-tests-tempest-0.4.2-0.20170801104045.5aee39c.el7ost.noarch
+All required packages installed
+Configuring Tempest
+
+2017-09-05 16:04:20.227 25239 INFO tempest [-] Using tempest config file /etc/tempest/tempest.conf
+
+
+Plugin selected: network
+API list selected: neutron_metering
+Running tempest
+Running the following tests!!
+tempest.api.network.test_metering_extensions.MeteringTestJSON.test_create_delete_metering_label_with_filters
+neutron.tests.tempest.api.test_metering_negative.MeteringNegativeTestJSON.test_create_metering_label_with_too_long_name
+tempest.api.network.test_metering_extensions.MeteringTestJSON.test_show_metering_label
+neutron.tests.tempest.api.test_metering_extensions.MeteringTestJSON.test_list_metering_labels
+neutron.tests.tempest.api.test_metering_extensions.MeteringTestJSON.test_show_metering_label_rule
+tempest.api.network.test_metering_extensions.MeteringTestJSON.test_show_metering_label_rule
+neutron.tests.tempest.api.test_metering_extensions.MeteringIpV6TestJSON.test_show_metering_label_rule
+neutron.tests.tempest.api.test_metering_extensions.MeteringIpV6TestJSON.test_list_metering_label_rules
+neutron.tests.tempest.api.test_metering_extensions.MeteringTestJSON.test_create_delete_metering_label_with_filters
+neutron.tests.tempest.api.test_metering_extensions.MeteringIpV6TestJSON.test_list_metering_labels
+neutron.tests.tempest.api.test_metering_extensions.MeteringIpV6TestJSON.test_create_delete_metering_label_rule_with_filters
+tempest.api.network.test_metering_extensions.MeteringTestJSON.test_create_delete_metering_label_rule_with_filters
+neutron.tests.tempest.api.test_metering_extensions.MeteringIpV6TestJSON.test_create_delete_metering_label_with_filters
+tempest.api.network.test_metering_extensions.MeteringTestJSON.test_list_metering_label_rules
+neutron.tests.tempest.api.test_metering_extensions.MeteringTestJSON.test_show_metering_label
+tempest.api.network.test_metering_extensions.MeteringIpV6TestJSON.test_show_metering_label_rule
+neutron.tests.tempest.api.test_metering_extensions.MeteringTestJSON.test_list_metering_label_rules
+neutron.tests.tempest.api.test_metering_extensions.MeteringIpV6TestJSON.test_create_delete_metering_label_with_name_max_length
+tempest.api.network.test_metering_extensions.MeteringIpV6TestJSON.test_list_metering_label_rules
+neutron.tests.tempest.api.test_metering_extensions.MeteringTestJSON.test_create_delete_metering_label_with_name_max_length
+neutron.tests.tempest.api.test_metering_extensions.MeteringIpV6TestJSON.test_show_metering_label
+tempest.api.network.test_metering_extensions.MeteringIpV6TestJSON.test_create_delete_metering_label_with_filters
+tempest.api.network.test_metering_extensions.MeteringIpV6TestJSON.test_list_metering_labels
+tempest.api.network.test_metering_extensions.MeteringIpV6TestJSON.test_create_delete_metering_label_rule_with_filters
+tempest.api.network.test_metering_extensions.MeteringIpV6TestJSON.test_show_metering_label
+neutron.tests.tempest.api.test_metering_extensions.MeteringTestJSON.test_create_delete_metering_label_rule_with_filters
+tempest.api.network.test_metering_extensions.MeteringTestJSON.test_list_metering_labels
+ostestr -w whitelist.txt --serial
+{0} neutron.tests.tempest.api.test_metering_extensions.MeteringIpV6TestJSON.test_create_delete_metering_label_rule_with_filters [1.020079s] ... ok
+{0} neutron.tests.tempest.api.test_metering_extensions.MeteringIpV6TestJSON.test_create_delete_metering_label_with_filters [0.787957s] ... ok
+{0} neutron.tests.tempest.api.test_metering_extensions.MeteringIpV6TestJSON.test_create_delete_metering_label_with_name_max_length [0.789814s] ... ok
+{0} neutron.tests.tempest.api.test_metering_extensions.MeteringIpV6TestJSON.test_list_metering_label_rules [0.277586s] ... ok
+{0} neutron.tests.tempest.api.test_metering_extensions.MeteringIpV6TestJSON.test_list_metering_labels [0.254104s] ... ok
+{0} neutron.tests.tempest.api.test_metering_extensions.MeteringIpV6TestJSON.test_show_metering_label [0.108537s] ... ok
+{0} neutron.tests.tempest.api.test_metering_extensions.MeteringIpV6TestJSON.test_show_metering_label_rule [0.018090s] ... ok
+{0} neutron.tests.tempest.api.test_metering_extensions.MeteringTestJSON.test_create_delete_metering_label_rule_with_filters [0.291047s] ... ok
+{0} neutron.tests.tempest.api.test_metering_extensions.MeteringTestJSON.test_create_delete_metering_label_with_filters [1.210119s] ... ok
+{0} neutron.tests.tempest.api.test_metering_extensions.MeteringTestJSON.test_create_delete_metering_label_with_name_max_length [0.750610s] ... ok
+{0} neutron.tests.tempest.api.test_metering_extensions.MeteringTestJSON.test_list_metering_label_rules [0.263599s] ... ok
+{0} neutron.tests.tempest.api.test_metering_extensions.MeteringTestJSON.test_list_metering_labels [0.022754s] ... ok
+{0} neutron.tests.tempest.api.test_metering_extensions.MeteringTestJSON.test_show_metering_label [0.103879s] ... ok
+{0} neutron.tests.tempest.api.test_metering_extensions.MeteringTestJSON.test_show_metering_label_rule [0.018669s] ... ok
+{0} neutron.tests.tempest.api.test_metering_negative.MeteringNegativeTestJSON.test_create_metering_label_with_too_long_name [0.773116s] ... ok
+Number of Tests that Ran 15
+Number of Tests that Passed 15
+Number of Tests that Failed 0
+Number of Tests that Skipped 0
+Below are the tests that have passed
+Success: neutron.tests.tempest.api.test_metering_extensions.MeteringIpV6TestJSON.test_create_delete_metering_label_with_filters[id-ec8e15ff-95d0-433b-b8a6-b466bddb1e50]   PASS
+Success: neutron.tests.tempest.api.test_metering_extensions.MeteringIpV6TestJSON.test_create_delete_metering_label_with_name_max_length[id-46608f8d-2e27-4eb6-a0b4-dbe405144c4d]   PASS
+Success: neutron.tests.tempest.api.test_metering_extensions.MeteringIpV6TestJSON.test_list_metering_label_rules[id-cc832399-6681-493b-9d79-0202831a1281]   PASS
+Success: neutron.tests.tempest.api.test_metering_extensions.MeteringTestJSON.test_list_metering_label_rules[id-cc832399-6681-493b-9d79-0202831a1281]   PASS
+Success: neutron.tests.tempest.api.test_metering_extensions.MeteringIpV6TestJSON.test_create_delete_metering_label_rule_with_filters[id-f4d547cd-3aee-408f-bf36-454f8825e045]   PASS
+Success: neutron.tests.tempest.api.test_metering_extensions.MeteringTestJSON.test_create_delete_metering_label_with_name_max_length[id-46608f8d-2e27-4eb6-a0b4-dbe405144c4d]   PASS
+Success: neutron.tests.tempest.api.test_metering_extensions.MeteringIpV6TestJSON.test_show_metering_label_rule[id-b7354489-96ea-41f3-9452-bace120fb4a7]   PASS
+Success: neutron.tests.tempest.api.test_metering_extensions.MeteringTestJSON.test_create_delete_metering_label_with_filters[id-ec8e15ff-95d0-433b-b8a6-b466bddb1e50]   PASS
+Success: neutron.tests.tempest.api.test_metering_extensions.MeteringTestJSON.test_list_metering_labels[id-05d7c750-6d26-44d6-82f3-c9dd1f81f358]   PASS
+Success: neutron.tests.tempest.api.test_metering_extensions.MeteringIpV6TestJSON.test_show_metering_label[id-cfc500d9-9de6-4847-8803-62889c097d45]   PASS
+Success: neutron.tests.tempest.api.test_metering_extensions.MeteringTestJSON.test_show_metering_label[id-cfc500d9-9de6-4847-8803-62889c097d45]   PASS
+Success: neutron.tests.tempest.api.test_metering_extensions.MeteringTestJSON.test_show_metering_label_rule[id-b7354489-96ea-41f3-9452-bace120fb4a7]   PASS
+Success: neutron.tests.tempest.api.test_metering_extensions.MeteringIpV6TestJSON.test_list_metering_labels[id-05d7c750-6d26-44d6-82f3-c9dd1f81f358]   PASS
+Success: neutron.tests.tempest.api.test_metering_extensions.MeteringTestJSON.test_create_delete_metering_label_rule_with_filters[id-f4d547cd-3aee-408f-bf36-454f8825e045]   PASS
+Success: neutron.tests.tempest.api.test_metering_negative.MeteringNegativeTestJSON.test_create_metering_label_with_too_long_name[id-8b3f7c84-9d37-4771-8681-bfd2c07f3c2d,negative]   PASS
+</output>

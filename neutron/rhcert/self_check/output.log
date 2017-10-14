@@ -1,0 +1,17 @@
+<output>
+Checking installed rpms:
+All required packages installed
+<output name="Verify Test Suite" description="Verify the redhat-certification packages">
+
+Checking redhat-certification-openstack-5.1-20170905.el7.noarch:
+Verified.
+
+Checking redhat-certification-backend-5.1-20170905.el7.noarch:
+Verified.
+
+Checking redhat-certification configuration:
+
+Using defaults.
+<summary data-value="PASS">PASS</summary>
+</output>
+</output>

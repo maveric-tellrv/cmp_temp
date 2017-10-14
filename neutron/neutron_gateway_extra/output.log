@@ -1,0 +1,70 @@
+<output>
+Checking installed rpms:
+openstack-tempest-16.1.1-0.20170808012534.0fc1454.el7ost.noarch
+sos-3.4-6.el7.noarch
+python-neutron-tests-11.0.0-0.20170821141644.3441b3f.el7ost.noarch
+python-neutron-lbaas-tests-11.0.0-0.20170818025704.bdea6dd.el7ost.noarch
+python-ddt-1.0.1-2.el7ost.noarch
+python-sahara-tests-7.0.0-0.20170821133416.c07f479.el7ost.noarch
+python-neutron-fwaas-tests-11.0.0-0.20170821135612.734e02a.el7ost.noarch
+python-manila-tests-5.0.0-0.20170821131529.e391476.el7ost.noarch
+python-cinder-tests-11.0.0-0.20170821192443.120fdb0.el7ost.noarch
+python-neutron-fwaas-tests-11.0.0-0.20170821135612.734e02a.el7ost.noarch
+python-sahara-tests-tempest-0.4.2-0.20170801104045.5aee39c.el7ost.noarch
+All required packages installed
+Configuring Tempest
+
+2017-09-05 15:57:28.968 21615 INFO tempest [-] Using tempest config file /etc/tempest/tempest.conf
+
+
+Plugin selected: network
+API list selected: neutron_gateway_extra
+Running tempest
+Running the following tests!!
+neutron.tests.tempest.api.test_routers.RoutersTest.test_update_router_set_gateway_without_snat
+tempest.api.network.test_routers.RoutersIpV6Test.test_update_router_reset_gateway_without_snat
+tempest.api.network.test_routers.RoutersIpV6Test.test_create_router_with_default_snat_value
+tempest.api.network.test_routers.RoutersTest.test_update_router_set_gateway_without_snat
+tempest.api.network.test_routers.RoutersTest.test_update_router_set_gateway_with_snat_explicit
+tempest.api.network.test_routers.RoutersTest.test_create_router_with_snat_explicit
+neutron.tests.tempest.api.test_routers.RoutersTest.test_create_router_with_default_snat_value
+tempest.api.network.test_routers.RoutersIpV6Test.test_create_router_with_snat_explicit
+tempest.api.network.test_routers.RoutersIpV6Test.test_update_router_set_gateway_with_snat_explicit
+tempest.api.network.test_routers.RoutersTest.test_create_router_with_default_snat_value
+neutron.tests.tempest.api.test_routers.RoutersIpV6Test.test_update_router_set_gateway_without_snat
+neutron.tests.tempest.api.test_routers.RoutersTest.test_update_router_reset_gateway_without_snat
+neutron.tests.tempest.api.test_routers.RoutersIpV6Test.test_update_router_set_gateway_with_snat_explicit
+neutron.tests.tempest.api.test_routers.RoutersTest.test_update_router_set_gateway_with_snat_explicit
+neutron.tests.tempest.api.test_routers.RoutersIpV6Test.test_create_router_with_snat_explicit
+tempest.api.network.test_routers.RoutersTest.test_update_router_reset_gateway_without_snat
+neutron.tests.tempest.api.test_routers.RoutersTest.test_create_router_with_snat_explicit
+neutron.tests.tempest.api.test_routers.RoutersIpV6Test.test_create_router_with_default_snat_value
+tempest.api.network.test_routers.RoutersIpV6Test.test_update_router_set_gateway_without_snat
+neutron.tests.tempest.api.test_routers.RoutersIpV6Test.test_update_router_reset_gateway_without_snat
+ostestr -w whitelist.txt --serial
+{0} neutron.tests.tempest.api.test_routers.RoutersIpV6Test.test_create_router_with_default_snat_value [5.243554s] ... ok
+{0} neutron.tests.tempest.api.test_routers.RoutersIpV6Test.test_create_router_with_snat_explicit [8.327692s] ... ok
+{0} neutron.tests.tempest.api.test_routers.RoutersIpV6Test.test_update_router_reset_gateway_without_snat [5.599934s] ... ok
+{0} neutron.tests.tempest.api.test_routers.RoutersIpV6Test.test_update_router_set_gateway_with_snat_explicit [4.082000s] ... ok
+{0} neutron.tests.tempest.api.test_routers.RoutersIpV6Test.test_update_router_set_gateway_without_snat [5.126295s] ... ok
+{0} neutron.tests.tempest.api.test_routers.RoutersTest.test_create_router_with_default_snat_value [4.758221s] ... ok
+{0} neutron.tests.tempest.api.test_routers.RoutersTest.test_create_router_with_snat_explicit [9.121292s] ... ok
+{0} neutron.tests.tempest.api.test_routers.RoutersTest.test_update_router_reset_gateway_without_snat [5.094840s] ... ok
+{0} neutron.tests.tempest.api.test_routers.RoutersTest.test_update_router_set_gateway_with_snat_explicit [4.793278s] ... ok
+{0} neutron.tests.tempest.api.test_routers.RoutersTest.test_update_router_set_gateway_without_snat [4.870162s] ... ok
+Number of Tests that Ran 10
+Number of Tests that Passed 10
+Number of Tests that Failed 0
+Number of Tests that Skipped 0
+Below are the tests that have passed
+Success: neutron.tests.tempest.api.test_routers.RoutersIpV6Test.test_update_router_set_gateway_without_snat[id-96536bc7-8262-4fb2-9967-5c46940fa279]   PASS
+Success: neutron.tests.tempest.api.test_routers.RoutersIpV6Test.test_update_router_set_gateway_with_snat_explicit[id-b386c111-3b21-466d-880c-5e72b01e1a33]   PASS
+Success: neutron.tests.tempest.api.test_routers.RoutersTest.test_update_router_reset_gateway_without_snat[id-f2faf994-97f4-410b-a831-9bc977b64374]   PASS
+Success: neutron.tests.tempest.api.test_routers.RoutersIpV6Test.test_create_router_with_snat_explicit[id-ea74068d-09e9-4fd7-8995-9b6a1ace920f]   PASS
+Success: neutron.tests.tempest.api.test_routers.RoutersIpV6Test.test_create_router_with_default_snat_value[id-847257cc-6afd-4154-b8fb-af49f5670ce8]   PASS
+Success: neutron.tests.tempest.api.test_routers.RoutersTest.test_create_router_with_default_snat_value[id-847257cc-6afd-4154-b8fb-af49f5670ce8]   PASS
+Success: neutron.tests.tempest.api.test_routers.RoutersTest.test_create_router_with_snat_explicit[id-ea74068d-09e9-4fd7-8995-9b6a1ace920f]   PASS
+Success: neutron.tests.tempest.api.test_routers.RoutersTest.test_update_router_set_gateway_with_snat_explicit[id-b386c111-3b21-466d-880c-5e72b01e1a33]   PASS
+Success: neutron.tests.tempest.api.test_routers.RoutersTest.test_update_router_set_gateway_without_snat[id-96536bc7-8262-4fb2-9967-5c46940fa279]   PASS
+Success: neutron.tests.tempest.api.test_routers.RoutersIpV6Test.test_update_router_reset_gateway_without_snat[id-f2faf994-97f4-410b-a831-9bc977b64374]   PASS
+</output>

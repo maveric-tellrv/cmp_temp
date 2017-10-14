@@ -1,0 +1,63 @@
+<output>
+Checking installed rpms:
+openstack-tempest-16.1.1-0.20170808012534.0fc1454.el7ost.noarch
+sos-3.4-6.el7.noarch
+python-neutron-tests-11.0.0-0.20170821141644.3441b3f.el7ost.noarch
+python-neutron-lbaas-tests-11.0.0-0.20170818025704.bdea6dd.el7ost.noarch
+python-ddt-1.0.1-2.el7ost.noarch
+python-sahara-tests-7.0.0-0.20170821133416.c07f479.el7ost.noarch
+python-neutron-fwaas-tests-11.0.0-0.20170821135612.734e02a.el7ost.noarch
+python-manila-tests-5.0.0-0.20170821131529.e391476.el7ost.noarch
+python-cinder-tests-11.0.0-0.20170821192443.120fdb0.el7ost.noarch
+python-neutron-fwaas-tests-11.0.0-0.20170821135612.734e02a.el7ost.noarch
+python-sahara-tests-tempest-0.4.2-0.20170801104045.5aee39c.el7ost.noarch
+All required packages installed
+Configuring Tempest
+
+2017-09-05 15:48:59.765 18683 INFO tempest [-] Using tempest config file /etc/tempest/tempest.conf
+
+
+Plugin selected: network
+API list selected: neutron_agents
+Running tempest
+Running the following tests!!
+tempest.api.network.admin.test_dhcp_agent_scheduler.DHCPAgentSchedulersTestJSON.test_add_remove_network_from_dhcp_agent
+neutron.tests.tempest.api.admin.test_dhcp_agent_scheduler.DHCPAgentSchedulersTestJSON.test_dhcp_port_status_active
+neutron.tests.tempest.api.admin.test_dhcp_agent_scheduler.DHCPAgentSchedulersTestJSON.test_add_remove_network_from_dhcp_agent
+tempest.api.network.admin.test_dhcp_agent_scheduler.DHCPAgentSchedulersTestJSON.test_list_dhcp_agent_hosting_network
+tempest.api.network.admin.test_l3_agent_scheduler.L3AgentSchedulerTestJSON.test_list_routers_on_l3_agent
+neutron.tests.tempest.api.admin.test_dhcp_agent_scheduler.DHCPAgentSchedulersTestJSON.test_list_networks_hosted_by_one_dhcp
+neutron.tests.tempest.api.admin.test_dhcp_agent_scheduler.DHCPAgentSchedulersTestJSON.test_list_dhcp_agent_hosting_network
+tempest.api.network.admin.test_dhcp_agent_scheduler.DHCPAgentSchedulersTestJSON.test_list_networks_hosted_by_one_dhcp
+neutron.tests.tempest.api.admin.test_l3_agent_scheduler.L3AgentSchedulerTestJSON.test_add_list_remove_router_on_l3_agent
+tempest.api.network.admin.test_l3_agent_scheduler.L3AgentSchedulerTestJSON.test_add_list_remove_router_on_l3_agent
+neutron.tests.tempest.api.admin.test_l3_agent_scheduler.L3AgentSchedulerTestJSON.test_list_routers_on_l3_agent
+ostestr -w whitelist.txt --serial
+{0} tempest.api.network.admin.test_dhcp_agent_scheduler.DHCPAgentSchedulersTestJSON.test_add_remove_network_from_dhcp_agent [2.959006s] ... ok
+{0} tempest.api.network.admin.test_dhcp_agent_scheduler.DHCPAgentSchedulersTestJSON.test_list_dhcp_agent_hosting_network [0.023130s] ... ok
+{0} tempest.api.network.admin.test_dhcp_agent_scheduler.DHCPAgentSchedulersTestJSON.test_list_networks_hosted_by_one_dhcp [0.174733s] ... ok
+{0} tempest.api.network.admin.test_l3_agent_scheduler.L3AgentSchedulerTestJSON.test_add_list_remove_router_on_l3_agent [0.509194s] ... ok
+{0} tempest.api.network.admin.test_l3_agent_scheduler.L3AgentSchedulerTestJSON.test_list_routers_on_l3_agent [0.109657s] ... ok
+{0} neutron.tests.tempest.api.admin.test_dhcp_agent_scheduler.DHCPAgentSchedulersTestJSON.test_add_remove_network_from_dhcp_agent [4.653419s] ... ok
+{0} neutron.tests.tempest.api.admin.test_dhcp_agent_scheduler.DHCPAgentSchedulersTestJSON.test_dhcp_port_status_active [1.563932s] ... ok
+{0} neutron.tests.tempest.api.admin.test_dhcp_agent_scheduler.DHCPAgentSchedulersTestJSON.test_list_dhcp_agent_hosting_network [0.258318s] ... ok
+{0} neutron.tests.tempest.api.admin.test_dhcp_agent_scheduler.DHCPAgentSchedulersTestJSON.test_list_networks_hosted_by_one_dhcp [1.131834s] ... ok
+{0} neutron.tests.tempest.api.admin.test_l3_agent_scheduler.L3AgentSchedulerTestJSON.test_add_list_remove_router_on_l3_agent [0.298730s] ... ok
+{0} neutron.tests.tempest.api.admin.test_l3_agent_scheduler.L3AgentSchedulerTestJSON.test_list_routers_on_l3_agent [0.982881s] ... ok
+Number of Tests that Ran 11
+Number of Tests that Passed 11
+Number of Tests that Failed 0
+Number of Tests that Skipped 0
+Below are the tests that have passed
+Success: neutron.tests.tempest.api.admin.test_l3_agent_scheduler.L3AgentSchedulerTestJSON.test_add_list_remove_router_on_l3_agent[id-9464e5e7-8625-49c3-8fd1-89c52be59d66]   PASS
+Success: tempest.api.network.admin.test_l3_agent_scheduler.L3AgentSchedulerTestJSON.test_add_list_remove_router_on_l3_agent[id-9464e5e7-8625-49c3-8fd1-89c52be59d66]   PASS
+Success: tempest.api.network.admin.test_dhcp_agent_scheduler.DHCPAgentSchedulersTestJSON.test_add_remove_network_from_dhcp_agent[id-a0856713-6549-470c-a656-e97c8df9a14d]   PASS
+Success: neutron.tests.tempest.api.admin.test_l3_agent_scheduler.L3AgentSchedulerTestJSON.test_list_routers_on_l3_agent[id-b7ce6e89-e837-4ded-9b78-9ed3c9c6a45a]   PASS
+Success: tempest.api.network.admin.test_dhcp_agent_scheduler.DHCPAgentSchedulersTestJSON.test_list_dhcp_agent_hosting_network[id-5032b1fe-eb42-4a64-8f3b-6e189d8b5c7d]   PASS
+Success: neutron.tests.tempest.api.admin.test_dhcp_agent_scheduler.DHCPAgentSchedulersTestJSON.test_list_dhcp_agent_hosting_network[id-5032b1fe-eb42-4a64-8f3b-6e189d8b5c7d]   PASS
+Success: tempest.api.network.admin.test_dhcp_agent_scheduler.DHCPAgentSchedulersTestJSON.test_list_networks_hosted_by_one_dhcp[id-30c48f98-e45d-4ffb-841c-b8aad57c7587]   PASS
+Success: tempest.api.network.admin.test_l3_agent_scheduler.L3AgentSchedulerTestJSON.test_list_routers_on_l3_agent[id-b7ce6e89-e837-4ded-9b78-9ed3c9c6a45a]   PASS
+Success: neutron.tests.tempest.api.admin.test_dhcp_agent_scheduler.DHCPAgentSchedulersTestJSON.test_add_remove_network_from_dhcp_agent[id-a0856713-6549-470c-a656-e97c8df9a14d]   PASS
+Success: neutron.tests.tempest.api.admin.test_dhcp_agent_scheduler.DHCPAgentSchedulersTestJSON.test_list_networks_hosted_by_one_dhcp[id-30c48f98-e45d-4ffb-841c-b8aad57c7587]   PASS
+Success: neutron.tests.tempest.api.admin.test_dhcp_agent_scheduler.DHCPAgentSchedulersTestJSON.test_dhcp_port_status_active[id-f164801e-1dd8-4b8b-b5d3-cc3ac77cfaa5]   PASS
+</output>

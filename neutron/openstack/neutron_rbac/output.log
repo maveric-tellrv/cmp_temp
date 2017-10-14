@@ -1,0 +1,114 @@
+<output>
+Checking installed rpms:
+openstack-tempest-16.1.1-0.20170808012534.0fc1454.el7ost.noarch
+sos-3.4-6.el7.noarch
+python-neutron-tests-11.0.0-0.20170821141644.3441b3f.el7ost.noarch
+python-neutron-lbaas-tests-11.0.0-0.20170818025704.bdea6dd.el7ost.noarch
+python-ddt-1.0.1-2.el7ost.noarch
+python-sahara-tests-7.0.0-0.20170821133416.c07f479.el7ost.noarch
+python-neutron-fwaas-tests-11.0.0-0.20170821135612.734e02a.el7ost.noarch
+python-manila-tests-5.0.0-0.20170821131529.e391476.el7ost.noarch
+python-cinder-tests-11.0.0-0.20170821192443.120fdb0.el7ost.noarch
+python-neutron-fwaas-tests-11.0.0-0.20170821135612.734e02a.el7ost.noarch
+python-sahara-tests-tempest-0.4.2-0.20170801104045.5aee39c.el7ost.noarch
+All required packages installed
+Configuring Tempest
+
+2017-09-05 16:38:33.346 984016 INFO tempest [-] Using tempest config file /etc/tempest/tempest.conf
+
+
+Plugin selected: network
+API list selected: neutron_rbac
+Running tempest
+Running the following tests!!
+neutron.tests.tempest.api.admin.test_shared_network_extension.RBACSharedNetworksTest.test_delete_self_share_rule
+neutron.tests.tempest.api.admin.test_external_network_extension.ExternalNetworksRBACTestJSON.test_delete_policies_while_tenant_attached_to_net
+neutron.tests.tempest.api.admin.test_shared_network_extension.RBACSharedNetworksTest.test_duplicate_policy_error
+neutron.tests.tempest.api.admin.test_shared_network_extension.RBACSharedNetworksTest.test_filter_fields
+neutron.tests.tempest.api.admin.test_external_network_extension.ExternalNetworksRBACTestJSON.test_external_update_policy_from_wildcard_to_specific_tenant
+neutron.tests.tempest.api.admin.test_shared_network_extension.RBACSharedNetworksTest.test_policy_show
+neutron.tests.tempest.api.admin.test_shared_network_extension.RBACSharedNetworksTest.test_tenant_can_delete_port_on_own_network
+neutron.tests.tempest.api.admin.test_shared_network_extension.RBACSharedNetworksTest.test_filter_policies
+neutron.tests.tempest.api.admin.test_shared_network_extension.RBACSharedNetworksTest.test_tenant_cant_delete_other_tenants_ports
+neutron.tests.tempest.api.admin.test_shared_network_extension.RBACSharedNetworksTest.test_update_self_share_rule
+neutron.tests.tempest.api.admin.test_external_network_extension.ExternalNetworksRBACTestJSON.test_wildcard_policy_created_from_external_network_api
+neutron.tests.tempest.api.admin.test_external_network_extension.ExternalNetworksRBACTestJSON.test_policy_allows_tenant_to_allocate_floatingip
+neutron.tests.tempest.api.admin.test_external_network_extension.ExternalNetworksRBACTestJSON.test_regular_client_shares_with_another
+neutron.tests.tempest.api.admin.test_external_network_extension.ExternalNetworksRBACTestJSON.test_wildcard_policy_delete_blocked_on_default_ext
+neutron.tests.tempest.api.admin.test_shared_network_extension.RBACSharedNetworksTest.test_create_rbac_policy_with_target_tenant_too_long_id
+neutron.tests.tempest.api.admin.test_shared_network_extension.RBACSharedNetworksTest.test_policy_target_update
+neutron.tests.tempest.api.admin.test_shared_network_extension.RBACSharedNetworksTest.test_subnet_on_network_only_visible_to_policy_target
+neutron.tests.tempest.api.admin.test_external_network_extension.ExternalNetworksRBACTestJSON.test_policy_allows_tenant_to_attach_ext_gw
+neutron.tests.tempest.api.admin.test_shared_network_extension.RBACSharedNetworksTest.test_regular_client_blocked_from_sharing_anothers_network
+neutron.tests.tempest.api.admin.test_shared_network_extension.RBACSharedNetworksTest.test_regular_client_blocked_from_sharing_with_wildcard
+neutron.tests.tempest.api.admin.test_shared_network_extension.RBACSharedNetworksTest.test_filtering_works_with_rbac_records_present
+neutron.tests.tempest.api.admin.test_external_network_extension.ExternalNetworksRBACTestJSON.test_external_conversion_on_policy_create
+neutron.tests.tempest.api.admin.test_shared_network_extension.RBACSharedNetworksTest.test_port_presence_prevents_network_rbac_policy_deletion
+neutron.tests.tempest.api.admin.test_shared_network_extension.RBACSharedNetworksTest.test_regular_client_shares_to_another_regular_client
+neutron.tests.tempest.api.admin.test_shared_network_extension.RBACSharedNetworksTest.test_rbac_policy_quota
+neutron.tests.tempest.api.admin.test_external_network_extension.ExternalNetworksRBACTestJSON.test_regular_client_blocked_from_creating_external_wild_policies
+neutron.tests.tempest.api.admin.test_shared_network_extension.RBACSharedNetworksTest.test_network_only_visible_to_policy_target
+neutron.tests.tempest.api.admin.test_shared_network_extension.RBACSharedNetworksTest.test_create_rbac_policy_with_target_tenant_none
+ostestr -w whitelist.txt --serial
+{0} neutron.tests.tempest.api.admin.test_external_network_extension.ExternalNetworksRBACTestJSON.test_delete_policies_while_tenant_attached_to_net [12.527978s] ... ok
+{0} neutron.tests.tempest.api.admin.test_external_network_extension.ExternalNetworksRBACTestJSON.test_external_conversion_on_policy_create [2.288492s] ... ok
+{0} neutron.tests.tempest.api.admin.test_external_network_extension.ExternalNetworksRBACTestJSON.test_external_update_policy_from_wildcard_to_specific_tenant [4.888590s] ... ok
+{0} neutron.tests.tempest.api.admin.test_external_network_extension.ExternalNetworksRBACTestJSON.test_policy_allows_tenant_to_allocate_floatingip [6.623210s] ... ok
+{0} neutron.tests.tempest.api.admin.test_external_network_extension.ExternalNetworksRBACTestJSON.test_policy_allows_tenant_to_attach_ext_gw [7.085866s] ... ok
+{0} neutron.tests.tempest.api.admin.test_external_network_extension.ExternalNetworksRBACTestJSON.test_regular_client_blocked_from_creating_external_wild_policies [1.425084s] ... ok
+{0} neutron.tests.tempest.api.admin.test_external_network_extension.ExternalNetworksRBACTestJSON.test_regular_client_shares_with_another [4.970486s] ... ok
+{0} neutron.tests.tempest.api.admin.test_external_network_extension.ExternalNetworksRBACTestJSON.test_wildcard_policy_created_from_external_network_api [5.093065s] ... ok
+{0} neutron.tests.tempest.api.admin.test_external_network_extension.ExternalNetworksRBACTestJSON.test_wildcard_policy_delete_blocked_on_default_ext [1.090190s] ... ok
+{0} neutron.tests.tempest.api.admin.test_shared_network_extension.RBACSharedNetworksTest.test_create_rbac_policy_with_target_tenant_none [5.724560s] ... ok
+{0} neutron.tests.tempest.api.admin.test_shared_network_extension.RBACSharedNetworksTest.test_create_rbac_policy_with_target_tenant_too_long_id [4.363288s] ... ok
+{0} neutron.tests.tempest.api.admin.test_shared_network_extension.RBACSharedNetworksTest.test_delete_self_share_rule [5.336954s] ... ok
+{0} neutron.tests.tempest.api.admin.test_shared_network_extension.RBACSharedNetworksTest.test_duplicate_policy_error [5.047550s] ... ok
+{0} neutron.tests.tempest.api.admin.test_shared_network_extension.RBACSharedNetworksTest.test_filter_fields [1.138327s] ... ok
+{0} neutron.tests.tempest.api.admin.test_shared_network_extension.RBACSharedNetworksTest.test_filter_policies [2.059131s] ... ok
+{0} neutron.tests.tempest.api.admin.test_shared_network_extension.RBACSharedNetworksTest.test_filtering_works_with_rbac_records_present [5.998780s] ... ok
+{0} neutron.tests.tempest.api.admin.test_shared_network_extension.RBACSharedNetworksTest.test_network_only_visible_to_policy_target [5.261412s] ... ok
+{0} neutron.tests.tempest.api.admin.test_shared_network_extension.RBACSharedNetworksTest.test_policy_show [5.337627s] ... ok
+{0} neutron.tests.tempest.api.admin.test_shared_network_extension.RBACSharedNetworksTest.test_policy_target_update [5.358884s] ... ok
+{0} neutron.tests.tempest.api.admin.test_shared_network_extension.RBACSharedNetworksTest.test_port_presence_prevents_network_rbac_policy_deletion [12.394325s] ... ok
+{0} neutron.tests.tempest.api.admin.test_shared_network_extension.RBACSharedNetworksTest.test_rbac_policy_quota [8.278236s] ... ok
+{0} neutron.tests.tempest.api.admin.test_shared_network_extension.RBACSharedNetworksTest.test_regular_client_blocked_from_sharing_anothers_network [5.000558s] ... ok
+{0} neutron.tests.tempest.api.admin.test_shared_network_extension.RBACSharedNetworksTest.test_regular_client_blocked_from_sharing_with_wildcard [1.271526s] ... ok
+{0} neutron.tests.tempest.api.admin.test_shared_network_extension.RBACSharedNetworksTest.test_regular_client_shares_to_another_regular_client [1.834946s] ... ok
+{0} neutron.tests.tempest.api.admin.test_shared_network_extension.RBACSharedNetworksTest.test_subnet_on_network_only_visible_to_policy_target [4.409798s] ... ok
+{0} neutron.tests.tempest.api.admin.test_shared_network_extension.RBACSharedNetworksTest.test_tenant_can_delete_port_on_own_network [3.219860s] ... ok
+{0} neutron.tests.tempest.api.admin.test_shared_network_extension.RBACSharedNetworksTest.test_tenant_cant_delete_other_tenants_ports [2.388516s] ... ok
+{0} neutron.tests.tempest.api.admin.test_shared_network_extension.RBACSharedNetworksTest.test_update_self_share_rule [4.008717s] ... ok
+Number of Tests that Ran 28
+Number of Tests that Passed 28
+Number of Tests that Failed 0
+Number of Tests that Skipped 0
+Below are the tests that have passed
+Success: neutron.tests.tempest.api.admin.test_shared_network_extension.RBACSharedNetworksTest.test_rbac_policy_quota[id-c5f8f785-ce8d-4430-af7e-a236205862fb]   PASS
+Success: neutron.tests.tempest.api.admin.test_external_network_extension.ExternalNetworksRBACTestJSON.test_policy_allows_tenant_to_attach_ext_gw[id-476be1e0-f72e-47dc-9a14-4435926bbe82]   PASS
+Success: neutron.tests.tempest.api.admin.test_shared_network_extension.RBACSharedNetworksTest.test_regular_client_blocked_from_sharing_with_wildcard[id-86c3529b-1231-40de-803c-afffffff7fff]   PASS
+Success: neutron.tests.tempest.api.admin.test_external_network_extension.ExternalNetworksRBACTestJSON.test_regular_client_blocked_from_creating_external_wild_policies[id-eff9443a-2d04-48ee-840e-d955ac564bcd]   PASS
+Success: neutron.tests.tempest.api.admin.test_shared_network_extension.RBACSharedNetworksTest.test_filtering_works_with_rbac_records_present[id-86c3529b-1231-40de-803c-aeeeeeee7fff]   PASS
+Success: neutron.tests.tempest.api.admin.test_shared_network_extension.RBACSharedNetworksTest.test_subnet_on_network_only_visible_to_policy_target[id-86c3529b-1231-40de-803c-afffffff2fff]   PASS
+Success: neutron.tests.tempest.api.admin.test_shared_network_extension.RBACSharedNetworksTest.test_filter_policies[id-e7bcb1ea-4877-4266-87bb-76f68b421f31]   PASS
+Success: neutron.tests.tempest.api.admin.test_shared_network_extension.RBACSharedNetworksTest.test_policy_target_update[id-86c3529b-1231-40de-803c-afffffff2eee]   PASS
+Success: neutron.tests.tempest.api.admin.test_external_network_extension.ExternalNetworksRBACTestJSON.test_wildcard_policy_created_from_external_network_api[id-a2e19f06-48a9-4e4c-b717-08cb2008707d]   PASS
+Success: neutron.tests.tempest.api.admin.test_shared_network_extension.RBACSharedNetworksTest.test_network_only_visible_to_policy_target[id-86c3529b-1231-40de-803c-afffffff1fff,smoke]   PASS
+Success: neutron.tests.tempest.api.admin.test_shared_network_extension.RBACSharedNetworksTest.test_port_presence_prevents_network_rbac_policy_deletion[id-86c3529b-1231-40de-803c-afffffff3fff]   PASS
+Success: neutron.tests.tempest.api.admin.test_shared_network_extension.RBACSharedNetworksTest.test_tenant_cant_delete_other_tenants_ports[id-f7539232-389a-4e9c-9e37-e42a129eb541]   PASS
+Success: neutron.tests.tempest.api.admin.test_external_network_extension.ExternalNetworksRBACTestJSON.test_delete_policies_while_tenant_attached_to_net[id-d54decee-4203-4ced-91a2-ea42ca63e154]   PASS
+Success: neutron.tests.tempest.api.admin.test_shared_network_extension.RBACSharedNetworksTest.test_create_rbac_policy_with_target_tenant_too_long_id[id-86c3529b-1231-40de-803c-bfffffff1fff,smoke]   PASS
+Success: neutron.tests.tempest.api.admin.test_shared_network_extension.RBACSharedNetworksTest.test_regular_client_shares_to_another_regular_client[id-86c3529b-1231-40de-803c-afffffff4fff]   PASS
+Success: neutron.tests.tempest.api.admin.test_shared_network_extension.RBACSharedNetworksTest.test_delete_self_share_rule[id-34d627da-a732-68c0-2e1a-bc4a19246698]   PASS
+Success: neutron.tests.tempest.api.admin.test_shared_network_extension.RBACSharedNetworksTest.test_policy_show[id-86c3529b-1231-40de-803c-afffffff5fff]   PASS
+Success: neutron.tests.tempest.api.admin.test_shared_network_extension.RBACSharedNetworksTest.test_duplicate_policy_error[id-86c3529b-1231-40de-803c-affefefef321]   PASS
+Success: neutron.tests.tempest.api.admin.test_shared_network_extension.RBACSharedNetworksTest.test_regular_client_blocked_from_sharing_anothers_network[id-86c3529b-1231-40de-803c-afffffff6fff]   PASS
+Success: neutron.tests.tempest.api.admin.test_external_network_extension.ExternalNetworksRBACTestJSON.test_wildcard_policy_delete_blocked_on_default_ext[id-7041cec7-d8fe-4c78-9b04-b51b2fd49dc9]   PASS
+Success: neutron.tests.tempest.api.admin.test_external_network_extension.ExternalNetworksRBACTestJSON.test_external_update_policy_from_wildcard_to_specific_tenant[id-a5539002-5bdb-48b5-b124-abcd12347865]   PASS
+Success: neutron.tests.tempest.api.admin.test_external_network_extension.ExternalNetworksRBACTestJSON.test_policy_allows_tenant_to_allocate_floatingip[id-01364c50-bfb6-46c4-b44c-edc4564d61cf]   PASS
+Success: neutron.tests.tempest.api.admin.test_shared_network_extension.RBACSharedNetworksTest.test_update_self_share_rule[id-34d627da-869f-68c0-2e1a-bc4a19246698]   PASS
+Success: neutron.tests.tempest.api.admin.test_shared_network_extension.RBACSharedNetworksTest.test_filter_fields[id-bf5052b8-b11e-407c-8e43-113447404d3e]   PASS
+Success: neutron.tests.tempest.api.admin.test_external_network_extension.ExternalNetworksRBACTestJSON.test_regular_client_shares_with_another[id-afd8f1b7-a81e-4629-bca8-a367b3a144bb]   PASS
+Success: neutron.tests.tempest.api.admin.test_external_network_extension.ExternalNetworksRBACTestJSON.test_external_conversion_on_policy_create[id-a5539002-5bdb-48b5-b124-e9eedd5975e6]   PASS
+Success: neutron.tests.tempest.api.admin.test_shared_network_extension.RBACSharedNetworksTest.test_tenant_can_delete_port_on_own_network[id-86c3529b-1231-40de-803c-beefbeefbeef]   PASS
+Success: neutron.tests.tempest.api.admin.test_shared_network_extension.RBACSharedNetworksTest.test_create_rbac_policy_with_target_tenant_none[id-86c3529b-1231-40de-803c-bfffffff1eee,smoke]   PASS
+</output>

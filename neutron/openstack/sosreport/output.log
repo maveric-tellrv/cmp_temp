@@ -1,0 +1,16 @@
+<output>
+Checking installed rpms:
+sos-3.4-6.el7.noarch
+All required packages installed
+<output name="System Report" description="Generates a system report (sosreport)">
+Generating System Report(sosreport). It may take a while. Please wait ...
+
+/var/tmp/sosreport-controller-0-20170905165520.tar.xz
+Copied sosreport --batch -n selinux -n logs /var/tmp/sosreport-controller-0-20170905165520.tar.xz to /var/log/rhcert/runs/4/openstack/sosreport
+Info: Checking sos version to see if required information will be collected.
+Info: sos version is in the accepted versions.
+Info: Checking sos version to see if required information will be collected.
+Info: sos version is in the accepted versions.
+<summary data-value="PASS">PASS</summary>
+</output>
+</output>

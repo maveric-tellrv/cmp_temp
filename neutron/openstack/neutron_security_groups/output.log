@@ -1,0 +1,198 @@
+<output>
+Checking installed rpms:
+openstack-tempest-16.1.1-0.20170808012534.0fc1454.el7ost.noarch
+sos-3.4-6.el7.noarch
+python-neutron-tests-11.0.0-0.20170821141644.3441b3f.el7ost.noarch
+python-neutron-lbaas-tests-11.0.0-0.20170818025704.bdea6dd.el7ost.noarch
+python-ddt-1.0.1-2.el7ost.noarch
+python-sahara-tests-7.0.0-0.20170821133416.c07f479.el7ost.noarch
+python-neutron-fwaas-tests-11.0.0-0.20170821135612.734e02a.el7ost.noarch
+python-manila-tests-5.0.0-0.20170821131529.e391476.el7ost.noarch
+python-cinder-tests-11.0.0-0.20170821192443.120fdb0.el7ost.noarch
+python-neutron-fwaas-tests-11.0.0-0.20170821135612.734e02a.el7ost.noarch
+python-sahara-tests-tempest-0.4.2-0.20170801104045.5aee39c.el7ost.noarch
+All required packages installed
+Configuring Tempest
+
+2017-09-05 16:41:29.653 996690 INFO tempest [-] Using tempest config file /etc/tempest/tempest.conf
+
+
+Plugin selected: network
+API list selected: neutron_security_groups
+Running tempest
+Running the following tests!!
+tempest.api.network.test_security_groups.SecGroupTest.test_create_security_group_rule_with_icmp_type_code
+tempest.api.network.test_security_groups.SecGroupTest.test_create_security_group_rule_with_remote_ip_prefix
+tempest.api.network.test_ports.PortsIpV6TestJSON.test_update_port_with_security_group_and_extra_attributes
+tempest.api.network.test_security_groups_negative.NegativeSecGroupTest.test_create_security_group_rule_with_non_existent_remote_groupid
+tempest.api.network.test_security_groups_negative.NegativeSecGroupIPv6Test.test_create_security_group_rule_with_non_existent_remote_groupid
+tempest.api.network.test_security_groups.SecGroupTest.test_create_show_delete_security_group_rule
+tempest.api.network.test_security_groups.SecGroupIPv6Test.test_create_show_delete_security_group_rule
+tempest.api.network.test_security_groups_negative.NegativeSecGroupTest.test_delete_non_existent_security_group
+tempest.api.network.test_security_groups_negative.NegativeSecGroupTest.test_create_security_group_rule_with_remote_ip_and_group
+tempest.api.network.test_ports.PortsTestJSON.test_update_port_with_security_group_and_extra_attributes
+tempest.api.network.test_security_groups_negative.NegativeSecGroupTest.test_create_security_group_rule_with_non_existent_security_group
+tempest.api.network.test_ports.PortsTestJSON.test_update_port_with_two_security_groups_and_extra_attributes
+tempest.api.network.test_security_groups_negative.NegativeSecGroupIPv6Test.test_show_non_existent_security_group
+neutron.tests.tempest.api.test_security_groups.SecGroupTest.test_create_list_update_show_delete_security_group
+tempest.api.network.test_security_groups_negative.NegativeSecGroupTest.test_create_security_group_rule_with_bad_remote_ip_prefix
+tempest.api.network.test_security_groups_negative.NegativeSecGroupIPv6Test.test_create_security_group_rule_with_bad_remote_ip_prefix
+tempest.api.network.test_security_groups_negative.NegativeSecGroupTest.test_create_additional_default_security_group_fails
+neutron.tests.tempest.api.admin.test_quotas_negative.QuotasAdminNegativeTestJSON.test_create_security_group_when_quotas_is_full
+tempest.api.network.test_security_groups_negative.NegativeSecGroupIPv6Test.test_create_security_group_rule_with_bad_ethertype
+tempest.api.network.test_security_groups_negative.NegativeSecGroupTest.test_create_duplicate_security_group_rule_fails
+tempest.api.network.test_security_groups_negative.NegativeSecGroupIPv6Test.test_create_security_group_rule_with_invalid_ports
+tempest.api.network.test_security_groups_negative.NegativeSecGroupIPv6Test.test_create_security_group_rule_with_remote_ip_and_group
+tempest.api.network.test_security_groups_negative.NegativeSecGroupIPv6Test.test_create_duplicate_security_group_rule_fails
+tempest.api.network.test_security_groups.SecGroupTest.test_create_security_group_rule_with_remote_group_id
+tempest.api.network.test_security_groups.SecGroupTest.test_list_security_groups
+tempest.api.network.test_security_groups_negative.NegativeSecGroupTest.test_show_non_existent_security_group
+tempest.api.network.test_security_groups.SecGroupTest.test_create_security_group_rule_with_additional_args
+tempest.api.network.test_security_groups_negative.NegativeSecGroupIPv6Test.test_show_non_existent_security_group_rule
+neutron.tests.tempest.api.test_security_groups_negative.NegativeSecGroupTest.test_update_default_security_group_name
+tempest.api.network.test_security_groups_negative.NegativeSecGroupIPv6Test.test_create_security_group_rule_wrong_ip_prefix_version
+tempest.api.network.test_ports.PortsIpV6TestJSON.test_create_port_with_no_securitygroups
+tempest.api.network.test_security_groups.SecGroupTest.test_create_list_update_show_delete_security_group
+tempest.api.network.test_security_groups_negative.NegativeSecGroupIPv6Test.test_create_additional_default_security_group_fails
+tempest.api.network.test_security_groups_negative.NegativeSecGroupIPv6Test.test_delete_non_existent_security_group
+tempest.api.network.test_security_groups.SecGroupIPv6Test.test_create_security_group_rule_with_remote_ip_prefix
+tempest.api.network.test_security_groups.SecGroupIPv6Test.test_create_security_group_rule_with_additional_args
+tempest.api.network.test_security_groups.SecGroupTest.test_create_security_group_rule_with_protocol_integer_value
+tempest.api.network.test_security_groups.SecGroupIPv6Test.test_create_security_group_rule_with_icmp_type_code
+tempest.api.network.test_security_groups.SecGroupIPv6Test.test_list_security_groups
+tempest.api.network.test_security_groups.SecGroupIPv6Test.test_create_security_group_rule_with_protocol_integer_value
+tempest.api.network.test_ports.PortsIpV6TestJSON.test_update_port_with_two_security_groups_and_extra_attributes
+tempest.api.network.test_security_groups_negative.NegativeSecGroupTest.test_show_non_existent_security_group_rule
+neutron.tests.tempest.api.test_extension_driver_port_security.PortSecTest.test_create_port_sec_with_security_group
+tempest.api.network.test_security_groups_negative.NegativeSecGroupTest.test_create_security_group_update_name_default
+tempest.api.network.test_security_groups_negative.NegativeSecGroupIPv6Test.test_create_security_group_rule_with_bad_protocol
+tempest.api.network.test_security_groups.SecGroupIPv6Test.test_create_list_update_show_delete_security_group
+tempest.api.network.test_security_groups_negative.NegativeSecGroupTest.test_create_security_group_rule_with_bad_protocol
+tempest.api.network.test_security_groups_negative.NegativeSecGroupTest.test_create_security_group_rule_with_bad_ethertype
+neutron.tests.tempest.api.admin.test_quotas_negative.QuotasAdminNegativeTestJSON.test_create_security_group_rule_when_quotas_is_full
+neutron.tests.tempest.api.test_security_groups.SecGroupTest.test_create_bulk_sec_groups
+tempest.api.network.test_security_groups.SecGroupIPv6Test.test_create_security_group_rule_with_remote_group_id
+tempest.api.network.test_security_groups_negative.NegativeSecGroupIPv6Test.test_create_security_group_rule_with_non_existent_security_group
+tempest.api.network.test_security_groups_negative.NegativeSecGroupTest.test_create_security_group_rule_with_invalid_ports
+tempest.api.network.test_ports.PortsTestJSON.test_create_port_with_no_securitygroups
+neutron.tests.tempest.api.test_security_groups_negative.NegativeSecGroupIPv6Test.test_update_default_security_group_name
+tempest.api.network.test_security_groups_negative.NegativeSecGroupIPv6Test.test_create_security_group_update_name_default
+ostestr -w whitelist.txt --serial
+{0} tempest.api.network.test_ports.PortsIpV6TestJSON.test_create_port_with_no_securitygroups [7.279780s] ... ok
+{0} tempest.api.network.test_ports.PortsIpV6TestJSON.test_update_port_with_security_group_and_extra_attributes [8.558925s] ... ok
+{0} tempest.api.network.test_ports.PortsIpV6TestJSON.test_update_port_with_two_security_groups_and_extra_attributes [9.438850s] ... ok
+{0} tempest.api.network.test_ports.PortsTestJSON.test_create_port_with_no_securitygroups [6.709212s] ... ok
+{0} tempest.api.network.test_ports.PortsTestJSON.test_update_port_with_security_group_and_extra_attributes [9.052665s] ... ok
+{0} tempest.api.network.test_ports.PortsTestJSON.test_update_port_with_two_security_groups_and_extra_attributes [10.524007s] ... ok
+{0} tempest.api.network.test_security_groups.SecGroupIPv6Test.test_create_list_update_show_delete_security_group [1.659120s] ... ok
+{0} tempest.api.network.test_security_groups.SecGroupIPv6Test.test_create_security_group_rule_with_additional_args [1.021507s] ... ok
+{0} tempest.api.network.test_security_groups.SecGroupIPv6Test.test_create_security_group_rule_with_icmp_type_code [2.932092s] ... ok
+{0} tempest.api.network.test_security_groups.SecGroupIPv6Test.test_create_security_group_rule_with_protocol_integer_value [0.835957s] ... ok
+{0} tempest.api.network.test_security_groups.SecGroupIPv6Test.test_create_security_group_rule_with_remote_group_id [1.765768s] ... ok
+{0} tempest.api.network.test_security_groups.SecGroupIPv6Test.test_create_security_group_rule_with_remote_ip_prefix [1.093282s] ... ok
+{0} tempest.api.network.test_security_groups.SecGroupIPv6Test.test_create_show_delete_security_group_rule [1.871110s] ... ok
+{0} tempest.api.network.test_security_groups.SecGroupIPv6Test.test_list_security_groups [0.085280s] ... ok
+{0} tempest.api.network.test_security_groups.SecGroupTest.test_create_list_update_show_delete_security_group [1.661669s] ... ok
+{0} tempest.api.network.test_security_groups.SecGroupTest.test_create_security_group_rule_with_additional_args [1.047594s] ... ok
+{0} tempest.api.network.test_security_groups.SecGroupTest.test_create_security_group_rule_with_icmp_type_code [3.240455s] ... ok
+{0} tempest.api.network.test_security_groups.SecGroupTest.test_create_security_group_rule_with_protocol_integer_value [0.904571s] ... ok
+{0} tempest.api.network.test_security_groups.SecGroupTest.test_create_security_group_rule_with_remote_group_id [1.731300s] ... ok
+{0} tempest.api.network.test_security_groups.SecGroupTest.test_create_security_group_rule_with_remote_ip_prefix [1.061208s] ... ok
+{0} tempest.api.network.test_security_groups.SecGroupTest.test_create_show_delete_security_group_rule [1.673312s] ... ok
+{0} tempest.api.network.test_security_groups.SecGroupTest.test_list_security_groups [0.107324s] ... ok
+{0} tempest.api.network.test_security_groups_negative.NegativeSecGroupIPv6Test.test_create_additional_default_security_group_fails [0.310175s] ... ok
+{0} tempest.api.network.test_security_groups_negative.NegativeSecGroupIPv6Test.test_create_duplicate_security_group_rule_fails [1.420806s] ... ok
+{0} tempest.api.network.test_security_groups_negative.NegativeSecGroupIPv6Test.test_create_security_group_rule_with_bad_ethertype [0.674019s] ... ok
+{0} tempest.api.network.test_security_groups_negative.NegativeSecGroupIPv6Test.test_create_security_group_rule_with_bad_protocol [0.638452s] ... ok
+{0} tempest.api.network.test_security_groups_negative.NegativeSecGroupIPv6Test.test_create_security_group_rule_with_bad_remote_ip_prefix [0.726614s] ... ok
+{0} tempest.api.network.test_security_groups_negative.NegativeSecGroupIPv6Test.test_create_security_group_rule_with_invalid_ports [1.310215s] ... ok
+{0} tempest.api.network.test_security_groups_negative.NegativeSecGroupIPv6Test.test_create_security_group_rule_with_non_existent_remote_groupid [0.795240s] ... ok
+{0} tempest.api.network.test_security_groups_negative.NegativeSecGroupIPv6Test.test_create_security_group_rule_with_non_existent_security_group [0.096430s] ... ok
+{0} tempest.api.network.test_security_groups_negative.NegativeSecGroupIPv6Test.test_create_security_group_rule_with_remote_ip_and_group [1.271470s] ... ok
+{0} tempest.api.network.test_security_groups_negative.NegativeSecGroupIPv6Test.test_create_security_group_rule_wrong_ip_prefix_version [0.972029s] ... ok
+{0} tempest.api.network.test_security_groups_negative.NegativeSecGroupIPv6Test.test_create_security_group_update_name_default [0.618425s] ... ok
+{0} tempest.api.network.test_security_groups_negative.NegativeSecGroupIPv6Test.test_delete_non_existent_security_group [0.037967s] ... ok
+{0} tempest.api.network.test_security_groups_negative.NegativeSecGroupIPv6Test.test_show_non_existent_security_group [0.030208s] ... ok
+{0} tempest.api.network.test_security_groups_negative.NegativeSecGroupIPv6Test.test_show_non_existent_security_group_rule [0.030424s] ... ok
+{0} tempest.api.network.test_security_groups_negative.NegativeSecGroupTest.test_create_additional_default_security_group_fails [0.306149s] ... ok
+{0} tempest.api.network.test_security_groups_negative.NegativeSecGroupTest.test_create_duplicate_security_group_rule_fails [1.462559s] ... ok
+{0} tempest.api.network.test_security_groups_negative.NegativeSecGroupTest.test_create_security_group_rule_with_bad_ethertype [0.643262s] ... ok
+{0} tempest.api.network.test_security_groups_negative.NegativeSecGroupTest.test_create_security_group_rule_with_bad_protocol [0.650988s] ... ok
+{0} tempest.api.network.test_security_groups_negative.NegativeSecGroupTest.test_create_security_group_rule_with_bad_remote_ip_prefix [0.734372s] ... ok
+{0} tempest.api.network.test_security_groups_negative.NegativeSecGroupTest.test_create_security_group_rule_with_invalid_ports [1.165049s] ... ok
+{0} tempest.api.network.test_security_groups_negative.NegativeSecGroupTest.test_create_security_group_rule_with_non_existent_remote_groupid [0.786816s] ... ok
+{0} tempest.api.network.test_security_groups_negative.NegativeSecGroupTest.test_create_security_group_rule_with_non_existent_security_group [0.097154s] ... ok
+{0} tempest.api.network.test_security_groups_negative.NegativeSecGroupTest.test_create_security_group_rule_with_remote_ip_and_group [1.307378s] ... ok
+{0} tempest.api.network.test_security_groups_negative.NegativeSecGroupTest.test_create_security_group_update_name_default [0.614239s] ... ok
+{0} tempest.api.network.test_security_groups_negative.NegativeSecGroupTest.test_delete_non_existent_security_group [0.034894s] ... ok
+{0} tempest.api.network.test_security_groups_negative.NegativeSecGroupTest.test_show_non_existent_security_group [0.029543s] ... ok
+{0} tempest.api.network.test_security_groups_negative.NegativeSecGroupTest.test_show_non_existent_security_group_rule [0.029196s] ... ok
+{0} neutron.tests.tempest.api.admin.test_quotas_negative.QuotasAdminNegativeTestJSON.test_create_security_group_rule_when_quotas_is_full [2.530810s] ... ok
+{0} neutron.tests.tempest.api.admin.test_quotas_negative.QuotasAdminNegativeTestJSON.test_create_security_group_when_quotas_is_full [1.105897s] ... ok
+{0} neutron.tests.tempest.api.test_extension_driver_port_security.PortSecTest.test_create_port_sec_with_security_group [6.434291s] ... ok
+{0} neutron.tests.tempest.api.test_security_groups.SecGroupTest.test_create_bulk_sec_groups [2.071243s] ... ok
+{0} neutron.tests.tempest.api.test_security_groups.SecGroupTest.test_create_list_update_show_delete_security_group [0.978582s] ... ok
+{0} neutron.tests.tempest.api.test_security_groups_negative.NegativeSecGroupIPv6Test.test_update_default_security_group_name [1.491723s] ... ok
+{0} neutron.tests.tempest.api.test_security_groups_negative.NegativeSecGroupTest.test_update_default_security_group_name [1.193969s] ... ok
+Number of Tests that Ran 56
+Number of Tests that Passed 56
+Number of Tests that Failed 0
+Number of Tests that Skipped 0
+Below are the tests that have passed
+Success: tempest.api.network.test_security_groups_negative.NegativeSecGroupIPv6Test.test_create_duplicate_security_group_rule_fails[id-8fde898f-ce88-493b-adc9-4e4692879fc5,negative]   PASS
+Success: tempest.api.network.test_security_groups_negative.NegativeSecGroupTest.test_create_security_group_rule_with_remote_ip_and_group[id-b5c4b247-6b02-435b-b088-d10d45650881,negative]   PASS
+Success: tempest.api.network.test_ports.PortsIpV6TestJSON.test_update_port_with_security_group_and_extra_attributes[id-58091b66-4ff4-4cc1-a549-05d60c7acd1a]   PASS
+Success: tempest.api.network.test_security_groups.SecGroupTest.test_list_security_groups[id-e30abd17-fef9-4739-8617-dc26da88e686,smoke]   PASS
+Success: tempest.api.network.test_security_groups_negative.NegativeSecGroupTest.test_create_security_group_rule_with_non_existent_remote_groupid[id-4bf786fd-2f02-443c-9716-5b98e159a49a,negative]   PASS
+Success: tempest.api.network.test_security_groups_negative.NegativeSecGroupTest.test_create_security_group_rule_with_non_existent_security_group[id-be308db6-a7cf-4d5c-9baf-71bafd73f35e,negative]   PASS
+Success: tempest.api.network.test_security_groups.SecGroupIPv6Test.test_list_security_groups[id-e30abd17-fef9-4739-8617-dc26da88e686,smoke]   PASS
+Success: tempest.api.network.test_ports.PortsTestJSON.test_update_port_with_two_security_groups_and_extra_attributes[id-edf6766d-3d40-4621-bc6e-2521a44c257d]   PASS
+Success: tempest.api.network.test_security_groups.SecGroupIPv6Test.test_create_security_group_rule_with_additional_args[id-87dfbcf9-1849-43ea-b1e4-efa3eeae9f71]   PASS
+Success: tempest.api.network.test_security_groups_negative.NegativeSecGroupIPv6Test.test_create_security_group_rule_with_invalid_ports[id-0d9c7791-f2ad-4e2f-ac73-abf2373b0d2d,negative]   PASS
+Success: tempest.api.network.test_ports.PortsTestJSON.test_create_port_with_no_securitygroups[id-4179dcb9-1382-4ced-84fe-1b91c54f5735,smoke]   PASS
+Success: tempest.api.network.test_security_groups.SecGroupTest.test_create_security_group_rule_with_icmp_type_code[id-c9463db8-b44d-4f52-b6c0-8dbda99f26ce]   PASS
+Success: tempest.api.network.test_security_groups_negative.NegativeSecGroupTest.test_show_non_existent_security_group[id-424fd5c3-9ddc-486a-b45f-39bf0c820fc6,negative]   PASS
+Success: neutron.tests.tempest.api.test_security_groups.SecGroupTest.test_create_list_update_show_delete_security_group[id-bfd128e5-3c92-44b6-9d66-7fe29d22c802]   PASS
+Success: neutron.tests.tempest.api.test_extension_driver_port_security.PortSecTest.test_create_port_sec_with_security_group[id-fe7c27b9-f320-4daf-b977-b1547c43daf6]   PASS
+Success: tempest.api.network.test_security_groups.SecGroupTest.test_create_security_group_rule_with_additional_args[id-87dfbcf9-1849-43ea-b1e4-efa3eeae9f71]   PASS
+Success: tempest.api.network.test_security_groups.SecGroupIPv6Test.test_create_security_group_rule_with_protocol_integer_value[id-0a307599-6655-4220-bebc-fd70c64f2290]   PASS
+Success: tempest.api.network.test_ports.PortsTestJSON.test_update_port_with_security_group_and_extra_attributes[id-58091b66-4ff4-4cc1-a549-05d60c7acd1a]   PASS
+Success: tempest.api.network.test_security_groups.SecGroupTest.test_create_security_group_rule_with_remote_group_id[id-c2ed2deb-7a0c-44d8-8b4c-a5825b5c310b]   PASS
+Success: tempest.api.network.test_security_groups.SecGroupIPv6Test.test_create_security_group_rule_with_remote_group_id[id-c2ed2deb-7a0c-44d8-8b4c-a5825b5c310b]   PASS
+Success: tempest.api.network.test_security_groups_negative.NegativeSecGroupIPv6Test.test_create_security_group_rule_wrong_ip_prefix_version[id-7607439c-af73-499e-bf64-f687fd12a842,negative]   PASS
+Success: tempest.api.network.test_security_groups_negative.NegativeSecGroupTest.test_create_security_group_rule_with_bad_remote_ip_prefix[id-5f8daf69-3c5f-4aaa-88c9-db1d66f68679,negative]   PASS
+Success: tempest.api.network.test_security_groups_negative.NegativeSecGroupIPv6Test.test_create_security_group_rule_with_non_existent_remote_groupid[id-4bf786fd-2f02-443c-9716-5b98e159a49a,negative]   PASS
+Success: tempest.api.network.test_security_groups.SecGroupTest.test_create_show_delete_security_group_rule[id-cfb99e0e-7410-4a3d-8a0c-959a63ee77e9,smoke]   PASS
+Success: tempest.api.network.test_security_groups.SecGroupIPv6Test.test_create_security_group_rule_with_remote_ip_prefix[id-16459776-5da2-4634-bce4-4b55ee3ec188]   PASS
+Success: tempest.api.network.test_security_groups.SecGroupIPv6Test.test_create_security_group_rule_with_icmp_type_code[id-c9463db8-b44d-4f52-b6c0-8dbda99f26ce]   PASS
+Success: tempest.api.network.test_ports.PortsIpV6TestJSON.test_update_port_with_two_security_groups_and_extra_attributes[id-edf6766d-3d40-4621-bc6e-2521a44c257d]   PASS
+Success: tempest.api.network.test_security_groups_negative.NegativeSecGroupIPv6Test.test_show_non_existent_security_group_rule[id-4c094c09-000b-4e41-8100-9617600c02a6,negative]   PASS
+Success: neutron.tests.tempest.api.admin.test_quotas_negative.QuotasAdminNegativeTestJSON.test_create_security_group_when_quotas_is_full[id-5c924ff7-b7a9-474f-92a3-dbe0f976ec13,negative]   PASS
+Success: tempest.api.network.test_security_groups_negative.NegativeSecGroupTest.test_create_security_group_rule_with_bad_ethertype[id-5666968c-fff3-40d6-9efc-df1c8bd01abb,negative]   PASS
+Success: tempest.api.network.test_security_groups.SecGroupIPv6Test.test_create_show_delete_security_group_rule[id-cfb99e0e-7410-4a3d-8a0c-959a63ee77e9,smoke]   PASS
+Success: tempest.api.network.test_security_groups.SecGroupIPv6Test.test_create_list_update_show_delete_security_group[id-bfd128e5-3c92-44b6-9d66-7fe29d22c802,smoke]   PASS
+Success: tempest.api.network.test_security_groups_negative.NegativeSecGroupTest.test_create_security_group_update_name_default[id-966e2b96-023a-11e7-a9e4-fa163e4fa634,negative]   PASS
+Success: neutron.tests.tempest.api.admin.test_quotas_negative.QuotasAdminNegativeTestJSON.test_create_security_group_rule_when_quotas_is_full[id-b7143480-6118-4ed4-be38-1b6f15f30d05,negative]   PASS
+Success: tempest.api.network.test_security_groups_negative.NegativeSecGroupIPv6Test.test_create_security_group_rule_with_bad_ethertype[id-5666968c-fff3-40d6-9efc-df1c8bd01abb,negative]   PASS
+Success: tempest.api.network.test_security_groups.SecGroupTest.test_create_security_group_rule_with_protocol_integer_value[id-0a307599-6655-4220-bebc-fd70c64f2290]   PASS
+Success: tempest.api.network.test_security_groups_negative.NegativeSecGroupTest.test_delete_non_existent_security_group[id-1f1bb89d-5664-4956-9fcd-83ee0fa603df,negative]   PASS
+Success: tempest.api.network.test_security_groups.SecGroupTest.test_create_list_update_show_delete_security_group[id-bfd128e5-3c92-44b6-9d66-7fe29d22c802,smoke]   PASS
+Success: tempest.api.network.test_security_groups_negative.NegativeSecGroupTest.test_create_security_group_rule_with_invalid_ports[id-0d9c7791-f2ad-4e2f-ac73-abf2373b0d2d,negative]   PASS
+Success: tempest.api.network.test_ports.PortsIpV6TestJSON.test_create_port_with_no_securitygroups[id-4179dcb9-1382-4ced-84fe-1b91c54f5735,smoke]   PASS
+Success: tempest.api.network.test_security_groups_negative.NegativeSecGroupTest.test_create_security_group_rule_with_bad_protocol[id-981bdc22-ce48-41ed-900a-73148b583958,negative]   PASS
+Success: tempest.api.network.test_security_groups_negative.NegativeSecGroupTest.test_create_duplicate_security_group_rule_fails[id-8fde898f-ce88-493b-adc9-4e4692879fc5,negative]   PASS
+Success: tempest.api.network.test_security_groups_negative.NegativeSecGroupIPv6Test.test_create_security_group_update_name_default[id-966e2b96-023a-11e7-a9e4-fa163e4fa634,negative]   PASS
+Success: tempest.api.network.test_security_groups_negative.NegativeSecGroupIPv6Test.test_create_security_group_rule_with_bad_remote_ip_prefix[id-5f8daf69-3c5f-4aaa-88c9-db1d66f68679,negative]   PASS
+Success: tempest.api.network.test_security_groups_negative.NegativeSecGroupIPv6Test.test_create_security_group_rule_with_remote_ip_and_group[id-b5c4b247-6b02-435b-b088-d10d45650881,negative]   PASS
+Success: tempest.api.network.test_security_groups_negative.NegativeSecGroupIPv6Test.test_create_security_group_rule_with_bad_protocol[id-981bdc22-ce48-41ed-900a-73148b583958,negative]   PASS
+Success: tempest.api.network.test_security_groups_negative.NegativeSecGroupIPv6Test.test_show_non_existent_security_group[id-424fd5c3-9ddc-486a-b45f-39bf0c820fc6,negative]   PASS
+Success: tempest.api.network.test_security_groups_negative.NegativeSecGroupIPv6Test.test_create_security_group_rule_with_non_existent_security_group[id-be308db6-a7cf-4d5c-9baf-71bafd73f35e,negative]   PASS
+Success: tempest.api.network.test_security_groups_negative.NegativeSecGroupTest.test_show_non_existent_security_group_rule[id-4c094c09-000b-4e41-8100-9617600c02a6,negative]   PASS
+Success: neutron.tests.tempest.api.test_security_groups.SecGroupTest.test_create_bulk_sec_groups[id-7c0ecb10-b2db-11e6-9b14-000c29248b0d]   PASS
+Success: neutron.tests.tempest.api.test_security_groups_negative.NegativeSecGroupIPv6Test.test_update_default_security_group_name[id-55100aa8-b24f-333c-0bef-64eefd85f15c,negative]   PASS
+Success: tempest.api.network.test_security_groups_negative.NegativeSecGroupTest.test_create_additional_default_security_group_fails[id-2323061e-9fbf-4eb0-b547-7e8fafc90849,negative]   PASS
+Success: tempest.api.network.test_security_groups_negative.NegativeSecGroupIPv6Test.test_delete_non_existent_security_group[id-1f1bb89d-5664-4956-9fcd-83ee0fa603df,negative]   PASS
+Success: neutron.tests.tempest.api.test_security_groups_negative.NegativeSecGroupTest.test_update_default_security_group_name[id-55100aa8-b24f-333c-0bef-64eefd85f15c,negative]   PASS
+Success: tempest.api.network.test_security_groups.SecGroupTest.test_create_security_group_rule_with_remote_ip_prefix[id-16459776-5da2-4634-bce4-4b55ee3ec188]   PASS
+Success: tempest.api.network.test_security_groups_negative.NegativeSecGroupIPv6Test.test_create_additional_default_security_group_fails[id-2323061e-9fbf-4eb0-b547-7e8fafc90849,negative]   PASS
+</output>

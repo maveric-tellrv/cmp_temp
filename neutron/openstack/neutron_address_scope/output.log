@@ -1,0 +1,135 @@
+<output>
+Checking installed rpms:
+openstack-tempest-16.1.1-0.20170808012534.0fc1454.el7ost.noarch
+sos-3.4-6.el7.noarch
+python-neutron-tests-11.0.0-0.20170821141644.3441b3f.el7ost.noarch
+python-neutron-lbaas-tests-11.0.0-0.20170818025704.bdea6dd.el7ost.noarch
+python-ddt-1.0.1-2.el7ost.noarch
+python-sahara-tests-7.0.0-0.20170821133416.c07f479.el7ost.noarch
+python-neutron-fwaas-tests-11.0.0-0.20170821135612.734e02a.el7ost.noarch
+python-manila-tests-5.0.0-0.20170821131529.e391476.el7ost.noarch
+python-cinder-tests-11.0.0-0.20170821192443.120fdb0.el7ost.noarch
+python-neutron-fwaas-tests-11.0.0-0.20170821135612.734e02a.el7ost.noarch
+python-sahara-tests-tempest-0.4.2-0.20170801104045.5aee39c.el7ost.noarch
+All required packages installed
+Configuring Tempest
+
+2017-09-05 15:29:10.731 688355 INFO tempest [-] Using tempest config file /etc/tempest/tempest.conf
+
+
+Plugin selected: network
+API list selected: neutron_address_scope
+Running tempest
+Running the following tests!!
+neutron.tests.tempest.api.test_address_scopes_negative.AddressScopeTestNegative.test_delete_address_scope_associated_with_subnetpool
+neutron.tests.tempest.api.test_subnetpools.SubnetPoolsTest.test_update_subnetpool_associate_address_scope
+neutron.tests.tempest.api.test_address_scopes_negative.AddressScopeTestNegative.test_get_non_existent_address_scope
+neutron.tests.tempest.api.test_subnetpools_negative.SubnetPoolsNegativeTestJSON.test_create_sp_associate_address_scope_multiple_prefix_intersect
+neutron.tests.tempest.api.test_subnetpools.SubnetPoolsTest.test_update_subnetpool_associate_another_address_scope
+neutron.tests.tempest.api.test_subnetpools.SubnetPoolsTestV6.test_update_subnetpool_disassociate_address_scope
+neutron.tests.tempest.api.test_address_scopes_negative.AddressScopeTestNegative.test_update_shared_address_scope_to_unshare
+neutron.tests.tempest.api.test_address_scopes_negative.AddressScopeTestNegative.test_delete_non_existent_address_scope
+neutron.tests.tempest.api.test_address_scopes.AddressScopeTest.test_show_address_scope_project_id
+neutron.tests.tempest.api.test_address_scopes_negative.AddressScopeTestNegative.test_tenant_update_address_scope_shared_false
+neutron.tests.tempest.api.test_subnetpools_negative.SubnetPoolsNegativeTestJSON.test_update_subnetpool_multiple_prefix_intersect
+neutron.tests.tempest.api.test_subnetpools.SubnetPoolsTestV6.test_update_subnetpool_associate_another_address_scope
+neutron.tests.tempest.api.test_subnetpools.SubnetPoolsTest.test_create_subnetpool_associate_address_scope
+neutron.tests.tempest.api.test_address_scopes.AddressScopeTest.test_admin_create_shared_address_scope
+neutron.tests.tempest.api.test_subnetpools_negative.SubnetPoolsNegativeTestJSON.test_tenant_create_subnetpool_associate_shared_address_scope
+neutron.tests.tempest.api.test_address_scopes.AddressScopeTest.test_tenant_create_list_address_scope
+neutron.tests.tempest.api.test_address_scopes_negative.AddressScopeTestNegative.test_tenant_create_shared_address_scope
+neutron.tests.tempest.api.test_address_scopes.AddressScopeTest.test_delete_address_scope
+neutron.tests.tempest.api.test_subnetpools.SubnetPoolsTestV6.test_update_subnetpool_associate_address_scope
+neutron.tests.tempest.api.test_address_scopes_negative.AddressScopeTestNegative.test_tenant_update_address_scope_shared_true
+neutron.tests.tempest.api.test_address_scopes_negative.AddressScopeTestNegative.test_update_non_existent_address_scope
+neutron.tests.tempest.api.test_subnetpools_negative.SubnetPoolsNegativeTestJSON.test_create_subnetpool_associate_non_exist_address_scope
+neutron.tests.tempest.api.test_address_scopes.AddressScopeTest.test_show_address_scope
+neutron.tests.tempest.api.test_subnetpools_negative.SubnetPoolsNegativeTestJSON.test_update_subnetpool_prefix_intersect
+neutron.tests.tempest.api.test_subnetpools_negative.SubnetPoolsNegativeTestJSON.test_tenant_update_sp_prefix_associated_with_shared_addr_scope
+neutron.tests.tempest.api.test_subnetpools_negative.SubnetPoolsNegativeTestJSON.test_create_subnetpool_associate_address_scope_prefix_intersect
+neutron.tests.tempest.api.test_address_scopes.AddressScopeTest.test_tenant_update_address_scope
+neutron.tests.tempest.api.test_subnetpools_negative.SubnetPoolsNegativeTestJSON.test_create_subnetpool_associate_invalid_address_scope
+neutron.tests.tempest.api.test_address_scopes_negative.AddressScopeTestNegative.test_tenant_get_not_shared_admin_address_scope
+neutron.tests.tempest.api.test_subnetpools.SubnetPoolsTest.test_update_subnetpool_disassociate_address_scope
+neutron.tests.tempest.api.test_subnetpools.SubnetPoolsTestV6.test_create_subnetpool_associate_address_scope
+neutron.tests.tempest.api.test_subnetpools_negative.SubnetPoolsNegativeTestJSON.test_update_subnetpool_associate_address_scope_wrong_ip_version
+neutron.tests.tempest.api.test_address_scopes.AddressScopeTest.test_admin_update_shared_address_scope
+neutron.tests.tempest.api.test_subnetpools_negative.SubnetPoolsNegativeTestJSON.test_update_subnetpool_associate_address_scope_of_other_owner
+neutron.tests.tempest.api.test_subnetpools_negative.SubnetPoolsNegativeTestJSON.test_create_subnetpool_associate_address_scope_of_other_owner
+ostestr -w whitelist.txt --serial
+{0} neutron.tests.tempest.api.test_address_scopes.AddressScopeTest.test_admin_create_shared_address_scope [0.935766s] ... ok
+{0} neutron.tests.tempest.api.test_address_scopes.AddressScopeTest.test_admin_update_shared_address_scope [0.095636s] ... ok
+{0} neutron.tests.tempest.api.test_address_scopes.AddressScopeTest.test_delete_address_scope [1.251009s] ... ok
+{0} neutron.tests.tempest.api.test_address_scopes.AddressScopeTest.test_show_address_scope [0.068195s] ... ok
+{0} neutron.tests.tempest.api.test_address_scopes.AddressScopeTest.test_show_address_scope_project_id [0.079020s] ... ok
+{0} neutron.tests.tempest.api.test_address_scopes.AddressScopeTest.test_tenant_create_list_address_scope [0.083322s] ... ok
+{0} neutron.tests.tempest.api.test_address_scopes.AddressScopeTest.test_tenant_update_address_scope [0.118240s] ... ok
+{0} neutron.tests.tempest.api.test_address_scopes_negative.AddressScopeTestNegative.test_delete_address_scope_associated_with_subnetpool [1.414314s] ... ok
+{0} neutron.tests.tempest.api.test_address_scopes_negative.AddressScopeTestNegative.test_delete_non_existent_address_scope [0.029143s] ... ok
+{0} neutron.tests.tempest.api.test_address_scopes_negative.AddressScopeTestNegative.test_get_non_existent_address_scope [0.023059s] ... ok
+{0} neutron.tests.tempest.api.test_address_scopes_negative.AddressScopeTestNegative.test_tenant_create_shared_address_scope [0.028154s] ... ok
+{0} neutron.tests.tempest.api.test_address_scopes_negative.AddressScopeTestNegative.test_tenant_get_not_shared_admin_address_scope [0.921952s] ... ok
+{0} neutron.tests.tempest.api.test_address_scopes_negative.AddressScopeTestNegative.test_tenant_update_address_scope_shared_false [0.070866s] ... ok
+{0} neutron.tests.tempest.api.test_address_scopes_negative.AddressScopeTestNegative.test_tenant_update_address_scope_shared_true [0.076094s] ... ok
+{0} neutron.tests.tempest.api.test_address_scopes_negative.AddressScopeTestNegative.test_update_non_existent_address_scope [0.027857s] ... ok
+{0} neutron.tests.tempest.api.test_address_scopes_negative.AddressScopeTestNegative.test_update_shared_address_scope_to_unshare [0.369841s] ... ok
+{0} neutron.tests.tempest.api.test_subnetpools.SubnetPoolsTest.test_create_subnetpool_associate_address_scope [1.367966s] ... ok
+{0} neutron.tests.tempest.api.test_subnetpools.SubnetPoolsTest.test_update_subnetpool_associate_address_scope [0.388440s] ... ok
+{0} neutron.tests.tempest.api.test_subnetpools.SubnetPoolsTest.test_update_subnetpool_associate_another_address_scope [0.431822s] ... ok
+{0} neutron.tests.tempest.api.test_subnetpools.SubnetPoolsTest.test_update_subnetpool_disassociate_address_scope [0.398110s] ... ok
+{0} neutron.tests.tempest.api.test_subnetpools.SubnetPoolsTestV6.test_create_subnetpool_associate_address_scope [1.363274s] ... ok
+{0} neutron.tests.tempest.api.test_subnetpools.SubnetPoolsTestV6.test_update_subnetpool_associate_address_scope [0.371800s] ... ok
+{0} neutron.tests.tempest.api.test_subnetpools.SubnetPoolsTestV6.test_update_subnetpool_associate_another_address_scope [0.422522s] ... ok
+{0} neutron.tests.tempest.api.test_subnetpools.SubnetPoolsTestV6.test_update_subnetpool_disassociate_address_scope [0.373442s] ... ok
+{0} neutron.tests.tempest.api.test_subnetpools_negative.SubnetPoolsNegativeTestJSON.test_create_sp_associate_address_scope_multiple_prefix_intersect [1.133557s] ... ok
+{0} neutron.tests.tempest.api.test_subnetpools_negative.SubnetPoolsNegativeTestJSON.test_create_subnetpool_associate_address_scope_of_other_owner [1.261459s] ... ok
+{0} neutron.tests.tempest.api.test_subnetpools_negative.SubnetPoolsNegativeTestJSON.test_create_subnetpool_associate_address_scope_prefix_intersect [0.274441s] ... ok
+{0} neutron.tests.tempest.api.test_subnetpools_negative.SubnetPoolsNegativeTestJSON.test_create_subnetpool_associate_invalid_address_scope [0.020159s] ... ok
+{0} neutron.tests.tempest.api.test_subnetpools_negative.SubnetPoolsNegativeTestJSON.test_create_subnetpool_associate_non_exist_address_scope [0.071286s] ... ok
+{0} neutron.tests.tempest.api.test_subnetpools_negative.SubnetPoolsNegativeTestJSON.test_tenant_create_subnetpool_associate_shared_address_scope [0.389781s] ... ok
+{0} neutron.tests.tempest.api.test_subnetpools_negative.SubnetPoolsNegativeTestJSON.test_tenant_update_sp_prefix_associated_with_shared_addr_scope [0.596519s] ... ok
+{0} neutron.tests.tempest.api.test_subnetpools_negative.SubnetPoolsNegativeTestJSON.test_update_subnetpool_associate_address_scope_of_other_owner [0.196911s] ... ok
+{0} neutron.tests.tempest.api.test_subnetpools_negative.SubnetPoolsNegativeTestJSON.test_update_subnetpool_associate_address_scope_wrong_ip_version [0.234968s] ... ok
+{0} neutron.tests.tempest.api.test_subnetpools_negative.SubnetPoolsNegativeTestJSON.test_update_subnetpool_multiple_prefix_intersect [0.446597s] ... ok
+{0} neutron.tests.tempest.api.test_subnetpools_negative.SubnetPoolsNegativeTestJSON.test_update_subnetpool_prefix_intersect [0.409763s] ... ok
+Number of Tests that Ran 35
+Number of Tests that Passed 35
+Number of Tests that Failed 0
+Number of Tests that Skipped 0
+Below are the tests that have passed
+Success: neutron.tests.tempest.api.test_subnetpools.SubnetPoolsTestV6.test_update_subnetpool_associate_another_address_scope[id-18302e80-46a3-4563-82ac-ccd1dd57f652]   PASS
+Success: neutron.tests.tempest.api.test_address_scopes.AddressScopeTest.test_admin_create_shared_address_scope[id-5a06c287-8036-4d04-9d78-def8e06d43df]   PASS
+Success: neutron.tests.tempest.api.test_subnetpools_negative.SubnetPoolsNegativeTestJSON.test_create_subnetpool_associate_non_exist_address_scope[id-3b6c5942-485d-4964-a560-55608af020b5,negative]   PASS
+Success: neutron.tests.tempest.api.test_subnetpools.SubnetPoolsTest.test_update_subnetpool_associate_address_scope[id-910b6393-db24-4f6f-87dc-b36892ad6c8c]   PASS
+Success: neutron.tests.tempest.api.test_subnetpools_negative.SubnetPoolsNegativeTestJSON.test_update_subnetpool_associate_address_scope_of_other_owner[id-6d3d9ad5-32d4-4d63-aa00-8c62f73e2881,negative]   PASS
+Success: neutron.tests.tempest.api.test_address_scopes_negative.AddressScopeTestNegative.test_tenant_update_address_scope_shared_true[id-a857b61e-bf53-4fab-b21a-b0daaf81b5bd,negative]   PASS
+Success: neutron.tests.tempest.api.test_address_scopes_negative.AddressScopeTestNegative.test_tenant_get_not_shared_admin_address_scope[id-ef213552-f2da-487d-bf4a-e1705d115ff1,negative]   PASS
+Success: neutron.tests.tempest.api.test_subnetpools_negative.SubnetPoolsNegativeTestJSON.test_create_sp_associate_address_scope_multiple_prefix_intersect[id-83a19a13-5384-42e2-b579-43fc69c80914,negative]   PASS
+Success: neutron.tests.tempest.api.test_subnetpools_negative.SubnetPoolsNegativeTestJSON.test_update_subnetpool_multiple_prefix_intersect[id-4d3f8a79-c530-4e59-9acf-6c05968adbfe,negative]   PASS
+Success: neutron.tests.tempest.api.test_subnetpools.SubnetPoolsTestV6.test_create_subnetpool_associate_address_scope[id-49b44c64-1619-4b29-b527-ffc3c3115dc4]   PASS
+Success: neutron.tests.tempest.api.test_address_scopes_negative.AddressScopeTestNegative.test_tenant_update_address_scope_shared_false[id-a859ef2f-9c76-4e2e-ba0f-e0339a489e8c,negative]   PASS
+Success: neutron.tests.tempest.api.test_subnetpools_negative.SubnetPoolsNegativeTestJSON.test_create_subnetpool_associate_address_scope_of_other_owner[id-f06d8e7b-908b-4e94-b570-8156be6a4bf1,negative]   PASS
+Success: neutron.tests.tempest.api.test_address_scopes_negative.AddressScopeTestNegative.test_update_shared_address_scope_to_unshare[id-702d0515-82cb-4207-b0d9-703336e54665,negative]   PASS
+Success: neutron.tests.tempest.api.test_subnetpools_negative.SubnetPoolsNegativeTestJSON.test_tenant_create_subnetpool_associate_shared_address_scope[id-3396ec6c-cb80-4ebe-b897-84e904580bdf,negative]   PASS
+Success: neutron.tests.tempest.api.test_address_scopes.AddressScopeTest.test_admin_update_shared_address_scope[id-e9e1ccdd-9ccd-4076-9503-71820529508b]   PASS
+Success: neutron.tests.tempest.api.test_address_scopes_negative.AddressScopeTestNegative.test_delete_non_existent_address_scope[id-5c25dc6a-1e92-467a-9cc7-cda74b6003db,negative]   PASS
+Success: neutron.tests.tempest.api.test_subnetpools.SubnetPoolsTestV6.test_update_subnetpool_disassociate_address_scope[id-f8970048-e41b-42d6-934b-a1297b07706a]   PASS
+Success: neutron.tests.tempest.api.test_address_scopes_negative.AddressScopeTestNegative.test_update_non_existent_address_scope[id-47c25dc5-e886-4a84-88c3-ac5031969661,negative]   PASS
+Success: neutron.tests.tempest.api.test_subnetpools.SubnetPoolsTest.test_create_subnetpool_associate_address_scope[id-49b44c64-1619-4b29-b527-ffc3c3115dc4]   PASS
+Success: neutron.tests.tempest.api.test_address_scopes.AddressScopeTest.test_show_address_scope[id-85e0326b-4c75-4b92-bd6e-7c7de6aaf05c]   PASS
+Success: neutron.tests.tempest.api.test_address_scopes.AddressScopeTest.test_delete_address_scope[id-22b3b600-72a8-4b60-bc94-0f29dd6271df]   PASS
+Success: neutron.tests.tempest.api.test_address_scopes_negative.AddressScopeTestNegative.test_delete_address_scope_associated_with_subnetpool[id-1e471e5c-6f9c-437a-9257-fd9bc4b6f0fb,negative]   PASS
+Success: neutron.tests.tempest.api.test_subnetpools_negative.SubnetPoolsNegativeTestJSON.test_create_subnetpool_associate_invalid_address_scope[id-9589e332-638e-476e-81bd-013d964aa3cb,negative]   PASS
+Success: neutron.tests.tempest.api.test_address_scopes.AddressScopeTest.test_tenant_update_address_scope[id-85a259b2-ace6-4e32-9657-a9a392b452aa]   PASS
+Success: neutron.tests.tempest.api.test_subnetpools_negative.SubnetPoolsNegativeTestJSON.test_update_subnetpool_associate_address_scope_wrong_ip_version[id-648fee7d-a909-4ced-bad3-3a169444c0a8,negative]   PASS
+Success: neutron.tests.tempest.api.test_subnetpools_negative.SubnetPoolsNegativeTestJSON.test_tenant_update_sp_prefix_associated_with_shared_addr_scope[id-7438e49e-1351-45d8-937b-892059fb97f5,negative]   PASS
+Success: neutron.tests.tempest.api.test_address_scopes_negative.AddressScopeTestNegative.test_tenant_create_shared_address_scope[id-9c92ec34-0c50-4104-aa47-9ce98d5088df,negative]   PASS
+Success: neutron.tests.tempest.api.test_subnetpools.SubnetPoolsTest.test_update_subnetpool_disassociate_address_scope[id-f8970048-e41b-42d6-934b-a1297b07706a]   PASS
+Success: neutron.tests.tempest.api.test_subnetpools.SubnetPoolsTest.test_update_subnetpool_associate_another_address_scope[id-18302e80-46a3-4563-82ac-ccd1dd57f652]   PASS
+Success: neutron.tests.tempest.api.test_address_scopes.AddressScopeTest.test_show_address_scope_project_id[id-bbd57364-6d57-48e4-b0f1-8b9a998f5e06]   PASS
+Success: neutron.tests.tempest.api.test_subnetpools.SubnetPoolsTestV6.test_update_subnetpool_associate_address_scope[id-910b6393-db24-4f6f-87dc-b36892ad6c8c]   PASS
+Success: neutron.tests.tempest.api.test_address_scopes_negative.AddressScopeTestNegative.test_get_non_existent_address_scope[id-9b6dd7ad-cabb-4f55-bd5e-e61176ef41f6,negative]   PASS
+Success: neutron.tests.tempest.api.test_address_scopes.AddressScopeTest.test_tenant_create_list_address_scope[id-045f9294-8b1a-4848-b6a8-edf1b41e9d06]   PASS
+Success: neutron.tests.tempest.api.test_subnetpools_negative.SubnetPoolsNegativeTestJSON.test_update_subnetpool_prefix_intersect[id-96006292-7214-40e0-a471-153fb76e6b31,negative]   PASS
+Success: neutron.tests.tempest.api.test_subnetpools_negative.SubnetPoolsNegativeTestJSON.test_create_subnetpool_associate_address_scope_prefix_intersect[id-2dfb4269-8657-485a-a053-b022e911456e,negative]   PASS
+</output>

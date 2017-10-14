@@ -1,0 +1,51 @@
+<output>
+Checking installed rpms:
+openstack-tempest-16.1.1-0.20170808012534.0fc1454.el7ost.noarch
+sos-3.4-6.el7.noarch
+python-neutron-tests-11.0.0-0.20170821141644.3441b3f.el7ost.noarch
+python-neutron-lbaas-tests-11.0.0-0.20170818025704.bdea6dd.el7ost.noarch
+python-ddt-1.0.1-2.el7ost.noarch
+python-sahara-tests-7.0.0-0.20170821133416.c07f479.el7ost.noarch
+python-neutron-fwaas-tests-11.0.0-0.20170821135612.734e02a.el7ost.noarch
+python-manila-tests-5.0.0-0.20170821131529.e391476.el7ost.noarch
+python-cinder-tests-11.0.0-0.20170821192443.120fdb0.el7ost.noarch
+python-neutron-fwaas-tests-11.0.0-0.20170821135612.734e02a.el7ost.noarch
+python-sahara-tests-tempest-0.4.2-0.20170801104045.5aee39c.el7ost.noarch
+All required packages installed
+Configuring Tempest
+
+2017-09-05 15:59:04.751 22310 INFO tempest [-] Using tempest config file /etc/tempest/tempest.conf
+
+
+Plugin selected: network
+API list selected: neutron_ip_availability
+Running tempest
+Running the following tests!!
+neutron.tests.tempest.api.test_network_ip_availability.NetworksIpAvailabilityIPv6Test.test_admin_network_availability_before_subnet
+neutron.tests.tempest.api.test_network_ip_availability.NetworksIpAvailabilityIPv4Test.test_net_ip_availability_after_port_delete
+neutron.tests.tempest.api.test_network_ip_availability_negative.NetworksIpAvailabilityNegativeTest.test_network_availability_nonexistent_network_id
+neutron.tests.tempest.api.test_network_ip_availability.NetworksIpAvailabilityIPv6Test.test_net_ip_availability_after_port_delete
+neutron.tests.tempest.api.test_network_ip_availability.NetworksIpAvailabilityIPv4Test.test_admin_network_availability_before_subnet
+neutron.tests.tempest.api.test_network_ip_availability.NetworksIpAvailabilityIPv6Test.test_net_ip_availability_after_subnet_and_ports
+neutron.tests.tempest.api.test_network_ip_availability.NetworksIpAvailabilityIPv4Test.test_net_ip_availability_after_subnet_and_ports
+ostestr -w whitelist.txt --serial
+{0} neutron.tests.tempest.api.test_network_ip_availability.NetworksIpAvailabilityIPv4Test.test_admin_network_availability_before_subnet [3.217199s] ... ok
+{0} neutron.tests.tempest.api.test_network_ip_availability.NetworksIpAvailabilityIPv4Test.test_net_ip_availability_after_port_delete [6.790855s] ... ok
+{0} neutron.tests.tempest.api.test_network_ip_availability.NetworksIpAvailabilityIPv4Test.test_net_ip_availability_after_subnet_and_ports [7.157319s] ... ok
+{0} neutron.tests.tempest.api.test_network_ip_availability.NetworksIpAvailabilityIPv6Test.test_admin_network_availability_before_subnet [3.168647s] ... ok
+{0} neutron.tests.tempest.api.test_network_ip_availability.NetworksIpAvailabilityIPv6Test.test_net_ip_availability_after_port_delete [6.225435s] ... ok
+{0} neutron.tests.tempest.api.test_network_ip_availability.NetworksIpAvailabilityIPv6Test.test_net_ip_availability_after_subnet_and_ports [7.638229s] ... ok
+{0} neutron.tests.tempest.api.test_network_ip_availability_negative.NetworksIpAvailabilityNegativeTest.test_network_availability_nonexistent_network_id [0.795944s] ... ok
+Number of Tests that Ran 7
+Number of Tests that Passed 7
+Number of Tests that Failed 0
+Number of Tests that Skipped 0
+Below are the tests that have passed
+Success: neutron.tests.tempest.api.test_network_ip_availability.NetworksIpAvailabilityIPv6Test.test_admin_network_availability_before_subnet[id-0f33cc8c-1bf6-47d1-9ce1-010618240599]   PASS
+Success: neutron.tests.tempest.api.test_network_ip_availability.NetworksIpAvailabilityIPv4Test.test_net_ip_availability_after_subnet_and_ports[id-3aecd3b2-16ed-4b87-a54a-91d7b3c2986b]   PASS
+Success: neutron.tests.tempest.api.test_network_ip_availability.NetworksIpAvailabilityIPv4Test.test_net_ip_availability_after_port_delete[id-9f11254d-757b-492e-b14b-f52144e4ee7b]   PASS
+Success: neutron.tests.tempest.api.test_network_ip_availability.NetworksIpAvailabilityIPv6Test.test_net_ip_availability_after_port_delete[id-9f11254d-757b-492e-b14b-f52144e4ee7b]   PASS
+Success: neutron.tests.tempest.api.test_network_ip_availability.NetworksIpAvailabilityIPv6Test.test_net_ip_availability_after_subnet_and_ports[id-3aecd3b2-16ed-4b87-a54a-91d7b3c2986b]   PASS
+Success: neutron.tests.tempest.api.test_network_ip_availability.NetworksIpAvailabilityIPv4Test.test_admin_network_availability_before_subnet[id-0f33cc8c-1bf6-47d1-9ce1-010618240599]   PASS
+Success: neutron.tests.tempest.api.test_network_ip_availability_negative.NetworksIpAvailabilityNegativeTest.test_network_availability_nonexistent_network_id[id-3b8693eb-6c57-4ea1-ab84-3730c9ee9c84,negative]   PASS
+</output>

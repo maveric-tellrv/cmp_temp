@@ -1,0 +1,75 @@
+<output>
+Checking installed rpms:
+openstack-tempest-16.1.1-0.20170808012534.0fc1454.el7ost.noarch
+sos-3.4-6.el7.noarch
+python-neutron-tests-11.0.0-0.20170821141644.3441b3f.el7ost.noarch
+python-neutron-lbaas-tests-11.0.0-0.20170818025704.bdea6dd.el7ost.noarch
+python-ddt-1.0.1-2.el7ost.noarch
+python-sahara-tests-7.0.0-0.20170821133416.c07f479.el7ost.noarch
+python-neutron-fwaas-tests-11.0.0-0.20170821135612.734e02a.el7ost.noarch
+python-manila-tests-5.0.0-0.20170821131529.e391476.el7ost.noarch
+python-cinder-tests-11.0.0-0.20170821192443.120fdb0.el7ost.noarch
+python-neutron-fwaas-tests-11.0.0-0.20170821135612.734e02a.el7ost.noarch
+python-sahara-tests-tempest-0.4.2-0.20170801104045.5aee39c.el7ost.noarch
+All required packages installed
+Configuring Tempest
+
+2017-09-05 15:56:48.570 21523 INFO tempest [-] Using tempest config file /etc/tempest/tempest.conf
+
+
+Plugin selected: network
+API list selected: neutron_flavor
+Running tempest
+Running the following tests!!
+neutron.tests.tempest.api.test_flavors_extensions.TestFlavorsIpV6TestJSON.test_create_update_delete_flavor
+neutron.tests.tempest.api.test_flavors_extensions.TestFlavorsJson.test_create_update_delete_service_profile
+neutron.tests.tempest.api.test_flavors_extensions.TestFlavorsJson.test_show_service_profile
+neutron.tests.tempest.api.test_flavors_extensions.TestFlavorsJson.test_list_service_profiles
+neutron.tests.tempest.api.test_flavors_extensions.TestFlavorsIpV6TestJSON.test_show_service_profile
+neutron.tests.tempest.api.test_flavors_extensions.TestFlavorsIpV6TestJSON.test_list_flavors
+neutron.tests.tempest.api.admin.test_routers_flavors.RoutersFlavorTestCase.test_create_router_with_flavor
+neutron.tests.tempest.api.test_flavors_extensions.TestFlavorsIpV6TestJSON.test_create_update_delete_service_profile
+neutron.tests.tempest.api.test_flavors_extensions.TestFlavorsJson.test_create_update_delete_flavor
+neutron.tests.tempest.api.admin.test_routers_flavors.RoutersFlavorTestCase.test_badrequest_on_requesting_flags_and_flavor
+neutron.tests.tempest.api.test_flavors_extensions.TestFlavorsIpV6TestJSON.test_show_flavor
+neutron.tests.tempest.api.test_flavors_extensions.TestFlavorsJson.test_list_flavors
+neutron.tests.tempest.api.test_flavors_extensions.TestFlavorsJson.test_show_flavor
+neutron.tests.tempest.api.admin.test_routers_flavors.RoutersFlavorTestCase.test_delete_router_flavor_in_use
+neutron.tests.tempest.api.test_flavors_extensions.TestFlavorsIpV6TestJSON.test_list_service_profiles
+ostestr -w whitelist.txt --serial
+{0} neutron.tests.tempest.api.admin.test_routers_flavors.RoutersFlavorTestCase.test_badrequest_on_requesting_flags_and_flavor [0.356448s] ... ok
+{0} neutron.tests.tempest.api.admin.test_routers_flavors.RoutersFlavorTestCase.test_create_router_with_flavor [1.146322s] ... ok
+{0} neutron.tests.tempest.api.admin.test_routers_flavors.RoutersFlavorTestCase.test_delete_router_flavor_in_use [0.477604s] ... ok
+{0} neutron.tests.tempest.api.test_flavors_extensions.TestFlavorsIpV6TestJSON.test_create_update_delete_flavor [0.916977s] ... ok
+{0} neutron.tests.tempest.api.test_flavors_extensions.TestFlavorsIpV6TestJSON.test_create_update_delete_service_profile [0.452385s] ... ok
+{0} neutron.tests.tempest.api.test_flavors_extensions.TestFlavorsIpV6TestJSON.test_list_flavors [0.026808s] ... ok
+{0} neutron.tests.tempest.api.test_flavors_extensions.TestFlavorsIpV6TestJSON.test_list_service_profiles [0.019501s] ... ok
+{0} neutron.tests.tempest.api.test_flavors_extensions.TestFlavorsIpV6TestJSON.test_show_flavor [0.025105s] ... ok
+{0} neutron.tests.tempest.api.test_flavors_extensions.TestFlavorsIpV6TestJSON.test_show_service_profile [0.246404s] ... ok
+{0} neutron.tests.tempest.api.test_flavors_extensions.TestFlavorsJson.test_create_update_delete_flavor [0.716789s] ... ok
+{0} neutron.tests.tempest.api.test_flavors_extensions.TestFlavorsJson.test_create_update_delete_service_profile [0.410207s] ... ok
+{0} neutron.tests.tempest.api.test_flavors_extensions.TestFlavorsJson.test_list_flavors [0.259940s] ... ok
+{0} neutron.tests.tempest.api.test_flavors_extensions.TestFlavorsJson.test_list_service_profiles [0.019652s] ... ok
+{0} neutron.tests.tempest.api.test_flavors_extensions.TestFlavorsJson.test_show_flavor [0.025158s] ... ok
+{0} neutron.tests.tempest.api.test_flavors_extensions.TestFlavorsJson.test_show_service_profile [0.022886s] ... ok
+Number of Tests that Ran 15
+Number of Tests that Passed 15
+Number of Tests that Failed 0
+Number of Tests that Skipped 0
+Below are the tests that have passed
+Success: neutron.tests.tempest.api.admin.test_routers_flavors.RoutersFlavorTestCase.test_badrequest_on_requesting_flags_and_flavor[id-83939cf7-5070-41bc-9a3e-cd9f22df2186]   PASS
+Success: neutron.tests.tempest.api.admin.test_routers_flavors.RoutersFlavorTestCase.test_create_router_with_flavor[id-a4d01977-e968-4983-b4d9-824ea6c33f4b]   PASS
+Success: neutron.tests.tempest.api.test_flavors_extensions.TestFlavorsJson.test_list_flavors[id-eb3dd12e-6dfd-45f4-8393-46e0fa19860e]   PASS
+Success: neutron.tests.tempest.api.test_flavors_extensions.TestFlavorsJson.test_show_service_profile[id-30abb445-0eea-472e-bd02-8649f54a5968]   PASS
+Success: neutron.tests.tempest.api.admin.test_routers_flavors.RoutersFlavorTestCase.test_delete_router_flavor_in_use[id-30e73858-a0fc-409c-a2e0-e9cd2826f6a2]   PASS
+Success: neutron.tests.tempest.api.test_flavors_extensions.TestFlavorsJson.test_create_update_delete_service_profile[id-b12a9487-b6a2-4cff-a69a-fe2a0b64fae6]   PASS
+Success: neutron.tests.tempest.api.test_flavors_extensions.TestFlavorsJson.test_list_service_profiles[id-e2fb2f8c-45bf-429a-9f17-171c70444612]   PASS
+Success: neutron.tests.tempest.api.test_flavors_extensions.TestFlavorsIpV6TestJSON.test_create_update_delete_flavor[id-136bcf09-00af-4da7-9b7f-174735d4aebd]   PASS
+Success: neutron.tests.tempest.api.test_flavors_extensions.TestFlavorsIpV6TestJSON.test_list_service_profiles[id-e2fb2f8c-45bf-429a-9f17-171c70444612]   PASS
+Success: neutron.tests.tempest.api.test_flavors_extensions.TestFlavorsIpV6TestJSON.test_list_flavors[id-eb3dd12e-6dfd-45f4-8393-46e0fa19860e]   PASS
+Success: neutron.tests.tempest.api.test_flavors_extensions.TestFlavorsIpV6TestJSON.test_create_update_delete_service_profile[id-b12a9487-b6a2-4cff-a69a-fe2a0b64fae6]   PASS
+Success: neutron.tests.tempest.api.test_flavors_extensions.TestFlavorsJson.test_show_flavor[id-362f9658-164b-44dd-8356-151bc9b7be72]   PASS
+Success: neutron.tests.tempest.api.test_flavors_extensions.TestFlavorsIpV6TestJSON.test_show_flavor[id-362f9658-164b-44dd-8356-151bc9b7be72]   PASS
+Success: neutron.tests.tempest.api.test_flavors_extensions.TestFlavorsIpV6TestJSON.test_show_service_profile[id-30abb445-0eea-472e-bd02-8649f54a5968]   PASS
+Success: neutron.tests.tempest.api.test_flavors_extensions.TestFlavorsJson.test_create_update_delete_flavor[id-136bcf09-00af-4da7-9b7f-174735d4aebd]   PASS
+</output>
