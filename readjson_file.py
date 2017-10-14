@@ -9,9 +9,10 @@ def read_json_test(path):
         data = json.load(data_file)
 
         for key, value in data.items():
-            print key,value
+            pass
         for keys in value:
-            print keys
+            sub_test.append(keys)
+        print sub_test
         # for key,test_name in data.items():
         #     # print test_name
         #     sub_test.append(test_name)
@@ -19,4 +20,4 @@ def read_json_test(path):
         # print len(sub_test),sub_test
 # pprint(data['test_cases'][ ]['name'])
 
-read_json_test('neutron/neutron_agents/neutron_agents-validation_report.json')
+read_json_test('neutron/neutron_lbaasv2/neutron_lbaasv2-validation_report.json')
