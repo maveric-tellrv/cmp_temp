@@ -100,7 +100,7 @@ def get_tempest_list_result_list(tempest_regex,result_path):
 	(list_tempest,len_of_list) = plugin_test(strip_values(lines),tempest_regex)
 	# (list_tempest,len_of_list) = plugin_test(strip_values(list_tempest),'agent')
 	list_result = read_json_test(result_path)
-	print len(list_tempest),len(list_result)
+	print ("\n Total tempest test found {0} \n Total result test found {1}".format(len(list_tempest),len(list_result)))
 	return (list_tempest,list_result)
 
 
@@ -120,18 +120,21 @@ def comp_result(list_tempest,list_result):
 		return temp '''
 
 def comp_result():
+
+	''' Function to compare the list of test in tempest and result file '''
 	
 	list_tempest,list_result = get_tempest_list_result_list("test_extra_dhcp_options","neutron/neutron_dhcp_extra/neutron_dhcp_extra-validation_report.json")
 
 	temp_missing_test = set(list_tempest) - set(list_result)
 	temp_outdated_test = set(list_result) - set(list_tempest)
-
-	print ("######### missing_test")
-	for i in temp_missing_test:
-		print i
-	print ("###### outdated test")
-	for i in temp_outdated_test:
-		print i
+	if temp_missing_test:
+		print ("######### missing_test")
+		for i in temp_missing_test:
+			print i
+	if temp_outdated_test:
+		print ("###### outdated test")
+		for i in temp_outdated_test:
+			print i
 	print ("Total missing test {0}".format(len(temp_missing_test)))
 	print ("Total outdated test {0}".format(len(temp_outdated_test)))
 
