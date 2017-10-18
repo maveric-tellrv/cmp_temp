@@ -13,7 +13,7 @@ list_tempest=[]
 '''
 
 
-# Fiunction to extract the resulti.json file from folder
+# Function to extract the resulti.json file from folder
 '''def return_test_json(dir_name):
 	retunn dict_test_json '''
 
@@ -94,12 +94,14 @@ def read_json_test(path):
 	print len(list_tempest),len(list_result)
 	return (list_tempest,list_result) '''
 
-(list_tempest,len_of_list) = plugin_test(strip_values(lines),'test_volume')
-# (list_tempest,len_of_list) = plugin_test(strip_values(list_tempest),'agent')
-list_result = read_json_test('neutron/neutron_lbaasv2/neutron_lbaasv2-validation_report.json')
-print len(list_tempest),len(list_result)
-print list_tempest
-print list_result
+
+def get_tempest_list_result_list(tempest_regex,result_path):
+
+	(list_tempest,len_of_list) = plugin_test(strip_values(lines),tempest_regex)
+	# (list_tempest,len_of_list) = plugin_test(strip_values(list_tempest),'agent')
+	list_result = read_json_test(result_path)
+	print len(list_tempest),len(list_result)
+	return (list_tempest,list_result)
 
 
 #Function to compare the subtest with the python set function  
@@ -117,13 +119,22 @@ def comp_result(list_tempest,list_result):
 		print len(temp)
 		return temp '''
 
-temp = set(list_tempest) -set(list_result)
-print ("######### list_result")
-for i in list_result:
-	print i
-print ("######")
-for i in list_tempest:
-	print i
-print len(temp)
+def comp_result():
+	
+	list_tempest,list_result = get_tempest_list_result_list("test_extra_dhcp_options","neutron/neutron_dhcp_extra/neutron_dhcp_extra-validation_report.json")
+
+	temp_missing_test = set(list_tempest) - set(list_result)
+	temp_outdated_test = set(list_result) - set(list_tempest)
+
+	print ("######### missing_test")
+	for i in temp_missing_test:
+		print i
+	print ("###### outdated test")
+	for i in temp_outdated_test:
+		print i
+	print ("Total missing test {0}".format(len(temp_missing_test)))
+	print ("Total outdated test {0}".format(len(temp_outdated_test)))
+
         
 
+comp_result()
