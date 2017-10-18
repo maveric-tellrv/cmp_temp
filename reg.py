@@ -10,7 +10,7 @@ cinder_test = ['snapshot']
 manila_test = ['shares']
 
 
-with open('tempest_network') as f:
+with open('tempest_api') as f:
         lines = f.readlines()
 
 #function accepts liens as list of tests.
@@ -20,7 +20,8 @@ def strip_values(lines):
                 try:
                         l = l.strip("\n")
                         if l[-1] == "]":
-                            li = re.search(r'^.*?\[',l).group().strip('[')
+			    li = re.sub(r'\[.*\]','',l)
+                          #  li = re.search(r'^.*?\[',l).group().strip('[')
                         # li = re.search(r'^.*?\[', l).group()[:-1]
                             list_tempest.append(li)
                         else:
@@ -67,7 +68,7 @@ def read_json_test(path):
     return sub_test
 
 
-(list_tempest,len_of_list) = plugin_test(strip_values(lines),'network')
+(list_tempest,len_of_list) = plugin_test(strip_values(lines),'test_volume')
 # (list_tempest,len_of_list) = plugin_test(strip_values(list_tempest),'agent')
 list_result = read_json_test('neutron/neutron_lbaasv2/neutron_lbaasv2-validation_report.json')
 print len(list_tempest),len(list_result)
