@@ -10,7 +10,14 @@ list_tempest=[]
 	neutron_tests = ['test_qos','test_agent','neutron.tests','routers','ports','ipv6','subnet']
 	cinder_test = ['snapshot']
 	manila_test = ['shares']
+Create a python dictionary with tempest_regex and test run file
+	
+	neutron = {"test_extra_dhcp_options":"neutron_dhcp_extra-validation_report.json"}
 '''
+
+
+
+
 
 
 # Function to extract the resulti.json file from folder
@@ -119,11 +126,11 @@ def comp_result(list_tempest,list_result):
 		print len(temp)
 		return temp '''
 
-def comp_result():
+def comp_result(tempest_regex,result_json_file):
 
 	''' Function to compare the list of test in tempest and result file '''
 	
-	list_tempest,list_result = get_tempest_list_result_list("test_extra_dhcp_options","neutron/neutron_dhcp_extra/neutron_dhcp_extra-validation_report.json")
+	list_tempest,list_result = get_tempest_list_result_list(tempest_regex,result_json_file)
 
 	temp_missing_test = set(list_tempest) - set(list_result)
 	temp_outdated_test = set(list_result) - set(list_tempest)
@@ -140,4 +147,4 @@ def comp_result():
 
         
 
-comp_result()
+comp_result("test_extra_dhcp_options","neutron/neutron_dhcp_extra/neutron_dhcp_extra-validation_report.json")
